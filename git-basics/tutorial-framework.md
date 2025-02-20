@@ -17,11 +17,21 @@ useful format):
   - `git add`
   - `git commit`
 
+Notes on [Learn Git Brancing](https://learngitbranching.js.org/):
+
+- good explanation of the basics, but then moves into operations that I've never used,
+  e.g. moving branches (`git branch -f BRANCH SHA`), though I think it does reinforce
+  the concepts
+- remote operation topics
+  - more complicated examples, again a number of things I've never needed to do
+
 ## Platform notes
 
 - I don't know almost anything about using git on Windows (gitbash? WSL/WSL2?)
 - ... or GitHub Desktop
 - vscode, RStudio, etc.
+- do we want a platform-independent sandbox for people to use? (to avoid installation
+  on their own computers...)
 
 ## When, when, where, why, and how
 
@@ -31,13 +41,18 @@ useful format):
   - git history (git log)
   - fork
   - branch
-  - checkout / switch
-  - HEAD, working tree
+  - HEAD, working tree, detached HEAD...
   - commit
   - staging area
-  - push, pull, merge
   - tracked vs. untracked files
-  - .gitignore
+- Git commands
+  - checkout / switch
+  - add
+  - commit
+  - fetch + merge = pull
+  - fetch + rebase = pull --rebase
+  - push
+- .gitignore
 - What does it mean to squash history? (and how it can change the history)
 - Commits
   - Add files to "staging"
@@ -58,4 +73,5 @@ useful format):
 - code projects
   - Individual or collaborative
 - non-code projects
-  - e.g. the FSP guidance is in git (Katy Barnhart [via Julie Herrick])
+  - e.g. the FSP guidance is in git (Katy Barnhart [via Julie Herrick]), which
+    is a repo for the source code for sphinx docs
