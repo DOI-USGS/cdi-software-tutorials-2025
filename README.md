@@ -6,26 +6,37 @@ This repository contains tutorial materials for CDI-Software members. Tutorials 
 
 ## 2025 Tutorials
 
-1. [Git Platforms](./git-platforms/)
-   - Tutorial on utilizing Git platforms (specifically GitHub and GitLab) to develop and deliver code.
-   - Tutorial Date: TBD
+1. [Git Basics](./git-basicss/)
+
+   - Introductory tutorial on git and git commands, and basic collboration practices
+   - Tutorial Date: June 12, 2025
+   - Tutorial Lead: Jason Altekruse
+
+2. [IDEs with Git Integration](./ides/)
+
+   - Tutorial on Integrated Development Enviornments (IDEs) that have git integration (e.g., VSCode, R Studio)
+   - Tutorial Date: September 11, 2025
+   - Tutorial Lead: Kirstie Haynie
+
+3. [CI/CD Pipeline Basics](./ci-cd-pipelines/)
+   - Introduction to Continuous Integration/Continuous Deployment (CI/CD) pipelines for testing, liting, and publishing pages and packages
+   - Tutorial Date: November 6, 2025
+   - Tutorial Lead: Heather Hunsinger
 
 ## CDI-Software Tutorial Committee
 
 2025 CDI-Software Tutorial Committee Members are:
 
 - Jason Altekruse <jaltekruse@usgs.gov>
-- Keith Doore <kdoore@usgs.gov>
 - Kirstie Haynie <khaynie@usgs.gov>
 - Heather Hunsinger <hhunsinger@usgs.gov>
 - Carl Schroedl <carl_schroedl@ios.doi.gov>
-- Paul Selmants <pselmants@usgs.gov>
 - Liam Toney <ltoney@usgs.gov>
 
 If you would like to get involved, deliver a tutorial, or suggest ideas for a tutorial, please email a committee member.
 
-
 ## Links
+
 [1]: https://doimspp.sharepoint.com/sites/Software
 [2]: https://teams.microsoft.com/l/team/19:b34ccbb114b545faafb03ef7af656fff%40thread.skype/conversations?groupId=01927172-3614-4d93-9cbe-6e7c31ad371e&tenantId=0693b5ba-4b18-4d7b-9341-f32f400a5494
 [3]: https://doimspp.sharepoint.com/sites/CommunityforDataIntegration/SitePages/Community-for-Data-Integration-Code-of-Conduct.aspx
