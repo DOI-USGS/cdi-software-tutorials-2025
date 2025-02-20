@@ -1,10 +1,10 @@
-## CDI-Software Tutorials 2024
+## CDI-Software Tutorials 2025
 
 [CDI-Software][1] is part of the U.S. Geological Survey's Community for Data Integration (CDI) and is a Department of the Interior (DOI) wide community of practice. This community aims to empower software developers and fosters innovation across the DOI. To become a member, join the CDI-Software [Microsoft Teams][2]. Members are expected to uphold the [CDI Code of Conduct][3], and facilitators have the right and responsibility to remove comments or other contributions that are not aligned with this code.
 
 This repository contains tutorial materials for CDI-Software members. Tutorials are held quarterly and are hands-on. Live tutorials are held via Teams meetings, and recordings will be posted in each Tutorials folder afterwards.
 
-## 2024 Tutorials
+## 2025 Tutorials
 
 1. [Git Platforms](./git-platforms/)
    - Tutorial on utilizing Git platforms (specifically GitHub and GitLab) to develop and deliver code.
@@ -12,7 +12,7 @@ This repository contains tutorial materials for CDI-Software members. Tutorials 
 
 ## CDI-Software Tutorial Committee
 
-2024 CDI-Software Tutorial Committee Members are:
+2025 CDI-Software Tutorial Committee Members are:
 
 - Jason Altekruse <jaltekruse@usgs.gov>
 - Keith Doore <kdoore@usgs.gov>

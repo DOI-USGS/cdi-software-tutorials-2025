@@ -1,47 +1,40 @@
 [
   {
-    "name": "tutorials-2024",
+    "name": "tutorials-2025",
     "organization": "U.S. Geological Survey",
     "description": "CDI-Software Tutorial Committee repository for training materials",
     "version": "main",
     "status": "Development",
-
     "permissions": {
       "usageType": "openSource",
       "licenses": [
         {
           "name": "Public Domain, CC0-1.0",
-          "URL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2024/-/raw/main/LICENSE.md"
+          "URL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2025/-/raw/main/LICENSE.md"
         }
       ]
     },
-
-    "homepageURL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2024",
-    "downloadURL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2024/-/archive/main/tutorials-2024-main.zip",
-    "disclaimerURL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2024/-/raw/main/DISCLAIMER.md",
-    "repositoryURL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2024.git",
+    "homepageURL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2025",
+    "downloadURL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2025/-/archive/main/tutorials-2025-main.zip",
+    "disclaimerURL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2025/-/raw/main/DISCLAIMER.md",
+    "repositoryURL": "https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git",
     "vcs": "git",
-
     "laborHours": 80,
-
     "tags": [
       "USGS",
       "CDI",
       "DOI",
       "CDI-Software"
     ],
-
     "languages": [
       "Markdown"
     ],
-
     "contact": {
       "name": "Kirstie Haynie, Heather Hunsinger, Jason Altekruse, Scott Brown, Keith Doore, Carl Schroedl, Paul Selmants, Liam Toney",
       "email": "khaynie@usgs.gov; hhunsinger@usgs.gov; jaltekruse@usgs.gov; csbrown@usgs.gov; kdoore@usgs.gov; carl_schroedl@ios.doi.gov; pselmants@usgs.gov; ltoney@usgs.gov"
     },
-
     "date": {
-      "metadataLastUpdated": "2024-06-21"
+      "metadataLastUpdated": "2025-06-21"
     }
   }
 ]
