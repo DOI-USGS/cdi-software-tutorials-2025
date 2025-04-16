@@ -55,6 +55,7 @@ Notes on [Learn Git Branching](https://learngitbranching.js.org/):
   - staging area
   - tracked vs. untracked files
   - merge conflicts
+  - GitHub = Pull Request, GitLab = Merge Request (same thing)
 - Git commands
   - checkout / switch
   - add
