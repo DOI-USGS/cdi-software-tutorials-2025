@@ -8,12 +8,12 @@ can comment (most simply even with just a `:+1:`) to show your support for that
 issue.
 
 New issues can also be created by sending an email to the project's Service
-Desk: gs_gitlab_servicedesk+cdi-cdi-software-tutorials-2024-13460-issue-@usgs.gov
+Desk: gs_gitlab_servicedesk+cdi-cdi-software-tutorials-2025-13460-issue-@usgs.gov
 
 If you have direct contributions you would like considered for incorporation
 into the project you can [fork this repository][2] and
 [submit a merge request][3] for review.
 
-[1]: https://code.usgs.gov/cdi/cdi-software/tutorials-2024/-/issues
+[1]: https://code.usgs.gov/cdi/cdi-software/tutorials-2025/-/issues
 [2]: https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html#creating-a-fork
 [3]: https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html
