@@ -6,7 +6,7 @@ This repository contains tutorial materials for CDI-Software members. Tutorials 
 
 ## 2025 Tutorials
 
-1. [Git Basics](./git-basicss/)
+1. [Git Basics](./git-basics/)
 
    - Introductory tutorial on git and git commands, and basic collboration practices
    - Tutorial Date: June 12, 2025
