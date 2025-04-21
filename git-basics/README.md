@@ -10,8 +10,8 @@ instructions to ensure the necessary software is installed on your computer.
 
 --> make sure users switch to bash (e.g. default shell on Macs is now zsh)
 
-- [Setting up Git and Bash on Windows](./pages/prereq-windows.md)
-- [Setting up Git and Bash on Mac or Linux](./pages/prereq-mac-linux.md)
+- [Setting up Git and Bash on Windows](./pages/prereq.md#windows)
+- [Setting up Git and Bash on Mac or Linux](./pages/prereq.md#mac)
 
 If `git --version` shows anything other than the version, go to CDI-Software office hours or see us before class...
 

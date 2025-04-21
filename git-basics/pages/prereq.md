@@ -4,7 +4,7 @@ TODO: customize for git-basics tutorial, i.e. GitBash?
 
 ## Installation
 
-### Installing Git on Windows
+### Windows
 
 See [USGS Git and Software Release Course Setup](https://code.usgs.gov/cdi/usgs-git-and-software-release-course/-/blob/main/learners/setup.md).
 
