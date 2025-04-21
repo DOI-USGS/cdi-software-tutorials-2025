@@ -33,7 +33,11 @@ Main concepts:
 Every copy of a git repository is a backup of the project and it's history, and it takes a bit of
 work to delete part of that history.
 
-TODO: expand on key concepts of git, add a glossary of common git terms
+TODO:
+
+- [ ] expand on key concepts of git
+- [ ] add a [glossary](./glossary.md) of common git terms
+
 - Remote vs. local repositories
 - Origin, upstream
 - branch and fork
@@ -44,6 +48,6 @@ TODO: expand on key concepts of git, add a glossary of common git terms
 
 - [**Tutorial Index**](../README.md#tutorial-outline)
 - Previous --> [Prerequisites](../README#pre-tutorial-instructions)
-- Next --> [Try it out](TODO)
+- Next --> [Git reference commands](./pages/git-help-and-cofig.md)
 
 ------

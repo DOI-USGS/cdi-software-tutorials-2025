@@ -30,6 +30,8 @@ installed by default.
 
 ## Potential Issues
 
+TODO: Note - this may be a more advanced topic that we don't need to get into for this tutorial
+
 Line endings differ between Windows and Mac or Linux systems and this can cause merge issues.
 GitHub has a page documenting how to handle line endings on different systems and, if necessary,
 how to normalize line endings in an existing repository:

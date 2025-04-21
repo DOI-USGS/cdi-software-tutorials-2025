@@ -1,0 +1,30 @@
+# Exercise 2: create a branch
+
+TODO
+
+1. switch between branches (git switch or git checkout -b branch)
+   1. Switch to a new branch based on current HEAD
+      1. `git switch -c new_branch` <-- this is the newer preferred method
+      2. `git checkout -b new_branch` <-- this is an older but equivalent method
+   2. Get information about branches
+      1. `git branch`
+      2. `git branch -a`
+2. make changes on branch, add, commit -m
+    1. what is staging?
+    2. git status
+    3. git diff
+    4. git revert
+    5. git add -p ?
+    6. git log
+    7. Show this in different settings? terminal, text editor, vscode git extension
+3. repeat on a second branch (causing a conflict)
+
+------
+
+## Navigation
+
+- [**Tutorial Index**](../README.md#tutorial-outline)
+- Previous --> [Exercise 1](./ex1-clone-and-setup.md)
+- Next --> [Exercise 3](./ex3-merge-and-rebase.md)
+
+------
