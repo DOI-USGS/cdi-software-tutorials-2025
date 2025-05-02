@@ -1,6 +1,18 @@
 # Exercise 2: create a branch
 
-TODO
+## Exercise 2 Goals
+
+- Branches
+  - Create a new branch
+  - Switch between branches
+  - Get information about branches
+- Making changes on a branch
+  - Staging
+  - Commits
+  - Status
+  - Diffs
+
+## The exercise
 
 1. switch between branches (git switch or git checkout -b branch)
    1. Switch to a new branch based on current HEAD

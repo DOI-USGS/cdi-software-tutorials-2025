@@ -48,6 +48,6 @@ TODO:
 
 - [**Tutorial Index**](../README.md#tutorial-outline)
 - Previous --> [Prerequisites](../README#pre-tutorial-instructions)
-- Next --> [Git reference commands](./pages/git-help-and-cofig.md)
+- Next --> [Git reference commands](./pages/git-help-and-config.md)
 
 ------

@@ -1,6 +1,14 @@
 # Exercise 3: merge and rebase
 
-TODO
+## Exercise 3 Goals
+
+- Merge changes from one branch into another
+- Rebase branch on another branch
+- Merge conflicts
+- Git log
+- Git blame
+
+## The exercise
 
 1. merge branch A into main (this is local, normally you'd pull from upstream into main after a merge/pull request on remote)
     1. git merge -p ?
@@ -15,7 +23,7 @@ TODO
 ## Navigation
 
 - [**Tutorial Index**](../README.md#tutorial-outline)
-- Previous --> [Exercise 2](./ex2-local-branch.md)
+- Previous --> [Exercise 2](./ex2-local-branch-and-commit.md)
 - Next --> [TODO](TODO)
 
 ------

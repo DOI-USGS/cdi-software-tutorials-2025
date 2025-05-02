@@ -30,7 +30,7 @@ If `git --version` shows anything other than the version, go to CDI-Software off
       1. philosophical questions, e.g. what should be commited or not?
       2. Git history - smush commits, commit --amend (and when this is OK or not)
    4. Overview of the forking workflow so they know what we're aiming for, even though we're focusing on local git commands
-2. [Git reference commands](./pages/git-help-and-cofig.md)
+2. [Git reference commands](./pages/git-help-and-config.md)
    1. git help
    2. git config - brief intro (set username...)
 
@@ -40,12 +40,13 @@ Examples for hands on work / exercises
 --> it may be useful to have mini-lectures between exercises for more background information
 
 1. [Exercise 1](./pages/ex1-clone-and-setup.md): clone the upstream repository and get set up
-   1. git config username
-   2. .gitignore
-   3. git init
-   4. git remote -v (demo)
+   1. git init
+   2. git clone
+   3. git config username
+   4. .gitignore
+   5. git remote -v (demo)
       1. managing remotes <- should we have them rename origin to upstream?
-2. [Exercise 2](./pages/ex2-local-branch.md): create a local branch
+2. [Exercise 2](./pages/ex2-local-branch-and-commit.md): create a local branch
    1. switch between branches (git switch or git checkout -b branch)
    2. make changes on branch, add, commit -m
       1. what is staging?
