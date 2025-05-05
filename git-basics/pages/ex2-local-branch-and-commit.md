@@ -16,8 +16,9 @@
 
 1. switch between branches (git switch or git checkout -b branch)
    1. Switch to a new branch based on current HEAD
-      1. `git switch -c new_branch` <-- this is the newer preferred method
-      2. `git checkout -b new_branch` <-- this is an older but equivalent method
+      1. TODO: hide solutions with `<details>` & `<summary>` tags?
+      2. `git switch -c new_branch` <-- this is the newer preferred method
+      3. `git checkout -b new_branch` <-- this is an older but equivalent method
    2. Get information about branches
       1. `git branch`
       2. `git branch -a`
