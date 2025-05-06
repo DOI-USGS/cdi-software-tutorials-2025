@@ -33,9 +33,10 @@ Main concepts:
 Every copy of a git repository is a backup of the project and it's history, and it takes a bit of
 work to delete part of that history.
 
-<img src="../img/visual_git-basic-usage.png" alt="Basic Git Usage" style="background-color:white;" />
+<img src="../img/visual_git-basic-usage.png" alt="Basic Git Usage" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/basic-usage.svg.png" />
 
-<img src="../img/visual_git-conventions.png" alt="Git Conventions" style="background-color:white;" />
+<img src="../img/visual_git-conventions.png" alt="Git Conventions" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" />
+
 
 TODO:
 
