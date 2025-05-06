@@ -23,13 +23,14 @@
       1. `git branch`
       2. `git branch -a`
 2. make changes on branch, add, commit -m
-    1. what is staging?
-    2. git status
-    3. git diff
-    4. git revert
-    5. git add -p ?
-    6. git log
-    7. Show this in different settings? terminal, text editor, vscode git extension
+   1. make changes to root README.md, etc., so our MR can modify the same lines for conflicts
+   2. what is staging?
+   3. git status
+   4. git diff
+   5. git revert
+   6. git add -p ?
+   7. git log
+   8. Show this in different settings? terminal, text editor, vscode git extension
 3. repeat on a second branch (causing a conflict)
 
 ------

@@ -1,6 +1,7 @@
 # Git Basics Tutorial Prerequisites
 
 TODO: customize for git-basics tutorial, i.e. GitBash?
+TODO: add link to vscode info in other tutorial
 
 ## Installation
 

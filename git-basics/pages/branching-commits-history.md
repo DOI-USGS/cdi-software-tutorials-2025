@@ -1,6 +1,10 @@
 # Git branches, commits, and history
 
+TODO
 
+## Try it out
+
+Exercise 2: [branching and commits](./ex2-local-branch-and-commit.md)
 
 ------
 
