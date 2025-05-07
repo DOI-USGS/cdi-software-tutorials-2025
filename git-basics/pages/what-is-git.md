@@ -13,7 +13,7 @@ versions of your work, be it a document, dataset, or software code. Examples of 
 include the undo command in your editor, keeping multiple copies of a Word document, track changes,
 and file version history in OneDrive.
 
-![Report hell 😵‍💫](../img/reports.png)
+![Multiple drafts mess](../img/reports.png)
 
 Git is a Version Control System (VCS) that keeps track of what was done, when, and by whom by
 storing file *changes*, or *diffs*, to record *snapshots* of our files. Though it is most commonly

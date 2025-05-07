@@ -4,7 +4,7 @@ Here we're going to get a local copy of a git repository to work with, set up ou
 email, and go over some basic commands. We'll be using a terminal and creating a couple of
 directories.
 
-## Creating a new emtpy repository
+## Creating a new empty repository
 
 ```terminal
 ~/Desktop/Tutorial $ mkdir new-git-repo
