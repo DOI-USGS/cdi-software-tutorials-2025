@@ -1,13 +1,5 @@
 # What is Git (and Why Should I Care)?
 
-TODO: This draws from https://code.usgs.gov/cdi/usgs-git-and-software-release-course/-/blob/main/instructors/instructor-notes.md, https://git-scm.com/book/en/v2 (Pro Git book), and https://blog.ltgt.net/teaching-git/
-
-<!---
-Material drawn from:
-- https://code.usgs.gov/cdi/usgs-git-and-software-release-course/-/blob/main/instructors/instructor-notes.md
-- https://code.usgs.gov/cdi/usgs-git-and-software-release-course/-/blob/main/learners/setup.md
----->
-
 Whether working alone or with a team, you've almost certainly wanted to keep track of different
 versions of your work, be it a document, dataset, or software code. Examples of version control
 include the undo command in your editor, keeping multiple copies of a Word document, track changes,
@@ -147,6 +139,14 @@ as the *upstream* repository and a user's own *fork* is referred to as the *orig
 Typically a user will push a branch to the remote *origin* repository and create a *merge* (GitLab)
 or *pull* (GitHub) request from the branch on their *fork* into the *upstream* repository. And now
 we've gotten ahead of ourselves.
+
+## References
+
+Chacon, S. and Straub, B., Pro Git, version 2, <https://git-scm.com/book/en/v2>.
+
+Haider, S.M., Langseth, M.L., Ross, J.C., Martinez, E.M., and Sherwood C.R., 2025, USGS Git and
+Software Release Course, version 1.0.0: U.S. Geological Survey software release,
+<https://doi.org/10.5066/P1GJWZT6>.
 
 ---
 
