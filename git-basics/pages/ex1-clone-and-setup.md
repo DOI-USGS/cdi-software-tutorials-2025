@@ -8,7 +8,7 @@
   - set username and email
 - Ignoring files
   - .gitignore
-- Show git remotes
+- Show Git remotes
 
 ## The exercise
 
@@ -53,7 +53,7 @@ Still in the tutorials-2025 directory
     1. managing remotes <- TODO: should we have them rename origin to upstream? (this sets up tracking to upstream...)
     2. `git remote rename origin upstream`
 
-------
+---
 
 ## Navigation
 
@@ -61,4 +61,4 @@ Still in the tutorials-2025 directory
 - Previous --> [Git reference commands](./pages/git-help-and-config.md)
 - Next --> [Exercise 2](./ex2-local-branch-and-commit.md)
 
-------
+---

@@ -30,10 +30,10 @@
    5. git revert
    6. git add -p ?
    7. git log
-   8. Show this in different settings? terminal, text editor, vscode git extension
+   8. Show this in different settings? terminal, text editor, vscode Git extension
 3. repeat on a second branch (causing a conflict)
 
-------
+---
 
 ## Navigation
 
@@ -41,4 +41,4 @@
 - Previous --> [Exercise 1](./ex1-clone-and-setup.md)
 - Next --> [Exercise 3](./ex3-merge-and-rebase.md)
 
-------
+---

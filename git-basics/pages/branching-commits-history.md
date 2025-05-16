@@ -6,7 +6,7 @@ TODO
 
 Exercise 2: [branching and commits](./ex2-local-branch-and-commit.md)
 
-------
+---
 
 ## Navigation
 
@@ -15,4 +15,4 @@ Exercise 2: [branching and commits](./ex2-local-branch-and-commit.md)
 - [Exercise 2 - branching and commits](./ex2-local-branch-and-commit.md)
 - Next --> [Branches, commits, and history](./branching-commits-history.md)
 
-------
+---

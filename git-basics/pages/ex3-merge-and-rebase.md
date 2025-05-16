@@ -18,7 +18,7 @@
 3. git log to show the history
 4. git blame
 
-------
+---
 
 ## Navigation
 
@@ -26,4 +26,4 @@
 - Previous --> [Exercise 2](./ex2-local-branch-and-commit.md)
 - Next --> [TODO](TODO)
 
-------
+---

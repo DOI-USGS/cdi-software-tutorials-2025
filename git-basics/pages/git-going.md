@@ -1,6 +1,6 @@
 # Git Going
 
-Here we're going to get a local copy of a git repository to work with, set up our username and
+Here we're going to get a local copy of a Git repository to work with, set up our username and
 email, and go over some basic commands. We'll be using a terminal and creating a couple of
 directories.
 
@@ -58,9 +58,9 @@ Still in the tutorials-2025 directory
 
 ## Try it out
 
-Exercise 1: [git init, clone, and config](./ex1-clone-and-setup.md)
+Exercise 1: [Git init, clone, and config](./ex1-clone-and-setup.md)
 
-------
+---
 
 ## Navigation
 
@@ -69,4 +69,4 @@ Exercise 1: [git init, clone, and config](./ex1-clone-and-setup.md)
 - [Exercise 1 - init, clone, and config](./ex1-clone-and-setup.md)
 - Next --> [Branches, commits, and history](./branching-commits-history.md)
 
-------
+---

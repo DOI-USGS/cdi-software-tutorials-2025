@@ -11,7 +11,7 @@ TODO
 
 Exercise 3: [merge and rebase](./ex3-merge-and-rebase.md)
 
-------
+---
 
 ## Navigation
 
@@ -20,4 +20,4 @@ Exercise 3: [merge and rebase](./ex3-merge-and-rebase.md)
 - [Exercise 3 - merge and rebase](./ex3-merge-and-rebase.md)
 - Next --> [TODO](TBD)
 
-------
+---
