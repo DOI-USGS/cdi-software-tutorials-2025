@@ -27,17 +27,17 @@ If `git --version` shows anything other than the version, go to CDI-Software off
    1. What is Git?
    2. What is GitLab and GitHub?
    3. Use cases
-   4. Mental model of git
+   4. Mental model of Git
       1. philosophical questions, e.g. what should be commited or not?
       2. Git history - squash commits, commit --amend (and when this is OK or not)
-   5. Overview of the forking workflow so they know what we're aiming for, even though we're focusing on local git commands
+   5. Overview of the forking workflow so they know what we're aiming for, even though we're focusing on local Git commands
 2. [Git reference commands](./pages/git-help-and-config.md)
    1. git help
    2. git config - brief intro (set username...)
 
 Examples for hands on work / exercises
 --> which topics are most important in case we run out of time (e.g. git stash less important than branch/merge/rebase)
---> markdown doc for each exercise, with relevant git diagrams or other materials, etc. (this is a test... may organize)
+--> markdown doc for each exercise, with relevant Git diagrams or other materials, etc. (this is a test... may organize)
 --> it may be useful to have mini-lectures between exercises for more background information
 
 1. [Initialization or cloning and basic settings](./pages/git-going.md)
@@ -69,7 +69,7 @@ Examples for hands on work / exercises
    2. we'll create a new branch on upstream for them to pull down
 
 5. git branch <- to show the list of branches (and the active branch of shell integration isn't set up to show the current branch in the prompt)
-   1. side note about how presenter's terminals have customized prompts that show the git branch, provide links to show how to set this up
+   1. side note about how presenter's terminals have customized prompts that show the Git branch, provide links to show how to set this up
 
 6. [Pulling it together - merging and rebasing](./pages/merging-and-rebasing.md)
    1. merge branch A into main (this is local, normally you'd pull from upstream into main after a merge/pull request on remote)

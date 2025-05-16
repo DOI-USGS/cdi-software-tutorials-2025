@@ -1,6 +1,6 @@
 # Git Help and Configuration
 
-Once you have Git installed, there are a plethora of commands to explore! If this is the first time installing git on your computer, you will need to configure your credentials before you can start using these commands.
+Once you have Git installed, there are a plethora of commands to explore! If this is the first time installing Git on your computer, you will need to configure your credentials before you can start using these commands.
 
 ## Git commands and options
 

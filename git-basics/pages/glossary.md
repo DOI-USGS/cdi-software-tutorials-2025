@@ -13,6 +13,6 @@ TODO: compile a top-level glossary for tutorials-2025? (or link to https://code.
 - SHA-1 Hash
 - timestamp
 - version control
-- git
+- Git
 - GitLab
 - GitHub

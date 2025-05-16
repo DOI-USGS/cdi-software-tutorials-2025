@@ -1,8 +1,8 @@
-# Framework for git basics tutorial
+# Framework for Git basics tutorial
 
 Target is a ~1.5-2 hour tutorial with plenty of hands-on examples and exercises. This tutorial
-will focus on day-to-day command line use of git. IDE integration, GitLab/GitHub platforms,
-and more advanced topics like git hooks, CI/CD workflows, package registries, will be covered
+will focus on day-to-day command line use of Git. IDE integration, GitLab/GitHub platforms,
+and more advanced topics like Git hooks, CI/CD workflows, package registries, will be covered
 in other tutorials.
 
 Format ideas ([Learn Git Brancing](https://learngitbranching.js.org/) seems to have a pretty
@@ -34,20 +34,20 @@ Notes on [Learn Git Branching](https://learngitbranching.js.org/):
 
 ## Platform notes
 
-- I don't know almost anything about using git on Windows (gitbash? WSL/WSL2?)
+- I don't know almost anything about using Git on Windows (gitbash? WSL/WSL2?)
 - ... or GitHub Desktop
 - vscode, RStudio, etc. (focus on command line, not IDE integration)
 - do we want a platform-independent sandbox for people to use? (to avoid installation
   on their own computers...)
   - is the GitLab/GitHub browser-based IDEs sufficient for tutorial? do these offer
-    a command line for git commands?
+    a command line for Git commands?
 
 ## When, when, where, why, and how
 
 - How to get help: `git help` and `git help COMMAND`
 - Git terminology
   - repository
-  - git history (git log)
+  - Git history (git log)
   - fork
   - branch
   - HEAD, working tree, detached HEAD...
@@ -83,13 +83,13 @@ Notes on [Learn Git Branching](https://learngitbranching.js.org/):
   - set up gitlab access tokens
 - Troubleshooting
   - merge conflicts
-  - climbing out of "git holes"
+  - climbing out of "Git holes"
 
 ## Use cases
 
 - code projects
   - Individual or collaborative
 - non-code projects
-  - e.g. the FSP guidance is in git (Katy Barnhart [via Julie Herrick]), which
+  - e.g. the FSP guidance is in Git (Katy Barnhart [via Julie Herrick]), which
     is a repo for the source code for sphinx docs
 

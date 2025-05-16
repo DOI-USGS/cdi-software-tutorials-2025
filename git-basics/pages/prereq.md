@@ -20,7 +20,7 @@ end with `/bash`, you can change your shell to Bash by typing `bash` and then `R
 `echo $0` will confirm that your current shell is Bash.
 
 Git is usually available by default on MacOS. To confirm this, in the terminal, run `git --version`.
-This will print the version of git on your system or report an error if git is an unknown command.
+This will print the version of Git on your system or report an error if Git is an unknown command.
 If Git is not installed, work with your local IT to determine the best path for your system (e.g.
 [git-scm](https://git-scm.com/download/mac "This is a non-Federal link")).
 
@@ -38,11 +38,11 @@ GitHub has a page documenting how to handle line endings on different systems an
 how to normalize line endings in an existing repository:
 [Configuring Git to handle line endings](https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings).
 
-------
+---
 
 ## Navigation
 
 * [**Tutorial Index**](../README.md#tutorial-outline)
 * Next --> [What is Git?](./what-is-git.md)
 
-------
+---
