@@ -21,6 +21,9 @@ applications. For example, some coding projects publish documentation and user g
 <https://ghsc.code-pages.usgs.gov/esi/shakemap/>). Of course, a repository could contain
 documentation without any code or static data files.
 
+For the purposes of this tutorial, we'll generally be talking about developing software, whether
+this is a software package or scripts to process and visualize data.
+
 <details>
 
 <summary>Git vs. GitHub and GitLab</summary>
@@ -84,6 +87,12 @@ the branch reference, `plot-data`, will point to the most recent *commit* on the
 Branches can be given arbitrary names, but there are common branches called `main` or `master`,
 which are generally the primary branch in a repository.
 
+Branches can be used to organize your work and isolate development from stable code. For example,
+if you need to parse a new input file format, it's a good idea to do this on a branch so that
+you don't break the stable code on `main`. Once the new feature works, the development branch is
+*merged* back into the `main` branch and the development branch can be deleted (it's just a
+reference to a series of commits, so nothing is lost).
+
 #### *Tags*
 
 *Tags* are immutable references to a specific *commit*. A simple example of a tag is a released
@@ -136,9 +145,11 @@ later.
 There are many ways to collaborate using Git, one of which is a *forking* workflow, in which each
 collaborator creates a *fork*, or copy, of the main repository. The main repository is referred to
 as the *upstream* repository and a user's own *fork* is referred to as the *origin* repository.
-Typically a user will push a branch to the remote *origin* repository and create a *merge* (GitLab)
-or *pull* (GitHub) request from the branch on their *fork* into the *upstream* repository. And now
-we've gotten ahead of ourselves.
+Typically a user will push a *branch* to their own *fork*, the remote *origin* repository, and
+then, once work on the branch is complete, incorporate their work into the main *upstream*
+repository by way of a *merge request* (GitLab) or *pull request* (GitHub).
+
+TODO: a flowchart diagram would be helpful here
 
 ## References
 
