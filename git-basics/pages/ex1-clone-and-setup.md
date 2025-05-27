@@ -1,57 +1,171 @@
 # Exercise 1: Clone repository and set up user
 
+Background information: [Git Going](./git-going.md)
+
 ## Exercise 1 Goals
 
 - Create a local repository for use with the rest of the tutorial from scratch and by cloning an
   existing repository
 - Git configuration
-  - set username and email
+  - set username and email, if these have not already been configured
 - Ignoring files
   - .gitignore
 - Show Git remotes
 
-## The exercise
+## Preparation
 
-1. Open a terminal, an editor, and file explorer / Finder
+1. Open a terminal, an editor, and File Explorer / Finder
    1. This could be Terminal on MacOS or GitBash on Windows
+   2. An editor, like VSCode, can include a terminal, editor, and explorer in a single window
 2. Change into the folder where you'd like to create a repository
    1. `cd ~/Desktop/Tutorial`
 
-### Initialize a new repository
+## Clone an existing remote repository
 
-1. `mkdir new-git-repo`
-2. `cd new-git-repo`
-3. `git init`
-4. `git config user.name "USER NAME"`
-5. `git config user.email "user@usgs.gov"`
+Clone the "tutorials-2025" repository.
 
-### Clone an existing remote repository
+<details><summary>Solution</summary>
 
-1. Change out of the new repository directory (`cd ..`)
-2. Get the remote repository URL
+Repository URLs:
 
-![GitLab clone](../img/gitlab-clone-repo.png)
-![GitHub clone](../img/github-clone-repo.png)
+- GitLab: https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git
+- GitHub: https://github.com/DOI-USGS/cdi-software-tutorials-2025.git
 
-3. `git clone https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git`
-4. Set user name an email globally
-   1. `git config --global ...`
+```terminal
+~/Desktop/Tutorial $ git clone https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git
+Cloning into 'tutorials-2025'...
+remote: Enumerating objects: 233, done.
+remote: Counting objects: 100% (230/230), done.
+remote: Compressing objects: 100% (139/139), done.
+remote: Total 233 (delta 116), reused 192 (delta 88), pack-reused 3 (from 1)
+Receiving objects: 100% (233/233), 1.09 MiB | 4.76 MiB/s, done.
+Resolving deltas: 100% (116/116), done.
+```
 
-### .gitignore
+</details>
 
-In the tutorials-2025 directory, `.gitignore` may not be visible in File Explorer (Windows) or
-Finder (Mac). In the terminal, use `ls -a` to list "dot-files" like `.gitignore`.
+## Configure Git username and email
 
-1. List files that are currently ignored: `git status --ignored`
-   1. `.DS_Store` is a MacOS system file
+Set your Git username and email address globally. Confirm that these have been set correctly.
 
-### Git remotes - For future reference
+<details><summary>Solution</summary>
 
-Still in the tutorials-2025 directory
+```terminal
+$ git config --global user.name "Gandalf"
 
-1. `git remote -v`
-    1. managing remotes <- TODO: should we have them rename origin to upstream? (this sets up tracking to upstream...)
-    2. `git remote rename origin upstream`
+$ git config --global user.email "gtg@middleearth.net"
+
+$ git config --get user.name
+Gandalf
+
+$ git config --get user.email
+gtg@middleearth.net
+```
+
+</details>
+
+## Check remote Git repositories
+
+Check the remote repository set for your local clone.
+
+<details><summary>Solution</summary>
+
+```terminal
+$ cd tutorials-2025
+
+$ git remote -v
+origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (fetch)
+origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (push)
+```
+
+If you cloned from GitHub, the URLs will be
+<https://github.com/DOI-USGS/cdi-software-tutorials-2025.git>.
+
+</details>
+
+## Ignoring files
+
+Create a new file that will be ignored (use `touch FILENAME` command to create a new empty file
+with the specified name) and verify that it is ignored.
+
+<details><summary>Solution</summary>
+
+```terminal
+$ touch temp-file.txt
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+$ git status --ignored
+On branch main
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+        temp-file.txt
+
+nothing to commit, working tree clean
+```
+
+</details>
+
+**Extra credit:** Make git ignore all `*.dat` files
+
+<details><summary>Solution</summary>
+
+```terminal
+$ echo "*.dat" >> .gitignore
+
+$ touch file.dat
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+$ git status --ignored
+On branch main
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+        file.dat
+        temp-file.txt
+
+nothing to commit, working tree clean
+```
+
+</details>
+
+## Git remotes - For future reference
+
+Check the remotes set for the current repository.
+
+<details><summary>Solution</summary>
+
+```terminal
+$ git remote -v
+origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (fetch)
+origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (push)
+```
+
+</details>
+
+**Extra credit:** Since we commonly use a forking workflow (more on this later), we don't want to
+push anything directly to the main repository. To avoid mistakes, change the *push* URL for remote
+"origin" to an invalid URL. Hint: `git help ...`
+
+<details><summary>Solution</summary>
+
+```terminal
+$ git remote set-url --push origin invalid-url--READ_ONLY
+
+$ git remote -v
+origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (fetch)
+origin  invalid-url--READ_ONLY (push)
+```
+
+</details>
 
 ---
 

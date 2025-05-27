@@ -1,5 +1,7 @@
 # Exercise 3: merge and rebase
 
+Background information: [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
+
 ## Exercise 3 Goals
 
 - Merge changes from one branch into another
