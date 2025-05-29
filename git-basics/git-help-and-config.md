@@ -20,7 +20,7 @@ For example, if you want to learn more about the `commit` commands, use
 
 This will provide details from the Git Manual on how to use the `commit` command (see figure below).
 
-![Git manual for `git commit`](../img/git-manual-commit.png)
+![Git manual for `git commit`](./img/git-manual-commit.png)
 
 Alternatively, if you want to have help infromation displayed on your terminal instead of opening the Git Manual, use
 

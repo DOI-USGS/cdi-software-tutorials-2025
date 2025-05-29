@@ -17,7 +17,7 @@ Made some commits that you want to undo? Use
 a previous commit.
 
 <details><summary><b>Example (screenshot)</b></summary>
-<img src="../img/git-reset-example.png" alt="Example using `git reset`">
+<img src="./img/git-reset-example.png" alt="Example using `git reset`">
 </details>
 
 ## `git stash`
@@ -31,5 +31,5 @@ the stash, while the latter applies the change while also removing the entry (re
 those changes!) from the stash.
 
 <details><summary><b>Example (screenshot)</b></summary>
-<img src="../img/git-stash-example.png" alt="Example using `git stash pop`">
+<img src="./img/git-stash-example.png" alt="Example using `git stash pop`">
 </details>

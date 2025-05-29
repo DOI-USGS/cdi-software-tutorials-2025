@@ -22,7 +22,7 @@ Since this presentation will do its best to be platform agnostic, all commands i
 
 > Before trying to install Git Bash, check if it has already been installed. In the Windows search bar type `git bash`. If the below logo appears, click on it, and validate that a terminal window opens.
 
-![Git Bash Logo](../img/git-bash.png)
+![Git Bash Logo](./img/git-bash.png)
 
 ### For Federal Employees
 
