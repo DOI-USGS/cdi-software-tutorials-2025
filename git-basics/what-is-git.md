@@ -5,7 +5,7 @@ versions of your work, be it a document, dataset, or software code. Examples of 
 include the undo command in your editor, keeping multiple copies of a Word document, track changes,
 and file version history in OneDrive. These methods of version control have significant limitations.
 
-![Multiple drafts mess](../img/reports.png)
+![Multiple drafts mess](./img/reports.png)
 
 ## What is Git?
 
@@ -123,7 +123,7 @@ Along these lines, files in your working directory can be in a number of states:
 
 |     |
 |:---:|
-|<img src="../img/visual_git-conventions.png" alt="Git Conventions" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" />|
+|<img src="./img/visual_git-conventions.png" alt="Git Conventions" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" />|
 |*Commits, references, and areas (source: [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html#conventions), Mark Lodato*)|
 
 ### Some other Git terms
