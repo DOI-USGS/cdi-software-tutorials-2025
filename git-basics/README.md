@@ -5,19 +5,17 @@ Introductory tutorial on Git basics.
 ## Pre-tutorial Instructions
 
 This tutorial will use Git and Bash. You can use a basic terminal and a text editor or an editor
-with an integrated terminal like [VSCode](https://code.visualstudio.com/). See the following
-instructions to ensure the necessary software is installed on your computer.
+with an integrated terminal like [VSCode](https://code.visualstudio.com/).
 
---> make sure users switch to bash (e.g. default shell on Macs is now zsh)
+> Make sure you switch to bash in whatever terminal you use with the command `bash` (e.g. default shell on Macs is now zsh)
 
-- [Setting up Git and Bash on Windows](./pages/prereq.md#windows)
-- [Setting up Git and Bash on Mac or Linux](./pages/prereq.md#mac)
+See the following
+instructions to ensure the necessary software is installed on your computer: [Prerequisite documentation](./pages/prereq.md)
 
-If `git --version` shows anything other than the version, go to CDI-Software office hours or see us before class...
+Following completing the [prerequisite instructions](./pages/prereq.md) verify that git is available with the command `git --version`. If you have trouble with the installation, come to office hours on 6/10/2025 for help.
 
 ## Tutorial Slides and Recording
 
-- Slides: [PlaceHolder](TODO)
 - Recording: [PlaceHolder](TODO)
 - Resources: [resources.md](resources.md)
 
@@ -41,6 +39,7 @@ Examples for hands on work / exercises
 --> it may be useful to have mini-lectures between exercises for more background information
 
 1. [Initialization or cloning and basic settings](./pages/git-going.md)
+
    1. git init
    2. git clone
    3. git config username
@@ -50,6 +49,7 @@ Examples for hands on work / exercises
    6. [Exercise 1](./pages/ex1-clone-and-setup.md): clone the upstream repository and get set up
 
 2. [Branches, commits, and what's been happening](./pages/branching-commits-history.md)
+
    1. switch between branches (git switch or git checkout -b branch)
    2. make changes on branch, add, commit -m
       1. what is staging?
@@ -65,13 +65,16 @@ Examples for hands on work / exercises
 3. `git pull --ff-only`, we'll have a MR ready to go so they can pull down new stuff
 
 4. git fetch - grab branch B or a third branch?
+
    1. TODO: how to demo fetch with "local" operations (without origin and upstream?)
    2. we'll create a new branch on upstream for them to pull down
 
 5. git branch <- to show the list of branches (and the active branch of shell integration isn't set up to show the current branch in the prompt)
+
    1. side note about how presenter's terminals have customized prompts that show the Git branch, provide links to show how to set this up
 
 6. [Pulling it together - merging and rebasing](./pages/merging-and-rebasing.md)
+
    1. merge branch A into main (this is local, normally you'd pull from upstream into main after a merge/pull request on remote)
       1. git merge -p ?
    2. rebase branch B from main
