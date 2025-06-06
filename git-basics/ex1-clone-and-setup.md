@@ -31,7 +31,7 @@ Repository URLs:
 - GitLab: https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git
 - GitHub: https://github.com/DOI-USGS/cdi-software-tutorials-2025.git
 
-```terminal
+```bash
 ~/Desktop/Tutorial $ git clone https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git
 Cloning into 'tutorials-2025'...
 remote: Enumerating objects: 233, done.
@@ -50,7 +50,7 @@ Set your Git username and email address globally. Confirm that these have been s
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 $ git config --global user.name "Gandalf"
 
 $ git config --global user.email "gtg@middleearth.net"
@@ -70,7 +70,7 @@ Check the remote repository set for your local clone.
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 $ cd tutorials-2025
 
 $ git remote -v
@@ -90,7 +90,7 @@ with the specified name) and verify that it is ignored.
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 $ touch temp-file.txt
 
 $ git status
@@ -114,7 +114,7 @@ nothing to commit, working tree clean
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 $ echo "*.dat" >> .gitignore
 
 $ touch file.dat
@@ -143,7 +143,7 @@ Check the remotes set for the current repository.
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 $ git remote -v
 origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (fetch)
 origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (push)
@@ -157,7 +157,7 @@ push anything directly to the main repository. To avoid mistakes, change the *pu
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 $ git remote set-url --push origin invalid-url--READ_ONLY
 
 $ git remote -v
@@ -171,8 +171,8 @@ origin  invalid-url--READ_ONLY (push)
 
 ## Navigation
 
-- [**Tutorial Index**](../README.md#tutorial-outline)
-- Previous --> [Git reference commands](./pages/git-help-and-config.md)
+- [**Tutorial Index**](./README.md#tutorial-outline)
+- Previous --> [Git reference commands](./git-help-and-config.md)
 - Next --> [Exercise 2](./ex2-local-branch-and-commit.md)
 
 ---

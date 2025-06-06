@@ -21,7 +21,7 @@ Background information: [Git branches, commits, and history](./branching-commits
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 (main=) $ git branch -c new-feature
 
 (main=) $ git branch
@@ -41,7 +41,7 @@ Your branch is up to date with 'origin/main'.
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 (new-feature) $ git switch -c another-new-feature
 Switched to a new branch 'another-new-feature'
 
@@ -55,7 +55,7 @@ Switched to a new branch 'another-new-feature'
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 (another-new-feature) $ git switch new-feature
 Switched to a new branch 'new-feature'
 
@@ -78,7 +78,7 @@ Deleted branch another-new-feature (was 1c48b3c).
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 (new-feature) $ echo "Hello" > new-file.txt
 
 (new-feature %) $ git status
@@ -104,7 +104,7 @@ Changes to be committed:
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 (new-feature %) $ git commit -m 'add new file'
 [new-feature f66c014] adding new file
  1 file changed, 0 insertions(+), 0 deletions(-)
@@ -117,7 +117,7 @@ Changes to be committed:
 
 <details><summary>Solution</summary>
 
-```terminal
+```bash
 (new-feature %) $ echo "World" >> new-file.txt
 
 (new-feature *) $ git status
@@ -157,7 +157,7 @@ TODO: more exercises for `git revert`, `git add -p`, etc.?
 
 ## Navigation
 
-- [**Tutorial Index**](../README.md#tutorial-outline)
+- [**Tutorial Index**](./README.md#tutorial-outline)
 - Previous --> [Exercise 1](./ex1-clone-and-setup.md)
 - Next --> [Exercise 3](./ex3-merge-and-rebase.md)
 

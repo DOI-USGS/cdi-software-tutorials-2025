@@ -20,7 +20,7 @@ repository.
 First we have to create the directory that will be the new repository and change into this new
 directory:
 
-```terminal
+```bash
 ~/Desktop/Tutorial $ mkdir new-git-repo
 
 ~/Desktop/Tutorial $ cd new-git-repo
@@ -29,7 +29,7 @@ directory:
 Now we can initialize a new repository. Note that the new `.git` folder is not shown by default,
 at least on MacOS in Finder or with the `ls` command since it is a "dot-file".
 
-```terminal
+```bash
 ~/Desktop/Tutorial/new-git-repo $ git init
 Initialized empty Git repository in ~/Desktop/Tutorial/new-git-repo/.git/
 
@@ -60,7 +60,7 @@ Copy the URL from your repository on GitHub or GitLab as shown below.
 
 The command to clone the remote repository will look something like this:
 
-```terminal
+```bash
 ~/Desktop/Tutorial $ git clone https://github.com/path/to/shire-repo.git
 Cloning into 'shire-repo'...
 remote: Enumerating objects: 233, done.
@@ -114,7 +114,7 @@ Git *remotes* are one ore more remote repositories that your local *clone* is li
 
 From within the `tutorials-2025` directory:
 
-```terminal
+```bash
 $ git remote -v
 origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (fetch)
 origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (push)
@@ -131,8 +131,8 @@ Exercise 1: [Git init, clone, and config](./ex1-clone-and-setup.md)
 
 ## Navigation
 
-- [**Tutorial Index**](../README.md#tutorial-outline)
-- Previous --> [Git reference commands](./pages/git-help-and-config.md)
+- [**Tutorial Index**](./README.md#tutorial-outline)
+- Previous --> [Git reference commands](./git-help-and-config.md)
 - [Exercise 1 - init, clone, and config](./ex1-clone-and-setup.md)
 - Next --> [Branches, commits, and history](./branching-commits-history.md)
 

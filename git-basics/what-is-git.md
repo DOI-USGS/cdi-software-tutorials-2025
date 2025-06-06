@@ -15,6 +15,8 @@ is difficult to lose those changes, especially if you are pushing your repositor
 server (e.g. GitLab or GitHub). This gives you freedom to experiment because Git allows you to
 revert back to a previous state.
 
+![Git](https://imgs.xkcd.com/comics/git.png) <https://xkcd.com/1597>
+
 Though Git is most commonly used for source code projects, it can also be useful for other
 applications. For example, some coding projects publish documentation and user guides via Git pages
 (ShakeMap code repository: <https://code.usgs.gov/ghsc/esi/shakemap> and associated Git pages site:
@@ -24,17 +26,19 @@ documentation without any code or static data files.
 For the purposes of this tutorial, we'll generally be talking about developing software, whether
 this is a software package or scripts to process and visualize data.
 
-<details>
+---
 
-<summary>Git vs. GitHub and GitLab</summary>
+*<details><summary>Git vs. GitHub and GitLab</summary>*
 
-### Git vs. GitHub and GitLab
-
-- Git: open source software version control system
-- GitLab and GitHub: platforms that host Git repositories for web-based collaboration and provide
-  additional tools
+> ### Git vs. GitHub and GitLab
+>
+> - __*Git*__: open source software version control system
+> - __*GitLab*__ and __*GitHub*__: platforms that host Git repositories for web-based collaboration and provide
+>   additional tools
 
 </details>
+
+---
 
 ## Main concepts
 
@@ -54,17 +58,15 @@ A set of changes in the project files containing:
 
 ---
 
-<details>
+*<details><summary>What are those Git identifiers?</summary>*
 
-<summary>What are those Git identifiers?</summary>
-
-### Git SHA1 Hashes
-
-Each object (file, commit, etc.) is identified by the SHA1 hash of the objects contents. Git allows
-us to work with a unique prefix of the full SHA1 hash, or the first six or eight characters of the
-40-digit hexadecimal number.
-
-Note that Git will eventually use the stronger SHA-256 hash function.
+> ### Git SHA1 Hashes
+>
+> Each object (file, commit, etc.) is identified by the SHA1 hash of the objects contents. Git allows
+> us to work with a unique prefix of the full SHA1 hash, or the first six or eight characters of the
+> 40-digit hexadecimal number.
+>
+> Note that Git will eventually use the stronger SHA-256 hash function.
 
 </details>
 
@@ -102,6 +104,12 @@ software may be tagged as `2.0`.
 
 Note that it *is* possible to change a *tag*, but this is generally ill advised, especially once it
 has been pushed to a remote server (just make a new one! `1.1.1`).
+
+*<details><summary>Maybe I'll just reuse this tag...</summary>*
+
+![Don't do it!](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGFjYnpwdzc0MXNhOG5ibTBoZzV0NmVxOXF2b3Nxc2U1aGpsN2FpNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SRqTQmbYdm5jgS7xH9/giphy.gif)
+
+</details>
 
 ### Git "areas" and "states"
 
@@ -149,7 +157,17 @@ Typically a user will push a *branch* to their own *fork*, the remote *origin* r
 then, once work on the branch is complete, incorporate their work into the main *upstream*
 repository by way of a *merge request* (GitLab) or *pull request* (GitHub).
 
-TODO: a flowchart diagram would be helpful here
+> [!NOTE]
+> The request to incorporate changes from a repository *fork* into the main repository has a
+> different name on *GitLab* and *GitHub*, even though the end result is the same:
+>
+> - *GitLab* calls this a __*merge request*__
+> - *GitHub* calls this a __*pull request*__
+
+|     |
+|:---:|
+|<img src="./img/forking_workflow-biostats_tutorial.png" alt="Forking Workflow" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" />|
+|*Forking workflow (source: [Version Control with Git and GitHub](https://biostats-r.github.io/biostats/github/Pics/fork_branch_tutorial/1_workflow3.png), A. Halbritter and R.J. Telford, BioStats*)|
 
 ## References
 
@@ -157,14 +175,14 @@ Chacon, S. and Straub, B., Pro Git, version 2, <https://git-scm.com/book/en/v2>.
 
 Haider, S.M., Langseth, M.L., Ross, J.C., Martinez, E.M., and Sherwood C.R., 2025, USGS Git and
 Software Release Course, version 1.0.0: U.S. Geological Survey software release,
-<https://doi.org/10.5066/P1GJWZT6>.
+<https://cdi.code-pages.usgs.gov/usgs-git-and-software-release-course/index.html>.
 
 ---
 
 ## Navigation
 
-- [**Tutorial Index**](../README.md#tutorial-outline)
-- Previous --> [Prerequisites](../README#pre-tutorial-instructions)
-- Next --> [Git reference commands](./pages/git-help-and-config.md)
+- [**Tutorial Index**](./README.md#tutorial-outline)
+- Previous --> [Prerequisites](./prereq.md)
+- Next --> [Git reference commands](./git-help-and-config.md)
 
 ---
