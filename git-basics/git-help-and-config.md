@@ -45,12 +45,18 @@ If you are using Government Furnished Equipment, we recomend using your governme
 
 Git config can be used to set other configurations! In this tutorial, however, setting your name and e-mail address is enough. For information on how to setting other configurations, such as your preferred editor, check out https://cdi.code-pages.usgs.gov/usgs-git-and-software-release-course/setup-git.html.
 
+### Bash prompt configuration for Git
+
+If the Git branch and status isn't shown by default in your bash prompt, see the
+[Git in Bash](https://git-scm.com/book/en/v2/Appendix-A:-Git-in-Other-Environments-Git-in-Bash "This is a non-Federal link")
+in the Git Pro book.
+
 ---
 
 ## Navigation
 
-- [**Tutorial Index**](../README.md#tutorial-outline)
-- Previous --> [What is Git](./pages/what-is-git.md)
+- [**Tutorial Index**](./README.md#tutorial-outline)
+- Previous --> [What is Git](./what-is-git.md)
 - Next --> [Exercise 1](./ex1-clone-and-setup.md)
 
 ---

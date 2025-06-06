@@ -32,7 +32,7 @@ terms are interchangeable. The `git branch` command can, among other things, cre
 and list, modify, or delete existing branches. Let's create a new branch, list the branches, and
 then *switch* to it (we could also *checkout* the new branch with `git checkout`)
 
-```terminal
+```bash
 (main=) $ git branch -c new-feature
 
 (main=) $ git branch
@@ -69,7 +69,7 @@ the *index*) and then, once you've completed some work, you *commit* the *staged
 
 If you create a new file, it is *untracked* until you add it:
 
-```terminal
+```bash
 (new-feature %) $ touch new-file.txt
 
 (new-feature %) $ git status
@@ -94,11 +94,11 @@ messages describing the contents and purpose of the commit (unless you wish to f
 your collaborators or future self). For a useful discussion of what should go into a commit
 message, see [How to Write a Git Commit Message][write-commit].
 
-![Git Commits](https://imgs.xkcd.com/comics/git_commit.png) <https://imgs.xkcd.com/comics/git_commit.png>
+![Git Commits](https://imgs.xkcd.com/comics/git_commit.png) <https://xkcd.com/1296>
 
 *Commit* a file with a message using `git commit -m` as follows:
 
-```terminal
+```bash
 (new-feature %) $ git commit -m 'add new file'
 [new-feature f66c014] adding new file
  1 file changed, 0 insertions(+), 0 deletions(-)
@@ -119,7 +119,7 @@ editor with `git config`, see the `core.editor` section of the [Pro Git book][co
 
 More often than not, you'll be changing existing files, so let's see what this looks like.
 
-```terminal
+```bash
 (new-feature) $ echo "Hello" >> new-file.txt
 
 (new-feature *) $ git status
@@ -134,7 +134,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Let's see what changed with `git diff`:
 
-```terminal
+```bash
 (new-feature *) $ git diff
 diff --git a/new-file.txt b/new-file.txt
 index e69de29..e965047 100644
@@ -148,7 +148,7 @@ And now let's prepare a commit. Note that after adding the changes, `git diff` w
 those changes. This is because you've moved the existing changes from your *working directory* to *staging*, so to
 see the *staged* changes, you'll need to use `git diff --staged`.
 
-```terminal
+```bash
 (new-feature *) $ git add new-file.txt
 
 (new-feature +) $ git status
@@ -180,7 +180,7 @@ nothing to commit, working tree clean
 
 The Git history
 
-```terminal
+```bash
 (new-feature) $ git log
 commit 1c48b3c9edb602c6e77f9acc1f355c4b8fadea0b (HEAD -> new-feature)
 Author: Gandalf <gtg@middleearth.net>
@@ -203,8 +203,8 @@ Exercise 2: [branching and commits](./ex2-local-branch-and-commit.md)
 
 ## Navigation
 
-- [**Tutorial Index**](../README.md#tutorial-outline)
-- Previous --> [Git going](./pages/git-going.md)
+- [**Tutorial Index**](./README.md#tutorial-outline)
+- Previous --> [Git going](./git-going.md)
 - [Exercise 2 - branching and commits](./ex2-local-branch-and-commit.md)
 - Next --> [Branches, commits, and history](./branching-commits-history.md)
 

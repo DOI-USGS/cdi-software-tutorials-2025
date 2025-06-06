@@ -12,7 +12,7 @@ A Git *merge* combines changes from one branch into another, creating a commit w
 the diagram below, the merge commit is commit `6` (tagged `1.1.0`). It has two parents, commits `4`
 and `5`.
 
-```mermaid
+```mermaid <!-- the lines below build a diagram and are not real Git commands -->
 %%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 2}} }%%
 gitGraph
     commit id:"0"
@@ -41,7 +41,7 @@ parts of the code, so you do need to incorporate it into your branch. There's no
 doing this using `git merge`, but it can lead to "messy" or "cluttered" git histories. Git *rebase*
 can clean this up (with a cost...).
 
-```mermaid
+```mermaid <!-- the lines below build a diagram and are not real Git commands -->
 %%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 2}} }%%
 gitGraph
     commit id:"0"
@@ -62,6 +62,27 @@ gitGraph
     merge new-feature id:"6" tag:"1.1.0"
 ```
 
+### Fast-forward
+
+A "fast-forward" merge is a merge operation that does not require a new commit. This can happen
+when the history on the current branch is a direct ancestor of the branch being *merged* or
+*pulled.* Fast-forward can merges result in a cleaner project history without merge commits. On the
+other hand, merge commits can make it easier to identify, and possibly revert, individual features
+in the Git history.
+
+> [!NOTE]
+> Git *pull* is a combination of two other commands: `git fetch` followed by `git merge`
+>
+> - `git fetch` downloads new commits, branches, and tags from a remote repository to your local
+>   repository without modifying your local branches
+> - `git merge` integrates changes from one branch into another
+> - `git pull` *fetches* changes from the remote repository and *merges* those changes into your
+>   current local branch
+
+Git commands `merge` and `pull` have the option `--ff-only` to ensure that a branch update will
+only be performed if it can be done through a fast-forward merge. Using the ``--ff-only` flag will
+cause a merge to abort if it does not satisfy the requirements of a fast-forward merge.
+
 ## Rebase
 
 Rebasing applies the incremental changes on one branch to another as a series of new commits. This
@@ -69,7 +90,7 @@ creates a "cleaner" history, but does change the history as the original commits
 if they occurred after commit `4` (commits `2'` and `3'`). This can cause problems if, for example,
 a collaborator branched off of your work at one of those original commits.
 
-```mermaid
+```mermaid <!-- the lines below build a diagram and are not real Git commands -->
 %%{init: { 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 2}} }%%
 gitGraph
     commit id:"0"
@@ -99,7 +120,7 @@ Exercise 3: [merge and rebase](./ex3-merge-and-rebase.md)
 
 ## Navigation
 
-- [**Tutorial Index**](../README.md#tutorial-outline)
+- [**Tutorial Index**](./README.md#tutorial-outline)
 - Previous --> [TODO](TBD)
 - [Exercise 3 - merge and rebase](./ex3-merge-and-rebase.md)
 - Next --> [TODO](TBD)

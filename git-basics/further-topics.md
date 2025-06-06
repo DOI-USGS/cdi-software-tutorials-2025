@@ -20,6 +20,9 @@ a previous commit.
 <img src="./img/git-reset-example.png" alt="Example using `git reset`">
 </details>
 
+Or, you can *unstage* files with `git reset filename` and they will return to the
+working directory.
+
 ## `git stash`
 
 Made some changes but aren't ready to commit them yet? Use
@@ -33,3 +36,18 @@ those changes!) from the stash.
 <details><summary><b>Example (screenshot)</b></summary>
 <img src="./img/git-stash-example.png" alt="Example using `git stash pop`">
 </details>
+
+## `git blame`
+
+Want to see who last changed a particular line in a file?
+[`git blame FILE`](https://git-scm.com/docs/git-blame) shows the revision and author that
+last modified each line of a file.
+
+---
+
+## Navigation
+
+- [**Tutorial Index**](./README.md#tutorial-outline)
+- TODO
+
+---

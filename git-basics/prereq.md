@@ -119,7 +119,7 @@ Commands to install git will require sudo privilages. Contact your local IT and 
 
 ## Navigation
 
-- [**Tutorial Index**](../README.md#tutorial-outline)
+- [**Tutorial Index**](./README.md#tutorial-outline)
 - Next --> [What is Git?](./what-is-git.md)
 
 ---
