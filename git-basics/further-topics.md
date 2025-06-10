@@ -10,7 +10,7 @@ were beyond the scope of this guide, but are nevertheless useful to know.
   - [`git stash`](#git-stash)
   - [`git blame`](#git-blame)
   - [`git add -p`](#git-add--p)
-  - [Navigation](#navigation)
+  - [Tutorial Pages](#tutorial-pages)
 
 ## Git command completion and prompt
 
@@ -76,6 +76,14 @@ commit. See the interactive mode section of the `git help add` documentation.
 
 ---
 
-## Navigation
-Previous --> [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
+## Tutorial Pages
+
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. And more!
+
 ---

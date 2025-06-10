@@ -129,15 +129,18 @@ the outcome, if any.
 
 ## Try it out
 
-Exercise 3: [merge and rebase](./ex3-merge-and-rebase.md)
+Exercise 3: [merge and rebase](ex3-merge-and-rebase.md)
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Branches, commits, and history](./branching-commits-history.md)
-- [Exercise 3 - merge and rebase](./ex3-merge-and-rebase.md)
-- Next --> [And more!](./further-topics.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. Pulling it together - merging and rebasing (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

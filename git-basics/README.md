@@ -14,9 +14,9 @@ with an integrated terminal like [VSCode][vscode].
 > use with the command `bash` (e.g. default shell on macOS is now zsh)
 
 See the following instructions to ensure the necessary software is installed on your computer:
-[Prerequisite documentation](./prereq.md)
+[Prerequisite documentation](prereq.md)
 
-Following completion of the [prerequisite instructions](./prereq.md) verify that git is available
+Following completion of the [prerequisite instructions](prereq.md) verify that git is available
 with the command `git --version`. If you have trouble with the installation, come to office hours
 on 6/10/2025 for help.
 
@@ -27,17 +27,17 @@ on 6/10/2025 for help.
 
 ## Tutorial Outline
 
-1. [What is Git (and why should I use it)?](./what-is-git.md)
+1. [What is Git (and why should I use it)?](what-is-git.md)
 
-2. [Git reference commands](./git-help-and-config.md)
+2. [Git reference commands](git-help-and-config.md)
 
-3. [Initialization or cloning and basic settings](./git-going.md)
-   - *[Exercise 1: clone and setup](./ex1-clone-and-setup.md)*
+3. [Initialization or cloning and basic settings](git-going.md)
+   - *[Exercise 1: clone and setup](ex1-clone-and-setup.md)*
 
-4. [Branches, commits, and history](./branching-commits-history.md)
-   - *[Exercise 2: branch and commit](./ex2-local-branch-and-commit.md)*
+4. [Branches, commits, and history](branching-commits-history.md)
+   - *[Exercise 2: branch and commit](ex2-local-branch-and-commit.md)*
 
-5. [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
-   - *[Exercise 3: merge and rebase](./ex3-merge-and-rebase.md)*
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md)
+   - *[Exercise 3: merge and rebase](ex3-merge-and-rebase.md)*
 
-6. [And more!](./further-topics.md)
+6. [And more!](further-topics.md)

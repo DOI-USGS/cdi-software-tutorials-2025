@@ -6,7 +6,7 @@ directories. The examples below will be created in a folder called `Tutorial` on
 
 Throughout the tutorial demonstrations, you'll see a git-aware prompt (e.g. `(main #)`) and may see
 Git command completion. Setting this up is beyond the scope of the tutorial, but see
-[Git prompt and command completion](./further-topics.md#git-command-completion-and-prompt) for more
+[Git prompt and command completion](further-topics.md#git-command-completion-and-prompt) for more
 information.
 
 ## Creating a new empty repository
@@ -81,7 +81,7 @@ shire-repo
 
 ## Configure username and email
 
-As noted in [Git Help and Config](./git-help-and-config.md#git-configuration), check for an
+As noted in [Git Help and Config](git-help-and-config.md#git-configuration), check for an
 existing global Git configuration with `git config --list --global`. If this output includes your
 `user.name` and `user.email`, you're all set. Otherwise, set these with
 
@@ -130,15 +130,18 @@ URLs (e.g. if you want a remote to be *read only*, you can set an invalid URL fo
 
 ## Try it out
 
-Exercise 1: [Git init, clone, and config](./ex1-clone-and-setup.md)
+Exercise 1: [Git init, clone, and config](ex1-clone-and-setup.md)
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Git reference commands](./git-help-and-config.md)
-- [Exercise 1 - init, clone, and config](./ex1-clone-and-setup.md)
-- Next --> [Branches, commits, and history](./branching-commits-history.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. Initialization or cloning and basic settings (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

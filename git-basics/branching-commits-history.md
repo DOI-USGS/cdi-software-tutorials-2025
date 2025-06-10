@@ -1,6 +1,6 @@
 # Git branches, commits, and history
 
-As mentioned in [What is Git](./what-is-git.md#branches), *branches* are references that can be
+As mentioned in [What is Git](what-is-git.md#branches), *branches* are references that can be
 used to organize your work and to separate development code from stable code. Though there are any
 number of schemes, workflows, and naming conventions, for the purposes of this tutorial, we'll call
 the stable branch `main`, with arbitrary branch names for new features or bug fixes.
@@ -233,15 +233,18 @@ Date:   Tue May 27 10:19:08 2025 -0600
 
 ## Try it out
 
-Exercise 2: [branching and commits](./ex2-local-branch-and-commit.md)
+Exercise 2: [branching and commits](ex2-local-branch-and-commit.md)
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Git going](./git-going.md)
-- [Exercise 2 - branching and commits](./ex2-local-branch-and-commit.md)
-- Next --> [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. Branches, commits, and history (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

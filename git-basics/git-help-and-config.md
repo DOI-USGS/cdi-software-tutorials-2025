@@ -57,10 +57,14 @@ up Git command completion.
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [What is Git](./what-is-git.md)
-- Next --> [Initialization or cloning and basic settings](./git-going.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

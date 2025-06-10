@@ -1,10 +1,10 @@
 # Exercise 2: create a branch
 
-Background information: [Git branches, commits, and history](./branching-commits-history.md)
+Background information: [Git branches, commits, and history](branching-commits-history.md)
 
 ## Exercise 2 Goals
 
-- Build on [Exercise 1](./ex1-clone-and-setup.md)
+- Build on [Exercise 1](ex1-clone-and-setup.md)
 - Branches
   - Create a new branch
   - Switch between branches
@@ -154,10 +154,14 @@ index e965047..f9264f7 100644
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Exercise 1](./ex1-clone-and-setup.md)
-- Next --> [Exercise 3](./ex3-merge-and-rebase.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *Exercise 2*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

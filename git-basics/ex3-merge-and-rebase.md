@@ -1,10 +1,10 @@
 # Exercise 3: merge and rebase
 
-Background information: [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
+Background information: [Pulling it together - merging and rebasing](merging-and-rebasing.md)
 
 ## Exercise 3 Goals
 
-- Build on [Exercise 2](./ex2-local-branch-and-commit.md)
+- Build on [Exercise 2](ex2-local-branch-and-commit.md)
 - Use `git fetch` to download changes and branches from a remote repository
 - Use `git pull` to merge changes from a remote branch into a local branch
 - Resolve Git merge conflicts
@@ -260,7 +260,7 @@ apply our change. VSCode can display the conflicted file with links to accept th
 the incoming change, or both (red box in the figure below). Or we can manually edit the file to
 resolve the conflict.
 
-![Merge conflict in VSCode](./img/vscode-merge-conflict.png)
+![Merge conflict in VSCode](img/vscode-merge-conflict.png)
 
 Once we resolve the conflict by changing the default greeting to our own, we follow the
 instructions in the `git rebase` output, which say to *add* the resolved file and then running
@@ -369,9 +369,14 @@ repository to reflect the deleted remote branch with `git fetch --all --prune`.
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Exercise 2](./ex2-local-branch-and-commit.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *Exercise 3*)
+6. [And more!](further-topics.md)
 
 ---
