@@ -122,6 +122,11 @@ gitGraph
     merge new-feature id:"6" tag:"1.1.0"
 ```
 
+## Keep in mind
+
+There is usually more than one way to do things in Git, and there may only be subtle differences in
+the outcome, if any.
+
 ## Try it out
 
 Exercise 3: [merge and rebase](./ex3-merge-and-rebase.md)

@@ -99,7 +99,11 @@ There may be files that you want Git to ignore. For example, you may not want to
 file types (compiled code, temporary files) or entire directories in your repository. This is
 accomplished with a `.gitignore` file, which can be local (within a repository) or global (e.g.
 `~/.gitignore-global`). Each line in the `.gitignore` file is a pattern (wildcards allowed) to
-match files or entire folders that should be ignored.
+match files or entire folders that should be ignored. Git will not ignore files that are already in
+your repository. See [Git ignore documentation][git-ignore-docs] for more information about
+`.gitignore`, *patterns*, and *wildcards*.
+
+[git-ignore-docs]: https://git-scm.com/docs/gitignore "This is a non-Federal link"
 
 > [!Note]
 > `.gitignore` files may not be visible in File Explorer (Windows) or Finder (Mac). In the

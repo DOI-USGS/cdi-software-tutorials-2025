@@ -59,6 +59,20 @@ and `git switch` commands above (presuming you're on the main branch):
 > specify a different *start point*, but we won't cover that here (see `<start-point>` in
 > `git help branch` or `git help switch`).
 
+---
+
+<details><summary>Git checkout vs. switch</summary>
+
+Commands `git checkout` and `git switch` have overlapping functionality. `git checkout` is much
+older and can do a lot more than just change branches, including retrieve individual files from a
+remote repository. Recent versions of Git have `git switch`, which is a dedicated command to create
+local copies of remote branches and switch between local branches. `git switch` is now the
+recommended command to use for create and switch branches.
+
+</details>
+
+---
+
 ## Commit already
 
 Once you've done some work - created or modified one or more files you'll want to *commit* these to
