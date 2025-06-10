@@ -70,6 +70,10 @@ when the history on the current branch is a direct ancestor of the branch being 
 other hand, merge commits can make it easier to identify, and possibly revert, individual features
 in the Git history.
 
+Git commands `merge` and `pull` have the option `--ff-only` to ensure that a branch update will
+only be performed if it can be done through a fast-forward merge. Using the `--ff-only` flag will
+cause a merge to abort if it does not satisfy the requirements of a fast-forward merge.
+
 > [!NOTE]
 > Git *pull* is a combination of two other commands: `git fetch` followed by `git merge`
 >
@@ -79,9 +83,15 @@ in the Git history.
 > - `git pull` *fetches* changes from the remote repository and *merges* those changes into your
 >   current local branch
 
-Git commands `merge` and `pull` have the option `--ff-only` to ensure that a branch update will
-only be performed if it can be done through a fast-forward merge. Using the ``--ff-only` flag will
-cause a merge to abort if it does not satisfy the requirements of a fast-forward merge.
+#### Why and when to use fast-forward
+
+In a *forking* workflow, your local *main* branch should always be the same as the remote *main*
+branch (upstream or origin) so that it can act as your local *source of truth*. Using `--ff-only`
+to *pull* to main (e.g. `git pull --ff-only upstream main`) means the operation will fail if your
+local main has diverged from the remote main. This can happen if you accidentally add a commit to
+your local main branch instead of a working branch. This can be fixed by reverting your main branch
+or deleting it and re-fetching it. If you want to keep the misplaced commits, use `git log` to get
+the commit IDs so that you can apply these to a working branch (`git cherry-pick ...`).
 
 ## Rebase
 

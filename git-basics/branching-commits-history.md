@@ -89,6 +89,28 @@ Changes to be committed:
         new file:   new-file.txt
 ```
 
+It is possible to add only some of the changes in an individual file, see
+[Further Topics: `git add -p`](further-topics.md#git-add--p).
+
+---
+
+*<details><summary>Moving between Git areas</summary>*
+
+The figure below shows the Git commands that move files from one area to another.
+
+|     |
+|:---:|
+| <img src="./img/visual_git-basic-usage.png" alt="Basic Git Usage" longdesc="https://marklodato.github.io/visual-git-guide/basic-usage.svg.png" width="500" /> |
+| *Basic Usage (source: [A Visual Git Reference][visual-git-ref], Mark Lodato)* |
+
+[visual-git-ref]: https://marklodato.github.io/visual-git-guide/index-en.html#basic-usage "This is a non-Federal link"
+
+</details>
+
+---
+
+### Make history
+
 *Staged* files are added to the *history* with the `git commit` command. *Commits* have concise
 messages describing the contents and purpose of the commit (unless you wish to face the wrath of
 your collaborators or future self). For a useful discussion of what should go into a commit
@@ -105,7 +127,7 @@ message, see [How to Write a Git Commit Message][write-commit].
  create mode 100644 new-file.txt
 ```
 
-<details><summary>Configuring a default editor</summary>
+*<details><summary>Configuring a default editor</summary>*
 
 For longer commit messages, where `git commit -m` is inconvenient, you can configure a default
 editor with `git config`, see the `core.editor` section of the [Pro Git book][core-editor]

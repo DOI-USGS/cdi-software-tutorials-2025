@@ -4,6 +4,11 @@ Here we're going to create a local copy of a Git repository to work with, set up
 email, and go over some basic commands. We'll be using a terminal and creating a couple of
 directories. The examples below will be created in a folder called `Tutorial` on your desktop.
 
+Throughout the tutorial demonstrations, you'll see a git-aware prompt (e.g. `(main #)`) and may see
+Git command completion. Setting this up is beyond the scope of the tutorial, but see
+[Git prompt and command completion](./further-topics.md#git-command-completion-and-prompt) for more
+information.
+
 ## Creating a new empty repository
 
 The command to initialize a new empty repository is `git init`, which basically creates a `.git`
@@ -11,7 +16,7 @@ folder in the current directory that contains a number of Git-specific subdirect
 used in an empty folder or a folder containing files and subfolders that will be added to the
 repository.
 
-<details><summary>`git init`</summary>
+*<details><summary>`git init`</summary>*
 
 First we have to create the directory that will be the new repository and change into this new
 directory:
@@ -29,7 +34,7 @@ at least on MacOS in Finder or with the `ls` command since it is a "dot-file".
 ~/Desktop/Tutorial/new-git-repo $ git init
 Initialized empty Git repository in ~/Desktop/Tutorial/new-git-repo/.git/
 
-~/Desktop/Tutorial/new-git-repo (main #) $ ls -1 .git
+~/Desktop/Tutorial/new-git-repo (main #) $ ls .git
 HEAD        config      description hooks       info        objects     refs
 ```
 
@@ -83,12 +88,12 @@ existing global Git configuration with `git config --list --global`. If this out
 - `git config --global user.name "Gandalf"`
 - `git config --global user.email "gtg@middleearth.net"`
 
-## Git can ignore files - .gitignore
 ## Git status
 
 `git status` may be the most frequently used Git command. It lists the currently checked out branch
 and the status of any staged, modified, or untracked files in your working directory.
 
+## Git can ignore files - .gitignore
 
 There may be files that you want Git to ignore. For example, you may not want to include certain
 file types (compiled code, temporary files) or entire directories in your repository. This is

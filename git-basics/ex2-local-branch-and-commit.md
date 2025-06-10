@@ -70,6 +70,9 @@ Switched to a new branch 'new-feature'
 Deleted branch another-new-feature (was 1c48b3c).
 ```
 
+Note that `git branch -d` will not delete a branch that contains unmerged changes. You can force
+this with `-D` at the risk of losing work.
+
 </details>
 
 ## Committing

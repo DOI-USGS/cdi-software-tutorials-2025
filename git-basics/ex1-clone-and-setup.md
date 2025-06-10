@@ -31,6 +31,8 @@ Repository URLs:
 - GitLab: https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git
 - GitHub: https://github.com/DOI-USGS/cdi-software-tutorials-2025.git
 
+All examples in this tutorial use GitLab.
+
 ```bash
 ~/Desktop/Tutorial $ git clone https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git
 Cloning into 'tutorials-2025'...
@@ -108,7 +110,7 @@ Ignored files:
 nothing to commit, working tree clean
 ```
 
-</details>
+</details><br>
 
 **Extra credit:** Make git ignore all `*.dat` files
 
