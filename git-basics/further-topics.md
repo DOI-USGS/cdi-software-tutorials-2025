@@ -16,8 +16,10 @@ Made some commits that you want to undo? Use
 [`git reset`](https://git-scm.com/docs/git-reset) to move the current branch pointer to
 a previous commit.
 
-<details><summary><b>Example (screenshot)</b></summary>
-<img src="./img/git-reset-example.png" alt="Example using `git reset`">
+<details><summary>Example (screenshot)</summary>
+
+<img src="./img/git-reset-example.png" alt="Example using `git reset`" width="600">
+
 </details>
 
 Or, you can *unstage* files with `git reset filename` and they will return to the
@@ -26,15 +28,19 @@ working directory.
 ## `git stash`
 
 Made some changes but aren't ready to commit them yet? Use
-[`git stash`](https://git-scm.com/docs/git-stash) to save your changes temporarily. This
+[`git stash`][git-stash-docs] to save your changes temporarily. This
 command will clear your working directory, allowing you to switch branches or pull
 changes without losing your work. You can later retrieve your stashed changes with `git
 stash apply` or `git stash pop`. The former applies the change without removing it from
 the stash, while the latter applies the change while also removing the entry (record of
 those changes!) from the stash.
 
+[git-stash-docs]: https://git-scm.com/docs/git-stash "This is a non-Federal link"
+
 <details><summary><b>Example (screenshot)</b></summary>
-<img src="./img/git-stash-example.png" alt="Example using `git stash pop`">
+
+<img src="./img/git-stash-example.png" alt="Example using `git stash pop`" width="600">
+
 </details>
 
 ## `git blame`

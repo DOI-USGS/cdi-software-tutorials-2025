@@ -50,9 +50,9 @@ create a new folder containing the repository in the working directory.
 
 Copy the URL from your repository on GitHub or GitLab as shown below.
 
-![GitHub clone](./img/github-clone-repo.png)
+<img src="./img/github-clone-repo.png" alt="GitHub clone with HTTPS" width="800" />
 
-![GitLab clone](./img/gitlab-clone-repo.png)
+<img src="./img/gitlab-clone-repo.png" alt="GitLab clone with HTTPS" width="800" />
 
 The command to clone the remote repository will look something like this:
 

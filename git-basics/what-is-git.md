@@ -5,7 +5,7 @@ versions of your work, be it a document, dataset, or software code. Examples of 
 include the undo command in your editor, keeping multiple copies of a Word document, track changes,
 and file version history in OneDrive. These methods of version control have significant limitations.
 
-![Multiple drafts mess](./img/reports.png)
+<img src="./img/reports.png" alt="Multiple drafts mess" width="400" />
 
 ## What is Git?
 
@@ -15,7 +15,9 @@ is difficult to lose those changes, especially if you are pushing your repositor
 server (e.g. GitLab or GitHub). This gives you freedom to experiment because Git allows you to
 revert back to a previous state.
 
-![Git](https://imgs.xkcd.com/comics/git.png) <https://xkcd.com/1597>
+![Git](https://imgs.xkcd.com/comics/git.png) [xkcd.com/1597][xkcd-1597]
+
+[xkcd-1597]: https://xkcd.com/1597 "This is a non-Federal link"
 
 Though Git is most commonly used for source code projects, it can also be useful for other
 applications. For example, some coding projects publish documentation and user guides via Git pages
@@ -131,8 +133,10 @@ Along these lines, files in your working directory can be in a number of states:
 
 |     |
 |:---:|
-|<img src="./img/visual_git-conventions.png" alt="Git Conventions" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" />|
-|*Commits, references, and areas (source: [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html#conventions), Mark Lodato*)|
+| <img src="./img/visual_git-conventions.png" alt="Git Conventions" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" width="700" /> |
+| *Commits, references, and areas (source: [A Visual Git Reference][visual-git-ref], Mark Lodato)* |
+
+[visual-git-ref]: https://marklodato.github.io/visual-git-guide/index-en.html#conventions "This is a non-Federal link"
 
 ### Some other Git terms
 
