@@ -282,8 +282,6 @@ Successfully rebased and updated refs/heads/modify-feature-branch.
 
 You can see who last edited each line of `hello.sh` with `git blame hello.sh`:
 
-TODO: What does a clean git show: is the output piped through `less` or printed to screen?
-
 ```shell
 git-basics (modify-feature-branch) $ git blame hello.sh
 916670d8 (Bilbo   2025-06-05 17:33:20 -0600 1) #!/bin/bash
@@ -359,6 +357,5 @@ repository to reflect the deleted remote branch with `git fetch --all --prune`.
 
 - [**Tutorial Index**](./README.md#tutorial-outline)
 - Previous --> [Exercise 2](./ex2-local-branch-and-commit.md)
-- Next --> [TODO](TODO)
 
 ---

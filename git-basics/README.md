@@ -29,12 +29,12 @@ on 6/10/2025 for help.
 2. [Git reference commands](./git-help-and-config.md)
 
 3. [Initialization or cloning and basic settings](./git-going.md)
-   1. TODO: separate exercise file?
+   1. [Excercise 1 - clone and setup](./ex1-clone-and-setup.md)
 
 4. [Branches, commits, and history](./branching-commits-history.md)
-   1. TODO: separate exercise file?
+   1. [Exercise 2 - branching and commits](./ex2-local-branch-and-commit.md)
 
 5. [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
-   1. TODO: separate exercise file?
+   1. [Exercise 3 - merge and rebase](./ex3-merge-and-rebase.md)
 
 6. [And more!](./further-topics.md)
