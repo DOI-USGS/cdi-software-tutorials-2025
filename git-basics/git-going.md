@@ -4,6 +4,11 @@ Here we're going to create a local copy of a Git repository to work with, set up
 email, and go over some basic commands. We'll be using a terminal and creating a couple of
 directories. The examples below will be created in a folder called `Tutorial` on your desktop.
 
+Throughout the tutorial demonstrations, you'll see a git-aware prompt (e.g. `(main #)`) and may see
+Git command completion. Setting this up is beyond the scope of the tutorial, but see
+[Git prompt and command completion](further-topics.md#git-command-completion-and-prompt) for more
+information.
+
 ## Creating a new empty repository
 
 The command to initialize a new empty repository is `git init`, which basically creates a `.git`
@@ -11,7 +16,7 @@ folder in the current directory that contains a number of Git-specific subdirect
 used in an empty folder or a folder containing files and subfolders that will be added to the
 repository.
 
-<details><summary>`git init`</summary>
+*<details><summary>`git init`</summary>*
 
 First we have to create the directory that will be the new repository and change into this new
 directory:
@@ -29,7 +34,7 @@ at least on MacOS in Finder or with the `ls` command since it is a "dot-file".
 ~/Desktop/Tutorial/new-git-repo $ git init
 Initialized empty Git repository in ~/Desktop/Tutorial/new-git-repo/.git/
 
-~/Desktop/Tutorial/new-git-repo (main #) $ ls -1 .git
+~/Desktop/Tutorial/new-git-repo (main #) $ ls .git
 HEAD        config      description hooks       info        objects     refs
 ```
 
@@ -50,9 +55,9 @@ create a new folder containing the repository in the working directory.
 
 Copy the URL from your repository on GitHub or GitLab as shown below.
 
-![GitHub clone](./img/github-clone-repo.png)
+<img src="./img/github-clone-repo.png" alt="GitHub clone with HTTPS" width="800" />
 
-![GitLab clone](./img/gitlab-clone-repo.png)
+<img src="./img/gitlab-clone-repo.png" alt="GitLab clone with HTTPS" width="800" />
 
 The command to clone the remote repository will look something like this:
 
@@ -76,25 +81,29 @@ shire-repo
 
 ## Configure username and email
 
-As noted in [Git Help and Config](./git-help-and-config.md#git-configuration), check for an
+As noted in [Git Help and Config](git-help-and-config.md#git-configuration), check for an
 existing global Git configuration with `git config --list --global`. If this output includes your
 `user.name` and `user.email`, you're all set. Otherwise, set these with
 
 - `git config --global user.name "Gandalf"`
 - `git config --global user.email "gtg@middleearth.net"`
 
-## Git can ignore files - .gitignore
 ## Git status
 
 `git status` may be the most frequently used Git command. It lists the currently checked out branch
 and the status of any staged, modified, or untracked files in your working directory.
 
+## Git can ignore files - .gitignore
 
 There may be files that you want Git to ignore. For example, you may not want to include certain
 file types (compiled code, temporary files) or entire directories in your repository. This is
 accomplished with a `.gitignore` file, which can be local (within a repository) or global (e.g.
 `~/.gitignore-global`). Each line in the `.gitignore` file is a pattern (wildcards allowed) to
-match files or entire folders that should be ignored.
+match files or entire folders that should be ignored. Git will not ignore files that are already in
+your repository. See [Git ignore documentation][git-ignore-docs] for more information about
+`.gitignore`, *patterns*, and *wildcards*.
+
+[git-ignore-docs]: https://git-scm.com/docs/gitignore "This is a non-Federal link"
 
 > [!Note]
 > `.gitignore` files may not be visible in File Explorer (Windows) or Finder (Mac). In the
@@ -121,15 +130,18 @@ URLs (e.g. if you want a remote to be *read only*, you can set an invalid URL fo
 
 ## Try it out
 
-Exercise 1: [Git init, clone, and config](./ex1-clone-and-setup.md)
+Exercise 1: [Git init, clone, and config](ex1-clone-and-setup.md)
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Git reference commands](./git-help-and-config.md)
-- [Exercise 1 - init, clone, and config](./ex1-clone-and-setup.md)
-- Next --> [Branches, commits, and history](./branching-commits-history.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. Initialization or cloning and basic settings (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

@@ -1,6 +1,6 @@
 # Git branches, commits, and history
 
-As mentioned in [What is Git](./what-is-git.md#branches), *branches* are references that can be
+As mentioned in [What is Git](what-is-git.md#branches), *branches* are references that can be
 used to organize your work and to separate development code from stable code. Though there are any
 number of schemes, workflows, and naming conventions, for the purposes of this tutorial, we'll call
 the stable branch `main`, with arbitrary branch names for new features or bug fixes.
@@ -59,6 +59,20 @@ and `git switch` commands above (presuming you're on the main branch):
 > specify a different *start point*, but we won't cover that here (see `<start-point>` in
 > `git help branch` or `git help switch`).
 
+---
+
+<details><summary>Git checkout vs. switch</summary>
+
+Commands `git checkout` and `git switch` have overlapping functionality. `git checkout` is much
+older and can do a lot more than just change branches, including retrieve individual files from a
+remote repository. Recent versions of Git have `git switch`, which is a dedicated command to create
+local copies of remote branches and switch between local branches. `git switch` is now the
+recommended command to use for create and switch branches.
+
+</details>
+
+---
+
 ## Commit already
 
 Once you've done some work - created or modified one or more files you'll want to *commit* these to
@@ -89,6 +103,28 @@ Changes to be committed:
         new file:   new-file.txt
 ```
 
+It is possible to add only some of the changes in an individual file, see
+[Further Topics: `git add -p`](further-topics.md#git-add--p).
+
+---
+
+*<details><summary>Moving between Git areas</summary>*
+
+The figure below shows the Git commands that move files from one area to another.
+
+|     |
+|:---:|
+| <img src="./img/visual_git-basic-usage.png" alt="Basic Git Usage" longdesc="https://marklodato.github.io/visual-git-guide/basic-usage.svg.png" width="500" /> |
+| *Basic Usage (source: [A Visual Git Reference][visual-git-ref], Mark Lodato)* |
+
+[visual-git-ref]: https://marklodato.github.io/visual-git-guide/index-en.html#basic-usage "This is a non-Federal link"
+
+</details>
+
+---
+
+### Make history
+
 *Staged* files are added to the *history* with the `git commit` command. *Commits* have concise
 messages describing the contents and purpose of the commit (unless you wish to face the wrath of
 your collaborators or future self). For a useful discussion of what should go into a commit
@@ -105,7 +141,7 @@ message, see [How to Write a Git Commit Message][write-commit].
  create mode 100644 new-file.txt
 ```
 
-<details><summary>Configuring a default editor</summary>
+*<details><summary>Configuring a default editor</summary>*
 
 For longer commit messages, where `git commit -m` is inconvenient, you can configure a default
 editor with `git config`, see the `core.editor` section of the [Pro Git book][core-editor]
@@ -197,15 +233,18 @@ Date:   Tue May 27 10:19:08 2025 -0600
 
 ## Try it out
 
-Exercise 2: [branching and commits](./ex2-local-branch-and-commit.md)
+Exercise 2: [branching and commits](ex2-local-branch-and-commit.md)
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Git going](./git-going.md)
-- [Exercise 2 - branching and commits](./ex2-local-branch-and-commit.md)
-- Next --> [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. Branches, commits, and history (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

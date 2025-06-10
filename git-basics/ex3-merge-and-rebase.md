@@ -1,33 +1,49 @@
 # Exercise 3: merge and rebase
 
-Background information: [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
+Background information: [Pulling it together - merging and rebasing](merging-and-rebasing.md)
 
 ## Exercise 3 Goals
 
-- Build on [Exercise 2](./ex2-local-branch-and-commit.md)
+- Build on [Exercise 2](ex2-local-branch-and-commit.md)
 - Use `git fetch` to download changes and branches from a remote repository
 - Use `git pull` to merge changes from a remote branch into a local branch
 - Resolve Git merge conflicts
 - Use `git rebase` to rebase branch on another branch
 - Delete a working branch after it has been merged
 
+> [!NOTE]
+> The Git identifiers in the examples and solutions below will likely be different from what you
+> see in your terminal.
+
 ## The exercise
 
 In the exercise, we're going to modify file `hello.sh` in the `git-basics` directory, so let's
 change into this directory (`cd git-basics`). Note that this file does not yet exist in your
-working directory. To get the file, we need to checkout a copy of the feature branch that does have
-it. Depending on whether the feature branch existed when you cloned the repository, the branch may
-or may not already exist in your local clone. Run `git fetch` to get it.
+working directory. It is not necessary to be in the `git-basics` directory to do the following
+exercises (bash or Git commands), but it means we have to type less.
 
-> [!NOTE]
-> The Git identifiers in the examples and solutions below will likely be different from what you
-> see in your terminal.
+To get the file new file, we need to checkout a copy of the feature branch that does have it. For
+this tutorial, the feature branch existed when you cloned the repository, so your local repository
+should already have it. But if, for example, you needed to grab a new branch that a colleague
+recently pushed up to the remote repository, you can run `git fetch` to get it.
 
 ```bash
 tutorials-2025 (main=) $ git remote -v
 origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (fetch)
 origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (push)
 
+git-basics (main>) $ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/demo-feature-branch
+  remotes/origin/main
+```
+
+If remote feature branch `remotes/origin/demo-feature-branch` is not listed, run `git fetch` to
+download it. `git fetch` will not print any output if all of the remote branches have already been
+downloaded.
+
+```bash
 git-basics (main=) $ git fetch
 remote: Enumerating objects: 6, done.
 remote: Counting objects: 100% (6/6), done.
@@ -38,13 +54,13 @@ From https://code.usgs.gov/cdi/cdi-software/tutorials-2025
  * [new branch]      demo-feature-branch -> origin/demo-feature-branch
 ```
 
-If the remote feature branch has already been downloaded to your local repository (i.e. it existed
-when you cloned the repository), `git fetch` will not print any output.
-
 ### Step 1 - checkout a local working branch based on the feature branch
 
 Fetch the remote `demo-feature-branch`, create a local working branch from it, and make this new
 branch your current branch.
+
+Remember, there is usually more than one way to do something with Git, so you may not use the same
+steps as the solutions below.
 
 <details><summary>Solution</summary>
 
@@ -244,7 +260,7 @@ apply our change. VSCode can display the conflicted file with links to accept th
 the incoming change, or both (red box in the figure below). Or we can manually edit the file to
 resolve the conflict.
 
-![Merge conflict in VSCode](./img/vscode-merge-conflict.png)
+![Merge conflict in VSCode](img/vscode-merge-conflict.png)
 
 Once we resolve the conflict by changing the default greeting to our own, we follow the
 instructions in the `git rebase` output, which say to *add* the resolved file and then running
@@ -353,9 +369,14 @@ repository to reflect the deleted remote branch with `git fetch --all --prune`.
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Exercise 2](./ex2-local-branch-and-commit.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *Exercise 3*)
+6. [And more!](further-topics.md)
 
 ---

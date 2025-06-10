@@ -70,6 +70,10 @@ when the history on the current branch is a direct ancestor of the branch being 
 other hand, merge commits can make it easier to identify, and possibly revert, individual features
 in the Git history.
 
+Git commands `merge` and `pull` have the option `--ff-only` to ensure that a branch update will
+only be performed if it can be done through a fast-forward merge. Using the `--ff-only` flag will
+cause a merge to abort if it does not satisfy the requirements of a fast-forward merge.
+
 > [!NOTE]
 > Git *pull* is a combination of two other commands: `git fetch` followed by `git merge`
 >
@@ -79,9 +83,15 @@ in the Git history.
 > - `git pull` *fetches* changes from the remote repository and *merges* those changes into your
 >   current local branch
 
-Git commands `merge` and `pull` have the option `--ff-only` to ensure that a branch update will
-only be performed if it can be done through a fast-forward merge. Using the ``--ff-only` flag will
-cause a merge to abort if it does not satisfy the requirements of a fast-forward merge.
+#### Why and when to use fast-forward
+
+In a *forking* workflow, your local *main* branch should always be the same as the remote *main*
+branch (upstream or origin) so that it can act as your local *source of truth*. Using `--ff-only`
+to *pull* to main (e.g. `git pull --ff-only upstream main`) means the operation will fail if your
+local main has diverged from the remote main. This can happen if you accidentally add a commit to
+your local main branch instead of a working branch. This can be fixed by reverting your main branch
+or deleting it and re-fetching it. If you want to keep the misplaced commits, use `git log` to get
+the commit IDs so that you can apply these to a working branch (`git cherry-pick ...`).
 
 ## Rebase
 
@@ -112,17 +122,25 @@ gitGraph
     merge new-feature id:"6" tag:"1.1.0"
 ```
 
+## Keep in mind
+
+There is usually more than one way to do things in Git, and there may only be subtle differences in
+the outcome, if any.
+
 ## Try it out
 
-Exercise 3: [merge and rebase](./ex3-merge-and-rebase.md)
+Exercise 3: [merge and rebase](ex3-merge-and-rebase.md)
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Branches, commits, and history](./branching-commits-history.md)
-- [Exercise 3 - merge and rebase](./ex3-merge-and-rebase.md)
-- Next --> [And more!](./further-topics.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. Pulling it together - merging and rebasing (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

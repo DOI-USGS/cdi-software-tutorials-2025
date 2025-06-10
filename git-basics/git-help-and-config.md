@@ -20,13 +20,15 @@ For example, if you want to learn more about the `commit` commands, use
 
 This will provide details from the Git Manual on how to use the `commit` command (see figure below).
 
-![Git manual for `git commit`](./img/git-manual-commit.png)
+<img src="./img/git-manual-commit.png" alt="Git manual for `git commit`" width="800" />
 
 Alternatively, if you want to have help infromation displayed on your terminal instead of opening the Git Manual, use
 
 - `git COMMAND -h`
 
-More information on the `help` command is avaialble at https://git-scm.com/docs/git-help.
+More information on the `help` command is avaialble at [https://git-scm.com/docs/git-help][git-help].
+
+[git-help]: https://git-scm.com/docs/git-help "This is a non-Federal link"
 
 ## Git configuration
 
@@ -43,20 +45,26 @@ If this command prints out your name and e-mail address, then you are all set! E
 
 If you are using Government Furnished Equipment, we recomend using your government e-mail address. Run `git config --list --global` again to verify your credentials were set correctly.
 
-Git config can be used to set other configurations! In this tutorial, however, setting your name and e-mail address is enough. For information on how to setting other configurations, such as your preferred editor, check out https://cdi.code-pages.usgs.gov/usgs-git-and-software-release-course/setup-git.html.
+Git config can be used to set other configurations! In this tutorial, however, setting your name and e-mail address is enough. For information on how to setting other configurations, such as your preferred editor, check out <https://cdi.code-pages.usgs.gov/usgs-git-and-software-release-course/setup-git.html>.
 
 ### Bash prompt configuration for Git
 
 If the Git branch and status isn't shown by default in your bash prompt, see the
-[Git in Bash](https://git-scm.com/book/en/v2/Appendix-A:-Git-in-Other-Environments-Git-in-Bash "This is a non-Federal link")
-in the Git Pro book.
+[Git in Bash][git-in-bash] in the Git Pro book. This link also provides documentation on setting
+up Git command completion.
+
+[git-in-bash]: https://git-scm.com/book/en/v2/Appendix-A:-Git-in-Other-Environments-Git-in-Bash "This is a non-Federal link"
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [What is Git](./what-is-git.md)
-- Next --> [Initialization or cloning and basic settings](./git-going.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

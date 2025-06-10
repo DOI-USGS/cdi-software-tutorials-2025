@@ -5,7 +5,7 @@ versions of your work, be it a document, dataset, or software code. Examples of 
 include the undo command in your editor, keeping multiple copies of a Word document, track changes,
 and file version history in OneDrive. These methods of version control have significant limitations.
 
-![Multiple drafts mess](./img/reports.png)
+<img src="./img/reports.png" alt="Multiple drafts mess" width="400" />
 
 ## What is Git?
 
@@ -15,7 +15,9 @@ is difficult to lose those changes, especially if you are pushing your repositor
 server (e.g. GitLab or GitHub). This gives you freedom to experiment because Git allows you to
 revert back to a previous state.
 
-![Git](https://imgs.xkcd.com/comics/git.png) <https://xkcd.com/1597>
+![Git](https://imgs.xkcd.com/comics/git.png) [xkcd.com/1597][xkcd-1597]
+
+[xkcd-1597]: https://xkcd.com/1597 "This is a non-Federal link"
 
 Though Git is most commonly used for source code projects, it can also be useful for other
 applications. For example, some coding projects publish documentation and user guides via Git pages
@@ -131,8 +133,10 @@ Along these lines, files in your working directory can be in a number of states:
 
 |     |
 |:---:|
-|<img src="./img/visual_git-conventions.png" alt="Git Conventions" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" />|
-|*Commits, references, and areas (source: [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html#conventions), Mark Lodato*)|
+| <img src="./img/visual_git-conventions.png" alt="Git Conventions" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" width="700" /> |
+| *Commits, references, and areas (source: [A Visual Git Reference][visual-git-ref], Mark Lodato)* |
+
+[visual-git-ref]: https://marklodato.github.io/visual-git-guide/index-en.html#conventions "This is a non-Federal link"
 
 ### Some other Git terms
 
@@ -144,7 +148,8 @@ A *local* Git repositories are directories with a `.git` folder at the root of t
 your machine. A local Git repository may or may not be a *clone* of a *remote* repository, which
 is hosted remotely on GitHub or GitLab, for example. A *local* repository can be syncronized with
 one or more *remote* repositories using *pulls* and *pushes*, which will be covered in more detail
-later.
+later. *Remote* repositories are typically given names such as *origin* (your *fork*, see below)
+and *upstream* (the main respository).
 
 #### Brances and Forks, Origin and Upstream
 
@@ -164,23 +169,32 @@ repository by way of a *merge request* (GitLab) or *pull request* (GitHub).
 
 |     |
 |:---:|
-|<img src="./img/forking_workflow-biostats_tutorial.png" alt="Forking Workflow" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" />|
-|*Forking workflow (source: [Version Control with Git and GitHub](https://biostats-r.github.io/biostats/github/Pics/fork_branch_tutorial/1_workflow3.png), A. Halbritter and R.J. Telford, BioStats*)|
+|<img src="./img/forking_workflow-biostats_tutorial.png" alt="Forking Workflow" style="background-color:white;" longdesc="https://marklodato.github.io/visual-git-guide/conventions.svg.png" width="900"/>|
+|*Forking workflow (source: [Version Control with Git and GitHub][biostats], A. Halbritter and R.J. Telford, BioStats*)|
+|     |
+
+[biostats]: https://biostats-r.github.io/biostats/github/Pics/fork_branch_tutorial/1_workflow3.png "This is a non-Federal link"
 
 ## References
 
-Chacon, S. and Straub, B., Pro Git, version 2, <https://git-scm.com/book/en/v2>.
+Chacon, S. and Straub, B., Pro Git, version 2, [https://git-scm.com/book/en/v2][git-scm].
 
 Haider, S.M., Langseth, M.L., Ross, J.C., Martinez, E.M., and Sherwood C.R., 2025, USGS Git and
 Software Release Course, version 1.0.0: U.S. Geological Survey software release,
 <https://cdi.code-pages.usgs.gov/usgs-git-and-software-release-course/index.html>.
 
+[git-scm]: https://git-scm.com/book/en/v2 "This is a non-Federal link"
+
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [Prerequisites](./prereq.md)
-- Next --> [Git reference commands](./git-help-and-config.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. What is Git (and why should I use it)?
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---

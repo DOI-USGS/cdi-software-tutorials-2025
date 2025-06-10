@@ -1,28 +1,25 @@
 # Git Basics Tutorial Prerequisites
 
-# Contents
-
-- [Git Installation](#git-installation)
-  - [Windows](#windows)
+- [Git Basics Tutorial Prerequisites](#git-basics-tutorial-prerequisites)
+  - [Git Installation - Windows](#git-installation---windows)
     - [For Federal Employees](#for-federal-employees)
     - [For External Collaborators](#for-external-collaborators)
   - [Mac](#mac)
     - [For Federal Employees](#for-federal-employees-1)
     - [For External Collaborators](#for-external-collaborators-1)
-  - [Linux/Unix](#linuxunix)
+  - [Git Installation - Linux/Unix](#git-installation---linuxunix)
     - [For Federal Employees](#for-federal-employees-2)
     - [For External Collaborators](#for-external-collaborators-2)
-- [Resources](#resources)
+  - [Resources](#resources)
+  - [Tutorial Pages](#tutorial-pages)
 
-# Git Installation
-
-## Windows
+## Git Installation - Windows
 
 Since this presentation will do its best to be platform agnostic, all commands in the demonstration will be run in a bash terminal. As a result, it is recommended that Windows users follow along in a Git Bash terminal. The Directions below outline how to install this application.
 
 > Before trying to install Git Bash, check if it has already been installed. In the Windows search bar type `git bash`. If the below logo appears, click on it, and validate that a terminal window opens.
 
-![Git Bash Logo](./img/git-bash.png)
+<img src="./img/git-bash.png" alt="Git Bash Logo" width="400"/>
 
 ### For Federal Employees
 
@@ -86,7 +83,7 @@ Option 2: Use Homebrew
 1. Open a terminal Window
 2. Run the command `brew install git`
 
-## Linux/Unix
+## Git Installation - Linux/Unix
 
 To check if git is already installed, in the terminal, run `git --version`.
 This will print the version of Git on your system or report an error if Git is an unknown command.
@@ -117,9 +114,14 @@ Commands to install git will require sudo privilages. Contact your local IT and 
 
 ---
 
-## Navigation
+## Tutorial Pages
 
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- Next --> [What is Git?](./what-is-git.md)
+0. [Tutorial Index](README.md#tutorial-outline)
+1. [What is Git (and why should I use it)?](what-is-git.md)
+2. [Git reference commands](git-help-and-config.md)
+3. [Initialization or cloning and basic settings](git-going.md) (and *[Exercise 1](ex1-clone-and-setup.md)*)
+4. [Branches, commits, and history](branching-commits-history.md) (and *[Exercise 2](ex2-local-branch-and-commit.md)*)
+5. [Pulling it together - merging and rebasing](merging-and-rebasing.md) (and *[Exercise 3](ex3-merge-and-rebase.md)*)
+6. [And more!](further-topics.md)
 
 ---
