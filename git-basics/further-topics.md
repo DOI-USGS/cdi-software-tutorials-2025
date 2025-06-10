@@ -46,8 +46,5 @@ last modified each line of a file.
 ---
 
 ## Navigation
-
-- [**Tutorial Index**](./README.md#tutorial-outline)
-- TODO
-
+Previous --> [Pulling it together - merging and rebasing](./merging-and-rebasing.md)
 ---

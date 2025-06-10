@@ -136,8 +136,6 @@ Along these lines, files in your working directory can be in a number of states:
 
 ### Some other Git terms
 
-TODO: maybe this section should be omitted
-
 These will be covered in more detail later but are mentioned here in case the terms come up.
 
 #### Remote vs. local repositories

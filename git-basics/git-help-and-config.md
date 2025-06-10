@@ -57,6 +57,6 @@ in the Git Pro book.
 
 - [**Tutorial Index**](./README.md#tutorial-outline)
 - Previous --> [What is Git](./what-is-git.md)
-- Next --> [Exercise 1](./ex1-clone-and-setup.md)
+- Next --> [Initialization or cloning and basic settings](./git-going.md)
 
 ---

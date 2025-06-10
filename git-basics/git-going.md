@@ -4,10 +4,6 @@ Here we're going to create a local copy of a Git repository to work with, set up
 email, and go over some basic commands. We'll be using a terminal and creating a couple of
 directories. The examples below will be created in a folder called `Tutorial` on your desktop.
 
-TODO: git-aware prompt? `(main #)` this has to be set up, correct?
-
-TODO: do we need to cover `git init` here or in the exercise (or both)?
-
 ## Creating a new empty repository
 
 The command to initialize a new empty repository is `git init`, which basically creates a `.git`

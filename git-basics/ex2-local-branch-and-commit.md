@@ -149,10 +149,6 @@ index e965047..f9264f7 100644
 
 </details>
 
-## More ???
-
-TODO: more exercises for `git revert`, `git add -p`, etc.?
-
 ---
 
 ## Navigation

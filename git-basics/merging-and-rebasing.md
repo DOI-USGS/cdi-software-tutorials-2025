@@ -121,8 +121,8 @@ Exercise 3: [merge and rebase](./ex3-merge-and-rebase.md)
 ## Navigation
 
 - [**Tutorial Index**](./README.md#tutorial-outline)
-- Previous --> [TODO](TBD)
+- Previous --> [Branches, commits, and history](./branching-commits-history.md)
 - [Exercise 3 - merge and rebase](./ex3-merge-and-rebase.md)
-- Next --> [TODO](TBD)
+- Next --> [And more!](./further-topics.md)
 
 ---
