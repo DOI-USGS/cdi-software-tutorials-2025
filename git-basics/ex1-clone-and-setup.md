@@ -55,13 +55,13 @@ Set your Git username and email address globally. Confirm that these have been s
 ```bash
 $ git config --global user.name "Gandalf"
 
-$ git config --global user.email "gtg@middleearth.net"
+$ git config --global user.email "gtg@middleearth.fic"
 
 $ git config --get user.name
 Gandalf
 
 $ git config --get user.email
-gtg@middleearth.net
+gtg@middleearth.fic
 ```
 
 </details>

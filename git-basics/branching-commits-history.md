@@ -219,13 +219,13 @@ The Git history
 ```bash
 (new-feature) $ git log
 commit 1c48b3c9edb602c6e77f9acc1f355c4b8fadea0b (HEAD -> new-feature)
-Author: Gandalf <gtg@middleearth.net>
+Author: Gandalf <gtg@middleearth.fic>
 Date:   Tue May 27 11:30:02 2025 -0600
 
     adding hello
 
 commit f66c0148c0234b5100596975c92c52df61c6b575
-Author: Gandalf <gtg@middleearth.net>
+Author: Gandalf <gtg@middleearth.fic>
 Date:   Tue May 27 10:19:08 2025 -0600
 
     adding new file
