@@ -67,7 +67,7 @@ Commands `git checkout` and `git switch` have overlapping functionality. `git ch
 older and can do a lot more than just change branches, including retrieve individual files from a
 remote repository. Recent versions of Git have `git switch`, which is a dedicated command to create
 local copies of remote branches and switch between local branches. `git switch` is now the
-recommended command to use for create and switch branches.
+recommended command to create and switch branches.
 
 </details>
 

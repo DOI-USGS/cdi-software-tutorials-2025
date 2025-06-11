@@ -151,7 +151,7 @@ origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (fetch)
 origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (push)
 ```
 
-</details>
+</details><br>
 
 **Extra credit:** Since we commonly use a forking workflow (more on this later), we don't want to
 push anything directly to the main repository. To avoid mistakes, change the *push* URL for remote

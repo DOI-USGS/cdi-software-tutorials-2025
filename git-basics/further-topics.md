@@ -41,7 +41,11 @@ a previous commit.
 </details>
 
 Or, you can *unstage* files with `git reset filename` and they will return to the
-working directory.
+working directory, retaining the changes. You can undo the last *n* commits with
+`git reset HEAD~n`. Git `reset` defaults to `--mixed` mode, which preserves changed
+files but does not leave them *staged*. `--soft` mode simply resets *HEAD* to the specified
+commit (as all modes do) and leaves changes *staged*, and `--hard` resets the index and the
+working tree and any changes to tracked files since the target commit are discarded.
 
 ## `git stash`
 

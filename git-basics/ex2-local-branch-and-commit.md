@@ -17,7 +17,7 @@ Background information: [Git branches, commits, and history](branching-commits-h
 
 ## Create a new branch and use it
 
-1. Create a new branch, list branches, and switch to the new branch
+Step 1. Create a new branch, list branches, and switch to the new branch
 
 <details><summary>Solution</summary>
 
@@ -35,9 +35,9 @@ Your branch is up to date with 'origin/main'.
 (new-feature=) $ 
 ```
 
-</details>
+</details><br>
 
-2. In one command, create and switch to a new branch
+Step 2. In one command, create and switch to a new branch
 
 <details><summary>Solution</summary>
 
@@ -48,9 +48,9 @@ Switched to a new branch 'another-new-feature'
 (another-new-feature) $ 
 ```
 
-</details>
+</details><br>
 
-3. Switch back to your first new branch, list *all* existing branches, and delete the second new
+Step 3. Switch back to your first new branch, list *all* existing branches, and delete the second new
    branch (hint: `git help`)
 
 <details><summary>Solution</summary>
@@ -77,7 +77,7 @@ this with `-D` at the risk of losing work.
 
 ## Committing
 
-1. Create a new file and add it to staging. Check the status of your working directory as you go
+Step 1. Create a new file and add it to staging. Check the status of your working directory as you go
 
 <details><summary>Solution</summary>
 
@@ -101,9 +101,9 @@ Changes to be committed:
         new file:   new-file.txt
 ```
 
-</details>
+</details><br>
 
-2. Commit your new file (with a commit message) and check the log
+Step 2. Commit your new file (with a commit message) and check the log
 
 <details><summary>Solution</summary>
 
@@ -112,11 +112,26 @@ Changes to be committed:
 [new-feature f66c014] adding new file
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 new-file.txt
+
+git-basics (new-feature>) $ # Show the last N log entries for brevity with -N
+
+git-basics (new-feature>) $ git log -2
+commit c99f5b92ab193a08431d7a55fe4de9c40e8a2104 (HEAD -> new-feature)
+Author: Frodo <fr@middleearth.fic>
+Date:   Wed Jun 11 08:53:54 2025 -0600
+
+    hello world
+
+commit db2492a501a0e4dedbe808a1bc592b556e6695fe
+Author: Frodo <fr@middleearth.fic>
+Date:   Wed Jun 11 08:50:15 2025 -0600
+
+    new file
 ```
 
-</details>
+</details><br>
 
-3. Modify your new file and commit the changes (check the status and differences as you go)
+Step 1. Modify your new file and commit the changes (check the status and differences as you go)
 
 <details><summary>Solution</summary>
 
