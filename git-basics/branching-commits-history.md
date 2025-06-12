@@ -148,8 +148,8 @@ editor with `git config`, see the `core.editor` section of the [Pro Git book][co
 
 </details>
 
-[write-commit]: https://cbea.ms/git-commit/?hl=en "This is a non-Federal link"
-[core-editor]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor?hl=en "This is a non-Federal link"
+[write-commit]: https://cbea.ms/git-commit "This is a non-Federal link"
+[core-editor]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor "This is a non-Federal link"
 
 ### Making changes
 
