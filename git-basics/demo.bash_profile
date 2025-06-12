@@ -8,6 +8,10 @@
 # git prompt modifications
 # See https://git-scm.com/book/en/v2/Appendix-A:-Git-in-Other-Environments-Git-in-Bash
 # for documentation on git command completion and git-prompt.sh
+# ...basically, you need to download git-completion.bash and git-prompt.sh and add these lines to ~/.bash_profile:
+# source git-completion.bash
+# source git-prompt.sh
+
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM="auto"
@@ -27,7 +31,7 @@ reset=$(tput sgr0)
 
 # Primary prompt is PS1
 # \W is current working directory (\w is current working dir with path)
-# __git_ps1 is a function from git-prompt.sh
+# __git_ps1 is a function from git-prompt.sh, see note above about git prompt modifications
 export PS1='\[$blue\]\W\[$magenta\]$(__git_ps1 " (%s)")\[$reset\]\[$bold\]\[$green\] \\$ \[$reset\]'
 
 # # alternative colors if `tput` is not available
@@ -37,6 +41,9 @@ export PS1='\[$blue\]\W\[$magenta\]$(__git_ps1 " (%s)")\[$reset\]\[$bold\]\[$gre
 # boldgreen="1;32m"
 # reset="0m"
 # export PS1='\e[$blue\]\W\e[$magenta\]$(__git_ps1 " (%s)")\e[$boldgreen\] \\$ \e[$reset'
+
+# Omit __git_ps1 function from PS1 in case function (from git-prompt.sh) is not found 
+[[ $(type -t __git_ps1) == function ]] || export PS1='\[$blue\]\W \[$reset\]\[$bold\]\[$green\] \\$ \[$reset\]'
 
 # PROMPT_COMMAND is run before displaying the prompt
 function prompt_command {
