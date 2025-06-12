@@ -55,13 +55,13 @@ Set your Git username and email address globally. Confirm that these have been s
 ```bash
 $ git config --global user.name "Gandalf"
 
-$ git config --global user.email "gtg@middleearth.net"
+$ git config --global user.email "gtg@middleearth.fic"
 
 $ git config --get user.name
 Gandalf
 
 $ git config --get user.email
-gtg@middleearth.net
+gtg@middleearth.fic
 ```
 
 </details>
@@ -151,7 +151,7 @@ origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (fetch)
 origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (push)
 ```
 
-</details>
+</details><br>
 
 **Extra credit:** Since we commonly use a forking workflow (more on this later), we don't want to
 push anything directly to the main repository. To avoid mistakes, change the *push* URL for remote

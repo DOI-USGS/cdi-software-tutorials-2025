@@ -86,7 +86,7 @@ existing global Git configuration with `git config --list --global`. If this out
 `user.name` and `user.email`, you're all set. Otherwise, set these with
 
 - `git config --global user.name "Gandalf"`
-- `git config --global user.email "gtg@middleearth.net"`
+- `git config --global user.email "gtg@middleearth.fic"`
 
 ## Git status
 

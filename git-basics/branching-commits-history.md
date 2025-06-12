@@ -67,7 +67,7 @@ Commands `git checkout` and `git switch` have overlapping functionality. `git ch
 older and can do a lot more than just change branches, including retrieve individual files from a
 remote repository. Recent versions of Git have `git switch`, which is a dedicated command to create
 local copies of remote branches and switch between local branches. `git switch` is now the
-recommended command to use for create and switch branches.
+recommended command to create and switch branches.
 
 </details>
 
@@ -148,8 +148,8 @@ editor with `git config`, see the `core.editor` section of the [Pro Git book][co
 
 </details>
 
-[write-commit]: https://cbea.ms/git-commit/?hl=en "This is a non-Federal link"
-[core-editor]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor?hl=en "This is a non-Federal link"
+[write-commit]: https://cbea.ms/git-commit "This is a non-Federal link"
+[core-editor]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor "This is a non-Federal link"
 
 ### Making changes
 
@@ -219,13 +219,13 @@ The Git history
 ```bash
 (new-feature) $ git log
 commit 1c48b3c9edb602c6e77f9acc1f355c4b8fadea0b (HEAD -> new-feature)
-Author: Gandalf <gtg@middleearth.net>
+Author: Gandalf <gtg@middleearth.fic>
 Date:   Tue May 27 11:30:02 2025 -0600
 
     adding hello
 
 commit f66c0148c0234b5100596975c92c52df61c6b575
-Author: Gandalf <gtg@middleearth.net>
+Author: Gandalf <gtg@middleearth.fic>
 Date:   Tue May 27 10:19:08 2025 -0600
 
     adding new file

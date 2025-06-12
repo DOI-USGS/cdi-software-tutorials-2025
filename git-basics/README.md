@@ -22,7 +22,7 @@ on 6/10/2025 for help.
 
 ## Tutorial Slides and Recording
 
-- Recording: [PlaceHolder](TODO)
+- Recording: [TBD](TODO)
 - Resources: [resources.md](resources.md)
 
 ## Tutorial Outline

@@ -22,6 +22,10 @@ change into this directory (`cd git-basics`). Note that this file does not yet e
 working directory. It is not necessary to be in the `git-basics` directory to do the following
 exercises (bash or Git commands), but it means we have to type less.
 
+> [!NOTE]
+> For the purposes of this exercise, we are going to pretend that `demo-feature-branch` is the main
+> branch and create a local working branch from there.
+
 To get the file new file, we need to checkout a copy of the feature branch that does have it. For
 this tutorial, the feature branch existed when you cloned the repository, so your local repository
 should already have it. But if, for example, you needed to grab a new branch that a colleague
@@ -56,8 +60,8 @@ From https://code.usgs.gov/cdi/cdi-software/tutorials-2025
 
 ### Step 1 - checkout a local working branch based on the feature branch
 
-Fetch the remote `demo-feature-branch`, create a local working branch from it, and make this new
-branch your current branch.
+Create a local working branch based on `demo-feature-branch` and make this new branch your current
+branch.
 
 Remember, there is usually more than one way to do something with Git, so you may not use the same
 steps as the solutions below.
@@ -65,12 +69,9 @@ steps as the solutions below.
 <details><summary>Solution</summary>
 
 ```shell
-git-basics (main=) $ git fetch origin demo-feature-branch:demo-feature-branch 
-From https://code.usgs.gov/cdi/cdi-software/tutorials-2025
- * [new branch]      demo-feature-branch -> demo-feature-branch
-
 git-basics (main=) $ git switch demo-feature-branch
-Switched to branch 'demo-feature-branch'
+branch 'demo-feature-branch' set up to track 'origin/demo-feature-branch'.
+Switched to a new branch 'demo-feature-branch'
 
 git-basics (demo-feature-branch) $ git switch -c modify-feature-branch
 Switched to a new branch 'modify-feature-branch'
@@ -83,11 +84,6 @@ git-basics (modify-feature-branch) $ git branch -a -v
   remotes/origin/demo-feature-branch a56954d add hello script
   remotes/origin/main                784fad6 Merge branch 'update-figs' into 'main'
 ```
-
-> [!NOTE]
-> The `:` in the `git fetch` command (`SRC:DEST`) allows you to specify both the source branch and
-> the destination branch. In the example above, Git finds the remote branch named
-> `demo-feature-branch` and creates a local branch named `demo-feature-branch`.
 
 </details><br>
 
@@ -166,7 +162,7 @@ a56954d5 (Jason Altekruse 2025-06-04 15:36:46 -0600 2)
 
 </details>
 
-### Step 3 - Update local working branch with changes from remote
+### Step 3 - Update local feature branch with changes from remote
 
 An important update has been merged into the remote branch - incorporate those changes into your
 local feature branch (not your working branch, yet).
@@ -181,19 +177,86 @@ the remote branch with `git pull`. In this case, since we don't need to pull fro
 git-basics (modify-feature-branch) $ git switch demo-feature-branch
 Switched to branch 'demo-feature-branch'
 
-git-basics (demo-feature-branch) $ git pull origin demo-feature-branch 
+git-basics (demo-feature-branch=) $ git pull --ff-only origin demo-feature-branch 
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 2), reused 4 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 696 bytes | 99.00 KiB/s, done.
 From https://code.usgs.gov/cdi/cdi-software/tutorials-2025
  * branch            demo-feature-branch -> FETCH_HEAD
-Updating a56954d..e665ffe
+   cb7f655..5131b63  demo-feature-branch -> origin/demo-feature-branch
+Updating cb7f655..5131b63
 Fast-forward
- git-basics/hello.sh | 5 ++++-
- 1 file changed, 4 insertions(+), 1 deletion(-)
+ git-basics/hello.sh | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
 
 git-basics (demo-feature-branch) $ ./hello.sh 
 Hello Middle Earth
 ```
 
+</details><br>
+
+At this point, when you run `./hello.sh` on the updated `demo-feature-branch`, the script should
+print `Hello Middle Earth` to the terminal.
+
+---
+
+*<details><summary>Step 3, Plan B</summary>*
+
+### Step 3, Plan B - update local feature branch from local branch
+
+An important update has been merged into the feature branch and, thankfully, this is available
+locally as `demo-feature-branch-merge`. Update your local feature branch (not your working branch
+yet) from the other local branch.
+
+<details><summary>Solution</summary>
+
+First we need to switch to the local `demo-feature-branch` and, in case GitLab is down for
+maintenance or you're not doing this exercise as part of the live tutorial demonstration, *pull*
+changes from another local branch that already contains the changes. In this instance, `git pull`
+skips the *fetch* operation, and the "remote" is "." instead of `origin` or `upstream`, etc.
+
+```shell
+git-basics (modify-feature-branch) $ git switch demo-feature-branch
+Switched to branch 'demo-feature-branch'
+Your branch is up to date with 'origin/demo-feature-branch'.
+
+git-basics (demo-feature-branch=) $ git branch -a
+* demo-feature-branch
+  main
+  modify-feature-branch
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/demo-feature-branch
+  remotes/origin/demo-feature-branch-merged
+  remotes/origin/main
+```
+
+This next command specifies `.` instead of `origin`, and `origin/demo-feature-branch-merged`
+instead of `demo-feature-branch` because we're *pulling* from a local branch that contains the
+modifications instead of the remote repository.
+
+```shell
+git-basics (demo-feature-branch=) $ git pull --ff-only . origin/demo-feature-branch-merged
+From .
+ * remote-tracking branch origin/demo-feature-branch-merged -> FETCH_HEAD
+Updating 505392a..f905cae
+Fast-forward
+ git-basics/hello.sh | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+git-basics (demo-feature-branch>) $ ./hello.sh 
+Hello Middle Earth
+```
+
+At this point, when you run `./hello.sh` on the updated `demo-feature-branch`, the script should
+print `Hello Middle Earth` to the terminal.
+
 </details>
+
+</details>
+
+---
 
 ### Step 4 - Rebase working branch on the updated feature branch
 
