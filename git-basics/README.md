@@ -22,7 +22,7 @@ on 6/10/2025 for help.
 
 ## Tutorial Slides and Recording
 
-- Recording: [TBD](TODO)
+- Recording: [Link to recording](https://doimspp.sharepoint.com/:v:/r/sites/Software/Meeting%20History/CDI-Software_%20Git%20Basics%20Tutorial-20250612_130026-Meeting%20Recording.mp4?csf=1&web=1&e=8dVCHH)
 - Resources: [resources.md](resources.md)
 
 ## Tutorial Outline
