@@ -10,6 +10,7 @@ were beyond the scope of this guide, but are nevertheless useful to know.
   - [`git stash`](#git-stash)
   - [`git blame`](#git-blame)
   - [`git add -p`](#git-add--p)
+  - [Git *refspec*](#git-refspec)
   - [Tutorial Pages](#tutorial-pages)
 
 ## Git command completion and prompt
@@ -77,6 +78,16 @@ Only want to commit some of the changes in an individual file and not others? Us
 (or `-p`) argument when you add one or more files (e.g. `git add -p some-file`). Git will
 interactively step through each block of changes in the file(s) to ask which changes you want to
 commit. See the interactive mode section of the `git help add` documentation.
+
+## Git *refspec*
+
+You'll eventually run across *refspec* in Git manuals for things like *pull*, *push*, *merge*, and
+*rebase*. A *refspec* can be as simple as the name a branch name you want to act on or apply. It
+can also be any valid Git ID (hash or reference, etc.), or it can specify a *source* and a
+*destination* in the form *source:destination*. So, for example, you could *push* a local branch to
+a remote branch of a different name (e.g. if you made a mistake naming your branch) with
+`git push origin local-embarrasing-branch-name:remote-professional-branch-name`, which pushes your
+poorly-named local branch to the remote *origin* repository with a new and improved branch name.
 
 ---
 

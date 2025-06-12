@@ -17,7 +17,7 @@ Background information: [Git branches, commits, and history](branching-commits-h
 
 ## Create a new branch and use it
 
-Step 1. Create a new branch, list branches, and switch to the new branch
+Step 1. Create a new branch, list branches, and switch to the new branch.
 
 <details><summary>Solution</summary>
 
@@ -78,6 +78,10 @@ this with `-D` at the risk of losing work.
 ## Committing
 
 Step 1. Create a new file and add it to staging. Check the status of your working directory as you go
+
+Hint: create a new empty file with `touch FILENAME` or redirect the output of `echo` to a file,
+e.g. `echo "hello" > FILENAME` (`>` overwrites an existing file or creates a new one, `>>` appends
+to the end of an existing file or creates a new one).
 
 <details><summary>Solution</summary>
 
