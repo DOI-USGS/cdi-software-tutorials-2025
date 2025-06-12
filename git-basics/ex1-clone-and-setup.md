@@ -44,6 +44,19 @@ Receiving objects: 100% (233/233), 1.09 MiB | 4.76 MiB/s, done.
 Resolving deltas: 100% (116/116), done.
 ```
 
+You can also specify the folder name of the cloned repository:
+
+```shell
+~/Desktop/Tutorial $ git clone https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git tutorials-2025-mine
+Cloning into 'tutorials-2025-mine'...
+remote: Enumerating objects: 423, done.
+remote: Counting objects: 100% (420/420), done.
+remote: Compressing objects: 100% (189/189), done.
+remote: Total 423 (delta 239), reused 404 (delta 226), pack-reused 3 (from 1)
+Receiving objects: 100% (423/423), 3.98 MiB | 6.02 MiB/s, done.
+Resolving deltas: 100% (239/239), done.
+```
+
 </details>
 
 ## Configure Git username and email
@@ -155,7 +168,7 @@ origin  https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git (push)
 
 **Extra credit:** Since we commonly use a forking workflow (more on this later), we don't want to
 push anything directly to the main repository. To avoid mistakes, change the *push* URL for remote
-"origin" to an invalid URL. Hint: `git help ...`
+"origin" to an invalid URL. Hint: `git help remote`
 
 <details><summary>Solution</summary>
 
