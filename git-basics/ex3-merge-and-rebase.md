@@ -162,7 +162,7 @@ a56954d5 (Jason Altekruse 2025-06-04 15:36:46 -0600 2)
 
 </details>
 
-### Step 3 - Update local working branch with changes from remote
+### Step 3 - Update local feature branch with changes from remote
 
 An important update has been merged into the remote branch - incorporate those changes into your
 local feature branch (not your working branch, yet).
@@ -199,6 +199,64 @@ Hello Middle Earth
 
 At this point, when you run `./hello.sh` on the updated `demo-feature-branch`, the script should
 print `Hello Middle Earth` to the terminal.
+
+---
+
+*<details><summary>Step 3, Plan B</summary>*
+
+### Step 3, Plan B - update local feature branch from local branch
+
+An important update has been merged into the feature branch and, thankfully, this is available
+locally as `demo-feature-branch-merge`. Update your local feature branch (not your working branch
+yet) from the other local branch.
+
+<details><summary>Solution</summary>
+
+First we need to switch to the local `demo-feature-branch` and, in case GitLab is down for
+maintenance or you're not doing this exercise as part of the live tutorial demonstration, *pull*
+changes from another local branch that already contains the changes. In this instance, `git pull`
+skips the *fetch* operation, and the "remote" is "." instead of `origin` or `upstream`, etc.
+
+```shell
+git-basics (modify-feature-branch) $ git switch demo-feature-branch
+Switched to branch 'demo-feature-branch'
+Your branch is up to date with 'origin/demo-feature-branch'.
+
+git-basics (demo-feature-branch=) $ git branch -a
+* demo-feature-branch
+  main
+  modify-feature-branch
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/demo-feature-branch
+  remotes/origin/demo-feature-branch-merged
+  remotes/origin/main
+```
+
+This next command specifies `.` instead of `origin`, and `origin/demo-feature-branch-merged`
+instead of `demo-feature-branch` because we're *pulling* from a local branch that contains the
+modifications instead of the remote repository.
+
+```shell
+git-basics (demo-feature-branch=) $ git pull --ff-only . origin/demo-feature-branch-merged
+From .
+ * remote-tracking branch origin/demo-feature-branch-merged -> FETCH_HEAD
+Updating 505392a..f905cae
+Fast-forward
+ git-basics/hello.sh | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+git-basics (demo-feature-branch>) $ ./hello.sh 
+Hello Middle Earth
+```
+
+At this point, when you run `./hello.sh` on the updated `demo-feature-branch`, the script should
+print `Hello Middle Earth` to the terminal.
+
+</details>
+
+</details>
+
+---
 
 ### Step 4 - Rebase working branch on the updated feature branch
 
