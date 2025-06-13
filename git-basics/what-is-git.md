@@ -151,7 +151,7 @@ one or more *remote* repositories using *pulls* and *pushes*, which will be cove
 later. *Remote* repositories are typically given names such as *origin* (your *fork*, see below)
 and *upstream* (the main respository).
 
-#### Brances and Forks, Origin and Upstream
+#### Branches and Forks, Origin and Upstream
 
 There are many ways to collaborate using Git, one of which is a *forking* workflow, in which each
 collaborator creates a *fork*, or copy, of the main repository. The main repository is referred to
