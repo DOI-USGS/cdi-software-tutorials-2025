@@ -5,8 +5,6 @@
   - [Contents](#contents)
   - [Overview](#overview)
   - [Vim](#vim)
-    - [Basic Commands](#basic-commands)
-      - [Things to consider when executing commands](#things-to-consider-when-executing-commands)
   - [Notepad++](#notepad)
   - [IntelliJ IDEA](#intellij-idea)
   - [Visual Studio](#visual-studio)
@@ -45,8 +43,7 @@ xychart-beta
 
 > Pros and cons are subject to opinion. Ultimately the best IDE is the whatever makes you most efficient.
 
-*<details><summary>Basic Commands</summary>*
-### Basic Commands
+**<details><summary>Basic Commands</summary>**
 
 | Command | Action |
 | -------- | ------- |
@@ -70,7 +67,7 @@ xychart-beta
 | `e`| Cursor jumps to beginning of the current word |
 | `b`| Cursor jumps to end of the current word |
 
-#### Things to consider when executing commands
+Things to consider when executing commands
 - Prefix commands with ESC if you are currently in a mode (e.g. insert mode) and want to go back to command mode
 - During editing, Vim creates a copy of the file that generally looks like `.<filename>.swp`. For example, if I was editing `text.txt`, the file might look like `.text.txt.swp`. These files provides data recovery. If a file is not closed correctly (using the write or quit commands), then upon opening the file in Vim again, you will be provided with a message like `Found a swap file by the name ".text.txt.swp"`. You will have the option to recover the data, delete the .swp file, edit the file anyway, open readonly, quit, or abort (options are always listed at the bottom of the message).
 </details>
