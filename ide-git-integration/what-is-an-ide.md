@@ -4,6 +4,9 @@ An **IDE** is an *Integrated Development Environment*, basically an application 
 a number of tools for software development and other tasks into one platform. An alternative is to
 use a basic text editor with separate console (or terminal) and file explorer windows.
 
+[Common IDEs](popular-ides.md) include Notepad++, IntelliJ IDEA, Visual Studio, and Visual Studio
+Code (VSCode), to mention a few.
+
 ## Why not use a text editor?
 
 You certainly can edit text in *Notepad.exe* or *TextEdit.app*. It might even have spellcheck, but
@@ -30,10 +33,11 @@ Let's start with the cons:
 Pros:
 
 1. **Integrated tools**
-   1. Integrated terminal - compile and deploy applications from within the IDE
-   2. Version control - view git history and diffs or manage conflicts in the IDE GUI
-   3. File and project management within the IDE (file explorer)
-   4. Collaboration tools help apply standards across teams (e.g. spaces vs. tabs, formatting)
+   1. Integrated editor with tabs for multiple open files at once
+   2. Integrated terminal - compile and deploy applications from within the IDE
+   3. Version control - view git history and diffs or manage conflicts in the IDE GUI
+   4. File and project management within the IDE (file explorer)
+   5. Collaboration tools help apply standards across teams (e.g. spaces vs. tabs, formatting)
 2. **Support for multiple programming languages** (e.g. C++, Python, R, bash) and file formats
    (e.g. JSON, XML, YAML, CSV)
 3. **Syntax highlighting** - keywords, variable names, data, brackets, etc. can be shown with
@@ -52,7 +56,7 @@ Pros:
    to see the intermediate values assigned to variables
 8. **Customization** - IDEs often have customizeable themes and styles, and many have large
    libraries plugins available to extend the IDE's functionality to meet your needs
-9.  **AI integration** - IDEs may be able to incorporate AI tools for code generation (e.g. GitHub
+9. **AI integration** - IDEs may be able to incorporate AI tools for code generation (e.g. GitHub
    CoPilot) and more advanced code completion or refactoring, but this will not be discussed in
    this tutorial.
 
