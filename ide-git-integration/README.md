@@ -10,10 +10,13 @@ Tutorial on integrating Git and Git platforms (GitHub and GitLab) with Integrate
 4. VSCode settings and extensions
 5. Basic git operations in VSCode - GUI and terminal (GitLab/GitHub & local)
 6. Conflict resolution in VSCode
+7. Debugging in IDEs
 
 # Pre-Tutorial Instructions
 
-<PlaceHolder>
+1. Complete the [Git Basics tutorial](../git-basics/).
+2. See the following instructions to ensure the necessary software is installed on your
+   computer: [Prerequisite documentation](prereq.md)
 
 # Tutorial Slides and Recording
 

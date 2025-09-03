@@ -12,10 +12,10 @@ This repository contains tutorial materials for CDI-Software members. Tutorials 
    - Tutorial Date: June 12, 2025
    - Tutorial Lead: Jason Altekruse
 
-2. [IDEs with Git Integration](./ides/)
+2. [IDEs with Git Integration](./ide-git-integration/)
 
    - Tutorial on Integrated Development Enviornments (IDEs) that have git integration (e.g., VSCode, R Studio)
-   - Tutorial Date: September 11, 2025
+   - Tutorial Date: September 25, 2025
    - Tutorial Lead: Kirstie Haynie
 
 3. [CI/CD Pipeline Basics](./ci-cd-pipelines/)
