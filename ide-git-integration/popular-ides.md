@@ -11,7 +11,7 @@
   - [Visual Studio Code (VSCode)](#visual-studio-code-vscode)
 
 ## Overview
-There are many IDEs available, both for free and with a license. Some IDEs are language specific (e.g. RStudio, Spyder), while others are language agnostic and provide language support through plugins. While there are hundreds of options, this documents will focus on the top 5 most popular with professional developers, reported by the [Stack Overflow 2024 Developer Survey][1].
+There are many IDEs available, both for free and with a license. Some IDEs are language specific (e.g. RStudio, Spyder), while others are language agnostic and provide language support through plugins (e.g. VSCode, Notepad++). While there are hundreds of options, this document will focus on the top 5 most popular IDEs, with professional developers, reported by the [Stack Overflow 2024 Developer Survey][1].
 
 ```mermaid
 ---
@@ -24,7 +24,7 @@ config:
 xychart-beta
     title "Top 5 IDEs Used by Professional Developers"
     x-axis [Vim, Notepad++, IntelliJ IDEA, Visual Studio, Visual Studio Code]
-    y-axis "Percent of Respondants that Use the IDE  (%)" 0 --> 100
+    y-axis "Percent of Respondents that Use the IDE  (%)" 0 --> 100
     bar [21.6, 24, 27.9, 29.7, 74]
 ```
 
@@ -43,7 +43,8 @@ xychart-beta
 
 > Pros and cons are subject to opinion. Ultimately the best IDE is the whatever makes you most efficient.
 
-**<details><summary>Basic Commands</summary>**
+<details>
+  <summary>Basic Commands</summary>
 
 | Command | Action |
 | -------- | ------- |
@@ -70,6 +71,7 @@ xychart-beta
 Things to consider when executing commands
 - Prefix commands with ESC if you are currently in a mode (e.g. insert mode) and want to go back to command mode
 - During editing, Vim creates a copy of the file that generally looks like `.<filename>.swp`. For example, if I was editing `text.txt`, the file might look like `.text.txt.swp`. These files provides data recovery. If a file is not closed correctly (using the write or quit commands), then upon opening the file in Vim again, you will be provided with a message like `Found a swap file by the name ".text.txt.swp"`. You will have the option to recover the data, delete the .swp file, edit the file anyway, open readonly, quit, or abort (options are always listed at the bottom of the message).
+
 </details>
 
 ## Notepad++
@@ -113,12 +115,12 @@ Things to consider when executing commands
 > Pros and cons are subject to opinion. Ultimately the best IDE is the whatever makes you most efficient.
 
 ## Visual Studio Code (VSCode)
-74% of surveyed developers reported using [Visual Studio Code (VSCode)][10]. VSCode has the option of many (if not all) of the features of provided by  IntelliJ IDEA and Visual Studio, packaged as a lightweight, configurable IDE installation. The base installation of this idea has builting Javascript, Typescript, and NodeJS support. Debugging and linting for other languages is provided via VSCode's large extension markeplace.
+74% of surveyed developers reported using [Visual Studio Code (VSCode)][10]. VSCode has the option of many (if not all) of the features of provided by  IntelliJ IDEA and Visual Studio, packaged as a lightweight, configurable IDE installation. The base installation of this IDE has builtin Javascript, Typescript, and NodeJS support. Debugging and linting for other languages is provided via VSCode's large extension marketplace.
 
 | Pros | Cons |
 | -------- | ------- |
 | GUI provides intuitive buttons for commands  | Support for code languages through extensions/plugins |
-| Lightweight installation  | Some performance degredation reported for large, complex code libraries |
+| Lightweight installation  | Some performance degradation reported for large, complex code libraries |
 | Portable configuration | Can be run on Windows, MacOS, and Linux  |
 | Extension/Plugin marketplace | |
 | Free | |
