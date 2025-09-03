@@ -19,7 +19,6 @@ can do far more than check your spelling.
 1. A text editor is a lightweight application that probably starts up and loads your file quickly
 2. Available on just about any system
 3. Spellcheck
-4. Intuitive and easy to use
 
 ## Benefits of using an IDE
 
