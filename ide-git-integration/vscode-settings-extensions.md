@@ -90,13 +90,13 @@ VSCode provides a large extension marketplace. Benefits of extensions include bu
     <tr>
         <td> <img src="./images/prettier.png"  alt="Prettier" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" title="This is a non-Federal link">Prettier</a></td>
         <td>Consistent style formatting for languages including but not limited to: JavaScript, Typescript, JSON, HTML, Markdown, YAML</td>
     </tr> 
     <tr>
         <td> <img src="./images/black-formatter.png"  alt="Black Formatter" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter">Black Formatter</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter" title="This is a non-Federal link">Black Formatter</a></td>
         <td>Formatting support for Python</td>
     </tr> 
 </table>
@@ -113,21 +113,21 @@ VSCode provides a large extension marketplace. Benefits of extensions include bu
     <tr>
         <td> <img src="./images/markdown-all-in-one.png"  alt="Markdown All in One" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one" title="This is a non-Federal link">Markdown All in One</a></td>
         <td>Shortcuts, auto-generated table of contents, preview</td>
         <td> <img src="./images/maio-example.png"  alt="Preview"></td>
     </tr> 
     <tr>
         <td> <img src="./images/markdown-preview-mermaid-support.png"  alt="Markdown Preview Mermaid Support" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid">Markdown Preview Mermaid Support</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid" title="This is a non-Federal link">Markdown Preview Mermaid Support</a></td>
         <td>Preview for mermaid diagrams (can be used in GitHub/GitLab markdown documentation files)</td>
         <td> <img src="./images/mpms-example.png"  alt="Preview"></td>
     </tr>
         <tr>
         <td> <img src="./images/live-preview.png"  alt="Live Preview" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server" title="This is a non-Federal link">Live Preview</a></td>
         <td>Webpage preview, autocompletion for elements</td>
         <td> <img src="./images/lp-example.png"  alt="Preview"></td>
     </tr>
@@ -145,29 +145,29 @@ VSCode provides a large extension marketplace. Benefits of extensions include bu
     <tr>
         <td> <img src="./images/python.png"  alt="Python" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" title="This is a non-Federal link">Python</a></td>
         <td>Pylance, debugging, formatting/linting, auto-completion, virtual environment management</td>
         <td> <img src="./images/p-example.png"  alt="Preview"></td>
     </tr>
     <tr>
         <td> <img src="./images/c.png"  alt="C/C++" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">Python</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" title="This is a non-Federal link">Python</a></td>
         <td>Compiler, debugger, intellisense</td>
         <td> <img src="./images/c-example.png"  alt="Preview"></td>
     </tr>
     <tr>
         <td> <img src="./images/debugger-for-java.png"  alt="Debugger for Java" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug">Debugger for Java</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug" title="This is a non-Federal link">Debugger for Java</a></td>
         <td>Integrated java debugger</td>
         <!-- This is a non-Federal link -->
-        <td><a href='https://code.visualstudio.com/docs/java/java-debugging'>Java Debugging Documentation</a></td>
+        <td><a href='https://code.visualstudio.com/docs/java/java-debugging' title="This is a non-Federal link">Java Debugging Documentation</a></td>
     </tr>
     <tr>
         <td> <img src="./images/container-tools.png"  alt="Container Tools" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers">Container Tools</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-containers" title="This is a non-Federal link">Container Tools</a></td>
         <td>Auto-completion, syntax highlighting, management and debugging</td>
         <td> <img src="./images/ct-example.png"  alt="Preview"></td>
     </tr>
@@ -185,14 +185,14 @@ VSCode provides a large extension marketplace. Benefits of extensions include bu
     <tr>
         <td> <img src="./images/gitlens-git-supercharged.png"  alt="GitLens — Git supercharged" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens — Git supercharged</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" title="This is a non-Federal link">GitLens — Git supercharged</a></td>
         <td>In editor blames</td>
         <td> <img src="./images/glgs-example.png"  alt="Preview"></td>
     </tr>
     <tr>
         <td> <img src="./images/code-spell-checker.png"  alt="Code Spell Checker" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" title="This is a non-Federal link">Code Spell Checker</a></td>
         <td>Spell check for code and documents</td>
         <td> <img src="./images/csc-example.png"  alt="Preview"></td>
     </tr>
