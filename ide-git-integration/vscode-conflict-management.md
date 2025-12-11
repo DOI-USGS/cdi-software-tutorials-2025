@@ -60,8 +60,8 @@ three versions of the file: Incoming, current, and merged result.
 
 ![Screenshot of the VS Code Merge Editor feature in action](img/vscode-merge-editor.png)
 
-Here you can make finer-grained adjustments more easily. When you're done, click
-"Complete Merge" and you'll be prompted for a commit message.
+Here you can make finer-grained adjustments more easily. When you're done, click the
+blue "Complete Merge" button and you'll be prompted for a commit message.
 
 ## Try it out yourself!
 
