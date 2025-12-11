@@ -10,6 +10,7 @@ Tutorial on integrating Git and Git platforms (GitHub and GitLab) with Integrate
 4. [VS Code settings and extensions](./vscode-settings-extensions.md)
 5. [Basic git operations in VS Code](./vscode-git-operations.md)
 6. [Conflict resolution in VS Code](vscode-conflict-management.md)
+7. Carrots and hummus break!!!!
 
 ## Pre-Tutorial Instructions
 
