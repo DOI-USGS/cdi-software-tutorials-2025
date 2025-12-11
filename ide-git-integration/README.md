@@ -11,6 +11,7 @@ Tutorial on integrating Git and Git platforms (GitHub and GitLab) with Integrate
 5. Basic git operations in VSCode - GUI and terminal (GitLab/GitHub & local)
 6. Conflict resolution in VSCode
 7. Debugging in IDEs
+8. Carrots and hummus break!!!!
 
 # Pre-Tutorial Instructions
 
