@@ -95,9 +95,11 @@ The integrated source control management panel allows you to work with Git via a
 
 The integrated terminal can be opened via a keyboard shortcut or the menu bar:
 
-- **Shortcut**: `` Ctrl+` `` (Windows/Linux) or `` Cmd+` `` (Mac)
+- **Shortcuts**:
+  - Windows/Linux - <kbd>Ctrl</kbd> + <kbd>+</kbd> + <kbd>`</kbd>
+  - Mac - <kbd>⌃</kbd> + <kbd>⇧</kbd> + <kbd>`</kbd>
 
-- **Menu Bar**: In the menu bard go to `View` then click `Terminal`
+- **Menu Bar**: In the menu bard go to `Terminal` then click `New Terminal`
 
 This should open a new terminal at the bottom of the VS Code IDE using your operating systems default shell (e.g., PowerShell, Bash). The working directory starts at the root of the workspace folder.
 
