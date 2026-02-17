@@ -155,7 +155,7 @@ VSCode provides a large extension marketplace. Benefits of extensions include bu
     <tr>
         <td> <img src="./images/c.png"  alt="C/C++" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" title="This is a non-Federal link">Python</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" title="This is a non-Federal link">C/C++</a></td>
         <td>Compiler, debugger, intellisense</td>
         <td> <img src="./images/c-example.png"  alt="Preview"></td>
     </tr>
@@ -217,5 +217,5 @@ The extensions you have installed may have more default settings options that yo
 - [Comparing user and workspace settings][1]
 - [VSCode Python settings reference][2]
 
-[1]:https://git-scm.com/downloads/win](https://code.visualstudio.com/docs/configure/settings?originUrl=%2Fdocs%2Fconfigure%2Fsettings) "This is a non-Federal link"
+[1]: https://code.visualstudio.com/docs/configure/settings?originUrl=%2Fdocs%2Fconfigure%2Fsettings "This is a non-Federal link"
 [2]: https://code.visualstudio.com/docs/python/settings-reference "This is a non-Federal link"

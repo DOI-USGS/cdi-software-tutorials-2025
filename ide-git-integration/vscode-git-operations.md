@@ -99,7 +99,7 @@ The integrated terminal can be opened via a keyboard shortcut or the menu bar:
   - Windows/Linux - <kbd>Ctrl</kbd> + <kbd>+</kbd> + <kbd>`</kbd>
   - Mac - <kbd>⌃</kbd> + <kbd>⇧</kbd> + <kbd>`</kbd>
 
-- **Menu Bar**: In the menu bard go to `Terminal` then click `New Terminal`
+- **Menu Bar**: In the menu bar go to `Terminal` then click `New Terminal`
 
 This should open a new terminal at the bottom of the VS Code IDE using your operating systems default shell (e.g., PowerShell, Bash). The working directory starts at the root of the workspace folder.
 
@@ -264,4 +264,6 @@ At this point, you may want to push your suggested change to your repository in 
 
 # References
 
-[1] https://code.visualstudio.com/docs/sourcecontrol/overview
+- [VS Code Source Control Interface Overview][1]
+
+[1]: https://code.visualstudio.com/docs/sourcecontrol/overview "This is a non-Federal link"
