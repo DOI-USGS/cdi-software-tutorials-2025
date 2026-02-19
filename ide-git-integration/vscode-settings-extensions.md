@@ -11,71 +11,74 @@
   - [Extensions and Settings](#extensions-and-settings)
 - [References](#references)
 
-
 # Settings
-One benefit of VSCode (and other popular IDEs) is the portability of settings. While settings can be edited with point and click options (`File -> Preferences -> Settings`), settings can also be defined via a JSON file which can be transfered to any other system where you have VSCode installed (`CTRL+SHIFT+P -> (type) "Preferences: Open User Settings (JSON)"`). Below is an annotated user settings JSON with useful configurations for formatting, linting, etc.
+
+One benefit of VSCode (and other popular IDEs) is the portability of settings. While settings can be edited with point and click options (`File -> Preferences -> Settings`), settings can also be defined via a JSON file which can be transferred to any other system where you have VSCode installed (`CTRL+SHIFT+P -> (type) "Preferences: Open User Settings (JSON)"`). Below is an annotated user settings JSON with useful configurations for formatting, linting, etc.
 
 ```json
 {
-/**
+  /**
 Set rulers so that you know where code should wrap
 */
-"editor.rulers": [80, 120],
-// set custom color for rulers, so that they stand out in dark mode
-"workbench.colorCustomizations": {
+  "editor.rulers": [80, 120],
+  // set custom color for rulers, so that they stand out in dark mode
+  "workbench.colorCustomizations": {
     "editorRuler.foreground": "#e8e807"
-},
+  },
 
-/**
+  /**
 Configure default formatting settings
 */
-// when to format
-"editor.formatOnSave": true,
-// what default formatter to use
-"editor.defaultFormatter": "esbenp.prettier-vscode",
+  // when to format
+  "editor.formatOnSave": true,
+  // what default formatter to use
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-/**
+  /**
 Set language/file type specific settings
 */
-"[python]": {
+  "[python]": {
     // Here we use a different formatter for this specific language
     "editor.defaultFormatter": "ms-python.black-formatter",
     "analysis.autoImportCompletions": true
-},
-"[markdown]": {
+  },
+  "[markdown]": {
     // Automatically wrap text in markdown for readability
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 80
-}
+  }
 }
 ```
+
 The above user settings will be applied to all projects (also called workspaces). However, there may be instances where you are working on a project that requires its own specific settings. In VSCode provides the option of workspace (project) settings (`CTRL+SHIFT+P -> (type) "Preferences: Open Workspace Settings (JSON)"`). This will create a file in your current working directory (project/workspace) at `.vscode/settings.json`. These settings will only be applied to the current project and will not impact other projects that are in any higher level directories. Below is an example of a workspace settings.json with project specific settings:
 
 ```json
 {
-// This project/workspace has a local virtual environment
-"python.venvFolders": ["${workspaceFolder}/.venv"],
-// markdown in this workspace should not wrap words
-"[markdown]": {
+  // This project/workspace has a local virtual environment
+  "python.venvFolders": ["${workspaceFolder}/.venv"],
+  // markdown in this workspace should not wrap words
+  "[markdown]": {
     "editor.wordWrap": false
-},
-// This workspace includes yaml and uses single quotes
-"[yaml]": {
+  },
+  // This workspace includes yaml and uses single quotes
+  "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.singleQuote": true
-}
+  }
 }
 ```
 
 # Extensions
+
 VSCode provides a large extension marketplace. Benefits of extensions include but are not limited to:
+
 - Additional language support
 - Debugging support
 - Formatted document preview (e.g. markdown, html)
 - Spell checking
 - Automated docstrings
 - Type hints
-> Extensions are part of an opensource marketplace. Do your best to ensure extensions are coming from a trusted source prior to installation. Regularly check that your extensions are up to date.
+  > Extensions are part of an opensource marketplace. Do your best to ensure extensions are coming from a trusted source prior to installation. Regularly check that your extensions are up to date.
 
 ## Example Extensions
 
@@ -133,8 +136,8 @@ VSCode provides a large extension marketplace. Benefits of extensions include bu
     </tr>
 </table>
 
-
 ### Extensions for Debugging
+
 <table>
     <tr>
         <td>Icon</td>
@@ -152,7 +155,7 @@ VSCode provides a large extension marketplace. Benefits of extensions include bu
     <tr>
         <td> <img src="./images/c.png"  alt="C/C++" style="max-width:100px;"></td>
         <!-- This is a non-Federal link -->
-        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" title="This is a non-Federal link">Python</a></td>
+        <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools" title="This is a non-Federal link">C/C++</a></td>
         <td>Compiler, debugger, intellisense</td>
         <td> <img src="./images/c-example.png"  alt="Preview"></td>
     </tr>
@@ -173,8 +176,8 @@ VSCode provides a large extension marketplace. Benefits of extensions include bu
     </tr>
 </table>
 
-
 ### Miscellaneous Extensions
+
 <table>
     <tr>
         <td>Icon</td>
@@ -204,16 +207,15 @@ The extensions you have installed may have more default settings options that yo
 
 ```json
 {
-    // dictionary so that spell checker doesn't label words as misspelled
-    "cSpell.userWords": [
-        "USGS"
-    ]
+  // dictionary so that spell checker doesn't label words as misspelled
+  "cSpell.userWords": ["USGS"]
 }
 ```
 
 # References
+
 - [Comparing user and workspace settings][1]
 - [VSCode Python settings reference][2]
-  
-[1]:https://git-scm.com/downloads/win](https://code.visualstudio.com/docs/configure/settings?originUrl=%2Fdocs%2Fconfigure%2Fsettings) "This is a non-Federal link"
+
+[1]: https://code.visualstudio.com/docs/configure/settings?originUrl=%2Fdocs%2Fconfigure%2Fsettings "This is a non-Federal link"
 [2]: https://code.visualstudio.com/docs/python/settings-reference "This is a non-Federal link"
