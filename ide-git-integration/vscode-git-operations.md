@@ -2,25 +2,46 @@
 
 Here, we will walk through a how to use basic Git operations in VS Code via the VS Code Graphical User Interface (GUI), also known as the VS Code Git interface, and the VS Code integrated terminal.
 
-- [VS Code Source Control Interface](#vs-code-source-control-interface)
-  - [How to open it and what is it?](#how-to-open-it-and-what-is-it?)
-  - [Source Control Interface Elements](#source-control-interface-elements)
-  - [Benefits](#benefits)
-- [VS Code Integrated Terminal](#vs-code-integrated-terminal)
-  - [How to open it and what is it?](#how-to-open-the-terminal-and-what-is-it?)
-  - [Benefits](#terminal-benefits)
-- [Basic Git Operations](#basic-git-operations)
-  - [Clone a repository](#clone-a-repository)
-  - [Create a new branch](#create-a-new-branch)
-  - [Pull](#pull)
-  - [View changes](#view-changes)
-  - [Discard changes](#discard-changes)
-  - [Stage and commit](#stage-and-commit)
-  - [Push](#push)
-- [Recommendations](#recommendations)
-- [References](#references)
+- [Basic Git Operations in VS Code](#basic-git-operations-in-vs-code)
+  - [VS Code Source Code Interface](#vs-code-source-code-interface)
+    - [How to open it and what is it?](#how-to-open-it-and-what-is-it)
+    - [Source Control Interface Elements](#source-control-interface-elements)
+      - [1. Repositories Element](#1-repositories-element)
+      - [2. Branch Information](#2-branch-information)
+      - [3. Changes Element](#3-changes-element)
+      - [4. Graph Element](#4-graph-element)
+      - [5. Additional Elements](#5-additional-elements)
+    - [Source Control Interface Benefits](#source-control-interface-benefits)
+  - [VS Code Integrated Terminal](#vs-code-integrated-terminal)
+    - [How to open the terminal and what is it?](#how-to-open-the-terminal-and-what-is-it)
+    - [Terminal Benefits](#terminal-benefits)
+  - [Basic Git Operations](#basic-git-operations)
+    - [Clone a Repository](#clone-a-repository)
+      - [Source Control Interface](#source-control-interface)
+      - [Integrated Terminal](#integrated-terminal)
+    - [Create a New Branch](#create-a-new-branch)
+      - [Source Control Interface](#source-control-interface-1)
+      - [Integrated Terminal](#integrated-terminal-1)
+    - [Pull](#pull)
+      - [Source Control Interface](#source-control-interface-2)
+      - [Integrated Terminal](#integrated-terminal-2)
+    - [View Changes](#view-changes)
+      - [Source Control Interface](#source-control-interface-3)
+      - [Integrated Terminal](#integrated-terminal-3)
+    - [Discard Changes](#discard-changes)
+      - [Source Control Interface](#source-control-interface-4)
+      - [Integrated Terminal](#integrated-terminal-4)
+    - [Stage and Commit](#stage-and-commit)
+      - [Source Control Interface](#source-control-interface-5)
+      - [Integrated Terminal](#integrated-terminal-5)
+    - [Push](#push)
+      - [Source Control Interface](#source-control-interface-6)
+      - [Integrated Terminal](#integrated-terminal-6)
+  - [Recommendations](#recommendations)
+  - [References](#references)
+  - [Tutorial Pages](#tutorial-pages)
 
-# VS Code Source Code Interface
+## VS Code Source Code Interface
 
 ### How to open it and what is it?
 
@@ -77,11 +98,11 @@ The integrated source control management panel allows you to work with Git via a
 
 ![Screenshot of source control graph element](images/graph.png)
 
-#### 4. Additional Elements
+#### 5. Additional Elements
 
 - Additional source code elements may be added when you install an extension. For instance, if you install the Git Lens extension (see [miscellaneous extensions in VS Code Settings and Extensions](./vscode-settings-extensions.md)), a visual representation of Git blame can be accessed.
 
-## Benefits
+### Source Control Interface Benefits
 
 - Visual representation of changes
 - Easy conflict resolution
@@ -89,7 +110,7 @@ The integrated source control management panel allows you to work with Git via a
 - One-click operations
 - No need to memorize commands
 
-# VS Code Integrated Terminal
+## VS Code Integrated Terminal
 
 ### How to open the terminal and what is it?
 
@@ -109,7 +130,7 @@ You can run shell commands as you would in your operating systems shell terminal
 
 Note: this tutorial will not cover basic Unix, Linux, or PowerShell commands.
 
-## Terminal Benefits
+### Terminal Benefits
 
 - More control and options
 - Faster for experienced users
@@ -117,19 +138,19 @@ Note: this tutorial will not cover basic Unix, Linux, or PowerShell commands.
 - Works in any environment
 - Full Git feature access
 
-# Basic Git Operations
+## Basic Git Operations
 
-## Clone a Repository
+### Clone a Repository
 
-Let's start by cloning the (CDI-Software tutorials-2025)[https://code.usgs.gov/cdi/cdi-software/tutorials-2025] repository from GitLab!
+Let's start by cloning the [CDI-Software tutorials-2025](https://code.usgs.gov/cdi/cdi-software/tutorials-2025) repository from GitLab!
 
 Note: if you already have this repository cloned, please either:
 
-1.  rebase/pull the upstream project (all branches),
-2.  delete the clone and follow along here, or
-3.  follow along by cloning to a new location.
+1. Rebase/pull the upstream project (all branches),
+2. Delete the clone and follow along here, or
+3. Follow along by cloning to a new location.
 
-### Source Control Interface
+#### Source Control Interface
 
 1. Open a new VS Code Window.
 2. Open the Source Control Interface.
@@ -140,7 +161,7 @@ Note: if you already have this repository cloned, please either:
 
 ![Screenshot of how to clone a repository](images/clone.png)
 
-### Integrated Terminal
+#### Integrated Terminal
 
 `git clone https://code.usgs.gov/cdi/cdi-software/tutorials-2025.git`
 
@@ -150,43 +171,43 @@ To clone to a specific location, use:
 
 Next, open VS Code and open the repository: File --> Open Folder.
 
-## Create a New Branch
+### Create a New Branch
 
 Let's create a feature branch that we can work in during this tutorial!
 
-### Source Control Interface
+#### Source Control Interface
 
 1. In the Source Control Interface, select "More Actions" (three horizontal dots), then select `Branch` --> `Create Branch`.
 
-2) Type `ide-tutorial` for the branch name and hit enter.
+2. Type `ide-tutorial` for the branch name and hit enter.
 
 Note: you can also hit the current branch name in the bottom status bar or type `Git: Create Branch` in the Command Palette.
 
 ![Screenshot of how to clone a repository](images/branch.png)
 
-### Integrated Terminal
+#### Integrated Terminal
 
 `git branch -c ide-tutorial`
 
-## Pull
+### Pull
 
 Let's incorporate changes from the `branch-a` branch in our origin repository into our `ide-tutorial`, or feature, branch!
 
-### Source Control Interface
+#### Source Control Interface
 
 1. In the Source Control Interface, select "More Actions" (three horizontal dots), then select `Pull from...`
 
-2) Select `origin/branch-a`
+2. Select `origin/branch-a`
 
 Note: you can also type `Git: Pull from` in the Command Palette.
 
 ![Screenshot of how to pull a specific branch from the origin repository](images/pull-from.png)
 
-### Integrated Terminal
+#### Integrated Terminal
 
 `git pull origin branch-a`
 
-## View Changes
+### View Changes
 
 The changes that we pulled down has a new item in the [README.md](./README.md): `8. Pizza break!!!!!!!!!!`. Let's remove that!
 
@@ -195,7 +216,7 @@ The changes that we pulled down has a new item in the [README.md](./README.md): 
 
 Now, lets verify that change by looking at the difference between
 
-### Source Control Interface
+#### Source Control Interface
 
 1. Once you hit save, the number 1 should appear on top of the Source Control logo. This number indicates how many files have changed.
 2. When the Source Control Interface is open, you will see the files that have changed under the `Changes` heading.
@@ -203,31 +224,31 @@ Now, lets verify that change by looking at the difference between
 
 ![Screenshot of the viewing differences via the Source Control Interface](images/diff.png)
 
-### Integrated Terminal
+#### Integrated Terminal
 
 `git diff`
 
-## Discard Changes
+### Discard Changes
 
 On second thought...a break doesn't sound like a bad idea! Let's discard the change we made.
 
-### Source Control Interface
+#### Source Control Interface
 
 1. In the Source Control Interface, to the right of the changed file, there is an arrow that when you hoover over it says "Discard Changes". Hit the arrow.
 2. A window will pop up asking to confirm this change. Select `Discard File`. This simply removes any changes you made to that file, it does not delete the file.
 
-### Integrated Terminal
+#### Integrated Terminal
 
 `git restore .\ide-git-integration\README.md`
 
-## Stage and Commit
+### Stage and Commit
 
 Let's suggest a coffee break instead of pizza and make a commit!
 
 1. Open the [IDE's and Git Integration README.md](./README.md).
 2. Replace `Pizza` with `Coffee` in item 8 and save the file.
 
-### Source Control Interface
+#### Source Control Interface
 
 1. Once the file is saved and you verified the change, in the Source Control Interface hit the `+` option to the right of the changed file. This will stage the file.
 2. In the commit box, type your commit message. In the screenshot below, I typed "Switch pizza to coffee break".
@@ -235,26 +256,26 @@ Let's suggest a coffee break instead of pizza and make a commit!
 
 ![Screenshot of how to stage and commit via the Source Control Interface](images/commit.png)
 
-### Integrated Terminal
+#### Integrated Terminal
 
 1. `git add ide-git-integration/README.md`
 2. `git commit -m "Switch pizza to coffee break"`
 
 or combine them using `git commit -am "Switch pizza to coffee break"`
 
-## Push
+### Push
 
 At this point, you may want to push your suggested change to your repository in GitLab and create a merge request to the upstream project so that your changes can be incorporated. The `push` action will not work for us during this tutorial, but let's walk through how to do it anyway!
 
-### Source Control Interface
+#### Source Control Interface
 
 1. In the Source Control Interface, select "More Actions" (three horizontal dots), then select `Push`.
 
-### Integrated Terminal
+#### Integrated Terminal
 
 `git push origin ide-tutorial`
 
-# Recommendations
+## Recommendations
 
 1. **Start with the GUI** to understand Git concepts visually
 2. **Learn terminal commands** for advanced operations
@@ -262,8 +283,21 @@ At this point, you may want to push your suggested change to your repository in 
 4. **Practice regularly** with real projects! Start with simple operations and gradually work your way up to more complex workflows.
 5. **Follow best practices** for commit messages and branching
 
-# References
+## References
 
 - [VS Code Source Control Interface Overview][1]
 
 [1]: https://code.visualstudio.com/docs/sourcecontrol/overview "This is a non-Federal link"
+
+---
+
+## Tutorial Pages
+
+1. [What is an IDE and why use one?](./what-is-an-ide.md)
+2. [Popular IDEs](./popular-ides.md)
+3. [VS Code overview](./vscode.md)
+4. [VS Code settings and extensions](./vscode-settings-extensions.md)
+5. [Basic git operations in VS Code](./vscode-git-operations.md)
+6. [Conflict resolution in VS Code](vscode-conflict-management.md)
+
+---

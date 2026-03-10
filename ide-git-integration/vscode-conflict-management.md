@@ -11,20 +11,25 @@ Consider two branches, `branch-a` and `branch-b`, both created from `main`. You 
 working on `branch-a` and your colleague is working on `branch-b`. It becomes necessary
 to merge `branch-b` into `branch-a` to incorporate your colleague's changes. BUT: When
 you run
+
 ```
 git merge branch-b
 ```
+
 from the `branch-a` branch, you get the dreaded message:
+
 ```
 CONFLICT (content): Merge conflict in ide-git-integration/README.md
 Automatic merge failed; fix conflicts and then commit the result.
 ```
+
 Evidently, your colleague and you both modified the file `ide-git-integration/README.md`
 causing a conflict when you tried to merge in `branch-b` into `branch-a`.
 
 ## The resolution
 
 Running `git status` will show you a list of the files that were "both modified", here:
+
 ```
 On branch branch-a
 You have unmerged paths.
@@ -48,7 +53,7 @@ makes this easier...
 **If you view the offending file in VS Code**, you're presented with the following
 content shown in the screenshot below.
 
-![Screenshot of the VS Code view of the file with conflicting changes](img/vscode-merge-resolve.png)
+![Screenshot of the VS Code view of the file with conflicting changes](images/vscode-merge-resolve.png)
 
 This is the same file you'd see in the terminal, but VS Code provides buttons above each
 conflicting section to help you resolve the conflict. You can "Accept Current Change" or
@@ -58,12 +63,12 @@ For more complicated merge conflicts, you can click the blue "Resolve in Merge E
 button at the bottom-right corner of the screen to launch the Merge Editor, which shows
 three versions of the file: Incoming, current, and merged result.
 
-![Screenshot of the VS Code Merge Editor feature in action](img/vscode-merge-editor.png)
+![Screenshot of the VS Code Merge Editor feature in action](images/vscode-merge-editor.png)
 
 Here you can make finer-grained adjustments more easily. When you're done, click the
 blue "Complete Merge" button and you'll be prompted for a commit message.
 
-## Try it out yourself!
+## Try it out yourself
 
 You can re-create the above scenario locally by cloning this repository, switching to
 [`branch-a`](https://code.usgs.gov/cdi/cdi-software/tutorials-2025/-/tree/branch-a), and
@@ -71,3 +76,16 @@ merging in
 [`branch-b`](https://code.usgs.gov/cdi/cdi-software/tutorials-2025/-/tree/branch-b) to
 see how VS Code helps you resolve the conflicts. This is a great way to get hands-on
 experience with VS Code's merge conflict management features!
+
+---
+
+## Tutorial Pages
+
+1. [What is an IDE and why use one?](./what-is-an-ide.md)
+2. [Popular IDEs](./popular-ides.md)
+3. [VS Code overview](./vscode.md)
+4. [VS Code settings and extensions](./vscode-settings-extensions.md)
+5. [Basic git operations in VS Code](./vscode-git-operations.md)
+6. [Conflict resolution in VS Code](vscode-conflict-management.md)
+
+---
