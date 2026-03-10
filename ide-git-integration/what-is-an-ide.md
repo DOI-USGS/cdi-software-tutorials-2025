@@ -1,15 +1,15 @@
 # What is an IDE?
 
-An **IDE** is an *Integrated Development Environment*, basically an application that *integrates*
+An **IDE** is an _Integrated Development Environment_, basically an application that _integrates_
 a number of tools for software development and other tasks into one platform. An alternative is to
 use a basic text editor with separate console (or terminal) and file explorer windows.
 
 [Common IDEs](popular-ides.md) include Notepad++, IntelliJ IDEA, Visual Studio, and Visual Studio
-Code (VSCode), to mention a few.
+Code (VS Code), to mention a few.
 
 ## Why not use a text editor?
 
-You certainly can edit text in *Notepad.exe* or *TextEdit.app*. It might even have spellcheck, but
+You certainly can edit text in _Notepad.exe_ or _TextEdit.app_. It might even have spellcheck, but
 that's about it. Other common text editors, which don't have a spellchecker, commonly used by
 developers on Linux/Unix systems include vim, emacs, and nano/pico. An IDE has a text editor but
 can do far more than check your spelling.
@@ -53,7 +53,7 @@ Pros:
 7. **Debugging** - though inserting print statements can be, technically speaking, a form of
    debugging, an IDE may allow you to set break points and step through the code while it executes
    to see the intermediate values assigned to variables
-8. **Customization** - IDEs often have customizeable themes and styles, and many have large
+8. **Customization** - IDEs often have customizable themes and styles, and many have large
    libraries plugins available to extend the IDE's functionality to meet your needs
 9. **AI integration** - IDEs may be able to incorporate AI tools for code generation (e.g. GitHub
    CoPilot) and more advanced code completion or refactoring, but this will not be discussed in
@@ -61,16 +61,29 @@ Pros:
 
 ## Syntax checking and highlighting
 
-It's worth mentioning again - ***Syntax Highlighting!*** Not only will an IDE use colors and fonts
+It's worth mentioning again - **_Syntax Highlighting!_** Not only will an IDE use colors and fonts
 to help make most files easier to read, it can help you find mistakes. For example, this simple
 JSON string has an error that may not be obvious in a basic text editor.
 
-![Text editor - did I miss something?](img/editor-did-i-miss-something.png) Is something missing?
+![Text editor - did I miss something?](images/editor-did-i-miss-something.png) Is something missing?
 
-Here's the same JSON string in VSCode. In addition to differentiating between keys and values with
+Here's the same JSON string in VS Code. In addition to differentiating between keys and values with
 font color, the IDE puts a red squiggle under the last curly bracket to indicate a syntax error
 (like a spelling error). The first curly bracket is also in red to indicate that it does not have a
 matching (closing) bracket. In many IDEs, you can even hover over the squiggle to get information
 about the error.
 
-![Missing bracket in an IDE](img/ide-missing-bracket.png)
+![Missing bracket in an IDE](images/ide-missing-bracket.png)
+
+---
+
+## Tutorial Pages
+
+1. [What is an IDE and why use one?](./what-is-an-ide.md)
+2. [Popular IDEs](./popular-ides.md)
+3. [VS Code overview](./vscode.md)
+4. [VS Code settings and extensions](./vscode-settings-extensions.md)
+5. [Basic git operations in VS Code](./vscode-git-operations.md)
+6. [Conflict resolution in VS Code](vscode-conflict-management.md)
+
+---

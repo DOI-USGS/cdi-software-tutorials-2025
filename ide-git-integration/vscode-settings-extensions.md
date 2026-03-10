@@ -1,19 +1,20 @@
-# VSCode Setting and Extensions
+# VS Code Setting and Extensions
 
-- [VSCode Setting and Extensions](#vscode-setting-and-extensions)
-- [Settings](#settings)
-- [Extensions](#extensions)
+- [VS Code Setting and Extensions](#vs-code-setting-and-extensions)
+  - [Settings](#settings)
+  - [Extensions](#extensions)
   - [Example Extensions](#example-extensions)
     - [Extensions for Formatting](#extensions-for-formatting)
     - [Extensions for Document Preview](#extensions-for-document-preview)
     - [Extensions for Debugging](#extensions-for-debugging)
     - [Miscellaneous Extensions](#miscellaneous-extensions)
   - [Extensions and Settings](#extensions-and-settings)
-- [References](#references)
+  - [References](#references)
+  - [Tutorial Pages](#tutorial-pages)
 
-# Settings
+## Settings
 
-One benefit of VSCode (and other popular IDEs) is the portability of settings. While settings can be edited with point and click options (`File -> Preferences -> Settings`), settings can also be defined via a JSON file which can be transferred to any other system where you have VSCode installed (`CTRL+SHIFT+P -> (type) "Preferences: Open User Settings (JSON)"`). Below is an annotated user settings JSON with useful configurations for formatting, linting, etc.
+One benefit of VS Code (and other popular IDEs) is the portability of settings. While settings can be edited with point and click options (`File -> Preferences -> Settings`), settings can also be defined via a JSON file which can be transferred to any other system where you have VS Code installed (`CTRL+SHIFT+P -> (type) "Preferences: Open User Settings (JSON)"`). Below is an annotated user settings JSON with useful configurations for formatting, linting, etc.
 
 ```json
 {
@@ -50,7 +51,7 @@ Set language/file type specific settings
 }
 ```
 
-The above user settings will be applied to all projects (also called workspaces). However, there may be instances where you are working on a project that requires its own specific settings. In VSCode provides the option of workspace (project) settings (`CTRL+SHIFT+P -> (type) "Preferences: Open Workspace Settings (JSON)"`). This will create a file in your current working directory (project/workspace) at `.vscode/settings.json`. These settings will only be applied to the current project and will not impact other projects that are in any higher level directories. Below is an example of a workspace settings.json with project specific settings:
+The above user settings will be applied to all projects (also called workspaces). However, there may be instances where you are working on a project that requires its own specific settings. In VS Code provides the option of workspace (project) settings (`CTRL+SHIFT+P -> (type) "Preferences: Open Workspace Settings (JSON)"`). This will create a file in your current working directory (project/workspace) at `.vscode/settings.json`. These settings will only be applied to the current project and will not impact other projects that are in any higher level directories. Below is an example of a workspace settings.json with project specific settings:
 
 ```json
 {
@@ -62,15 +63,15 @@ The above user settings will be applied to all projects (also called workspaces)
   },
   // This workspace includes yaml and uses single quotes
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vs-code",
     "prettier.singleQuote": true
   }
 }
 ```
 
-# Extensions
+## Extensions
 
-VSCode provides a large extension marketplace. Benefits of extensions include but are not limited to:
+VS Code provides a large extension marketplace. Benefits of extensions include but are not limited to:
 
 - Additional language support
 - Debugging support
@@ -212,10 +213,23 @@ The extensions you have installed may have more default settings options that yo
 }
 ```
 
-# References
+## References
 
 - [Comparing user and workspace settings][1]
-- [VSCode Python settings reference][2]
+- [VS Code Python settings reference][2]
 
 [1]: https://code.visualstudio.com/docs/configure/settings?originUrl=%2Fdocs%2Fconfigure%2Fsettings "This is a non-Federal link"
 [2]: https://code.visualstudio.com/docs/python/settings-reference "This is a non-Federal link"
+
+---
+
+## Tutorial Pages
+
+1. [What is an IDE and why use one?](./what-is-an-ide.md)
+2. [Popular IDEs](./popular-ides.md)
+3. [VS Code overview](./vscode.md)
+4. [VS Code settings and extensions](./vscode-settings-extensions.md)
+5. [Basic git operations in VS Code](./vscode-git-operations.md)
+6. [Conflict resolution in VS Code](vscode-conflict-management.md)
+
+---

@@ -1,12 +1,12 @@
 # IDE Tips and Tricks
 
-IDEs come with many built-in conveninences out of the box and settings can be customized. A quick
+IDEs come with many built-in conveniences out of the box and settings can be customized. A quick
 google search will find cheat sheets for your preferred IDE, for example:
 
-- VSCode keyboard shortcuts for [Mac][vscode-mac-shortcuts] and [Windows][vscode-pc-shortcuts]
+- VS Code keyboard shortcuts for [Mac][vs-code-mac-shortcuts] and [Windows][vs-code-pc-shortcuts]
 - RStudio keyboard shortcuts for [Mac and PC][rstudio-shortcuts]
 
-The tips and tricks below are focused on VSCode, but some keyboard shortcuts for RStudio are also
+The tips and tricks below are focused on VS Code, but some keyboard shortcuts for RStudio are also
 provided.
 
 - [IDE Tips and Tricks](#ide-tips-and-tricks)
@@ -14,13 +14,14 @@ provided.
     - [Column select mode](#column-select-mode)
     - [Go To](#go-to)
     - [Navigate through code](#navigate-through-code)
-    - [VSCode Command Palette](#vscode-command-palette)
+    - [VS Code Command Palette](#vs-code-command-palette)
     - [Switch focus](#switch-focus)
     - [Markdown preview](#markdown-preview)
     - [Change line endings, encoding, and more](#change-line-endings-encoding-and-more)
     - [Workspaces and workspace-specific customization](#workspaces-and-workspace-specific-customization)
-    - [VSCode Snippets](#vscode-snippets)
+    - [VS Code Snippets](#vs-code-snippets)
     - [Auto doc-strings](#auto-doc-strings)
+  - [Tutorial Pages](#tutorial-pages)
 
 ## Some of our favorite tips and tricks
 
@@ -31,7 +32,7 @@ provided.
 Select a block of text, or position the cursor, across multiple lines to edit in multiple places at
 once or copy columns of data.
 
-- VSCode: hold Shift + Option (Mac) or Shift + Alt (PC/Linux) and click/drag with the mouse
+- VS Code: hold Shift + Option (Mac) or Shift + Alt (PC/Linux) and click/drag with the mouse
 - RStudio: Option (Mac) or Alt (PC/Linux) and click/drag with mouse
 
 ![...or `awk -v OFS="," '{print $2,$1}' latlon.txt > lonlat.csv`](img/column-select.gif)
@@ -44,12 +45,12 @@ once or copy columns of data.
 
 Navigate to a specific line/column number:
 
-- VSCode: Ctrl+G
+- VS Code: Ctrl+G
 - RStudio: Option+Shift+Cmd+G (Mac) or Alt+Shift+G (PC/Linux)
 
 Navigate to the last cursor location (across documents):
 
-- VSCode: Ctrl+- (Mac) or Ctrl+Alt+- (PC/Linux), hold shift to navigate forward
+- VS Code: Ctrl+- (Mac) or Ctrl+Alt+- (PC/Linux), hold shift to navigate forward
 - RStudio: Cmd+F9 and Cmd+F10 (Mac) or Ctrl+F9 and Ctrl+F10 (PC/Linux)
 
 There are a lot of other things you can go to (matching bracket, definitions, last location), check
@@ -68,13 +69,13 @@ shortcuts defined in the section above!)
 
 </details><br>
 
-<details><summary>VSCode Command Palette</summary>
+<details><summary>VS Code Command Palette</summary>
 
-### VSCode Command Palette
+### VS Code Command Palette
 
-The Command Palette provides access to all of VSCodes functionality, settings, and extensions.
+The Command Palette provides access to all of VS Codes functionality, settings, and extensions.
 Access by typing Cmd+Shift+P (Mac) or Ctrl+Shift+P (PC/Linux) and checkout the
-[Command Pallet section](vscode.md#5-command-palette) in the VSCode overview.
+[Command Pallet section](vs-code.md#5-command-palette) in the VS Code overview.
 
 </details><br>
 
@@ -84,7 +85,7 @@ Access by typing Cmd+Shift+P (Mac) or Ctrl+Shift+P (PC/Linux) and checkout the
 
 Switch from the editor to the terminal to the explorer and back, without leaving the keyboard.
 
-- VSCode (customize any of these!):
+- VS Code (customize any of these!):
   - Ctrl+` to cycle between terminal and editor (and hide the terminal)
   - Ctrl+0 to move to the navigator/explorer
   - Ctrl+number focuses on the first, second, third, etc. document in the editor pane
@@ -97,10 +98,10 @@ Switch from the editor to the terminal to the explorer and back, without leaving
 
 Preview the rendered Markdown with clean tables, lists, links, and images.
 
-- VSCode: Cmd+Shift+V (Mac) or Ctrl+Shift+V (PC/Linux)
+- VS Code: Cmd+Shift+V (Mac) or Ctrl+Shift+V (PC/Linux)
 
 Bonus! See rendered [Mermaid diagrams][mermaid-info] (with a Mermaid extension for markdown), also
-see [Extensions for Document Preview](vscode-settings-extensions.md#extensions-for-document-preview).
+see [Extensions for Document Preview](vs-code-settings-extensions.md#extensions-for-document-preview).
 For example:
 
 ```mermaid
@@ -122,9 +123,9 @@ flowchart LR
 
 Ever struggle with line endings when sharing files between users on different systems? Of course,
 this can be standardized with Git hooks and editor settings, but you can make quick changes right
-from the VSCode status bar (as well as the encoding or language/file type).
+from the VS Code status bar (as well as the encoding or language/file type).
 
-![VSCode GUI line endings](img/eol.png)
+![VS Code GUI line endings](img/eol.png)
 
 </details><br>
 
@@ -132,12 +133,12 @@ from the VSCode status bar (as well as the encoding or language/file type).
 
 ### Workspaces and workspace-specific customization
 
-VSCode workspaces are collections of one or more folders that are opened in a VSCode window
+VS Code workspaces are collections of one or more folders that are opened in a VS Code window
 (instance). They provide a convenient way to switch between tasks or projects. If you close and
 reopen a workspace the open editors persist so you can pick up where you left off.
 
 For those of us who may have a few too many windows open at once, you can customize the appearance
-of VSCode on a workspace-specific basis. For example, you can set a custom title bar color for each
+of VS Code on a workspace-specific basis. For example, you can set a custom title bar color for each
 workspace. Open the Command Palette with Cmd+Shift+P (Mac) or Ctrl+Shift+P (PC/Linux) and start
 typing "workspace settings" to open the workspacing settings JSON file. Add the following to the
 `settings.json` file (create a `"settings"` object, if there is a `workspace.json` file):
@@ -146,22 +147,22 @@ typing "workspace settings" to open the workspacing settings JSON file. Add the 
 {
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#0012b5",
-    "titleBar.inactiveBackground": "#000d83",
+    "titleBar.inactiveBackground": "#000d83"
   }
 }
 ```
 
 Or, in a `workspace.json` file:
 
-![VSCode Custom Title Bar Color](img/title-bar-color.png)
+![VS Code Custom Title Bar Color](img/title-bar-color.png)
 
 </details><br>
 
-<details><summary>VSCode Snippets</summary>
+<details><summary>VS Code Snippets</summary>
 
-### VSCode Snippets
+### VS Code Snippets
 
-VSCode snippets are templates to insert commonly used code patterns (for example, one of these
+VS Code snippets are templates to insert commonly used code patterns (for example, one of these
 expanding-details markdown blocks or conditional statements and loops). There are built in snippets
 and users can create their own custom snippets. Access through the Command Palette with Cmd+Shift+P
 (Mac) or Ctrl+Shift+P (PC/Linux) and start typing "snippets". "Configure Snippets" to create a new
@@ -173,15 +174,28 @@ global snippets file or edit existing user snippets.
 
 ### Auto doc-strings
 
-Code documentation is important, but does anyone like to do it? VSCode can make it a little easier
-with automatic doc-strings. VSCode provides this out-of-the box for typescript and language-specific
+Code documentation is important, but does anyone like to do it? VS Code can make it a little easier
+with automatic doc-strings. VS Code provides this out-of-the box for typescript and language-specific
 extensions can create configurable auto doc-strings for other languages like Python, below:
 
-![VSCode auto doc-strings in Python](img/auto-doc-string.gif)
+![VS Code auto doc-strings in Python](img/auto-doc-string.gif)
 
 </details><br>
 
 [mermaid-info]: https://mermaid.js.org/intro/ "Not a Federal Link"
 [rstudio-shortcuts]: https://posit.co/wp-content/uploads/2022/10/rstudio-ide-1.pdf "Not a Federal Link"
-[vscode-mac-shortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf "Not a Federal Link"
-[vscode-pc-shortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Not a Federal Link"
+[vs-code-mac-shortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf "Not a Federal Link"
+[vs-code-pc-shortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Not a Federal Link"
+
+---
+
+## Tutorial Pages
+
+1. [What is an IDE and why use one?](./what-is-an-ide.md)
+2. [Popular IDEs](./popular-ides.md)
+3. [VS Code overview](./vscode.md)
+4. [VS Code settings and extensions](./vscode-settings-extensions.md)
+5. [Basic git operations in VS Code](./vscode-git-operations.md)
+6. [Conflict resolution in VS Code](vscode-conflict-management.md)
+
+---
