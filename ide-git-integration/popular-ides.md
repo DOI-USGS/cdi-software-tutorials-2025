@@ -14,7 +14,7 @@
 
 ## Overview
 
-There are many IDEs available, both for free and with a license. Some IDEs are language specific (e.g. RStudio, Spyder), while others are language agnostic and provide language support through plugins (e.g. VSCode, Notepad++). While there are hundreds of options, this document will focus on the top 5 most popular IDEs, with professional developers, reported by the [Stack Overflow 2024 Developer Survey][1].
+There are many IDEs available, both for free and with a license. Some IDEs are language specific (e.g. RStudio, Spyder), while others are language agnostic and provide language support through plugins (e.g. VSCode, Notepad++). While there are hundreds of options, this document will focus on the top 5 most popular IDEs, with professional developers, reported by the [Stack Overflow 2025 Developer Survey][1].
 
 ```mermaid
 ---
@@ -28,14 +28,14 @@ xychart-beta
     title "Top 5 IDEs Used by Professional Developers"
     x-axis [Vim, Notepad++, IntelliJ IDEA, Visual Studio, Visual Studio Code]
     y-axis "Percent of Respondents that Use the IDE  (%)" 0 --> 100
-    bar [21.6, 24, 27.9, 29.7, 74]
+    bar [24, 26.9, 28.4, 29.7, 76.2]
 ```
 
-_Figure 1_: Percentage of surveyed professional developers that reported using the specific IDE adapted from [Stack Overflow 2024 Developer Survey's technology question results][1]. Respondants could select multiple IDEs.
+_Figure 1_: Percentage of surveyed professional developers that reported using the specific IDE adapted from [Stack Overflow 2025 Developer Survey's technology question results][1]. Respondants could select multiple IDEs.
 
 ## Vim
 
-21.6% of surveyed developers reported using Vim. [VI IMproved (Vim)][2] is a text editor commonly distributed with Unix systems. While its configurable functionality is largely constrained to text editing, its popularity and ease of use in the terminal have made many consider it an IDE. Vim is not a point and click graphical user interface (GUI) and all commands must be performed [via keystrokes][3].
+24% of surveyed developers reported using Vim. [VI IMproved (Vim)][2] is a text editor commonly distributed with Unix systems. While its configurable functionality is largely constrained to text editing, its popularity and ease of use in the terminal have made many consider it an IDE. Vim is not a point and click graphical user interface (GUI) and all commands must be performed [via keystrokes][3].
 
 | Pros                                                                                  | Cons                                                                           |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -81,7 +81,7 @@ Things to consider when executing commands
 
 ## Notepad++
 
-24% of surveyed developers reported using Notepad++. [Notepad++][4] is a simple GUI that implements a [point and click text editor][5]. Notepad++ provides tab editing so that multiple files may be opened and edited at once. Syntax highlighting is another key feature of this IDE.
+26.9% of surveyed developers reported using Notepad++. [Notepad++][4] is a simple GUI that implements a [point and click text editor][5]. Notepad++ provides tab editing so that multiple files may be opened and edited at once. Syntax highlighting is another key feature of this IDE.
 
 | Pros                                        | Cons                                                                           |
 | ------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -95,7 +95,7 @@ Things to consider when executing commands
 
 ## IntelliJ IDEA
 
-27.9% of surveyed developers reported using [IntelliJ IDEA (JetBrains)][6]. This IDE is designed specifically for [Java][7] and [Kotlin][8] development. It provides a graphical user interface, auto-formatting, debugging, and access to an integrated extension marketplace.
+28.4% of surveyed developers reported using [IntelliJ IDEA (JetBrains)][6]. This IDE is designed specifically for [Java][7] and [Kotlin][8] development. It provides a graphical user interface, auto-formatting, debugging, and access to an integrated extension marketplace.
 
 | Pros                                        | Cons                                                                     |
 | ------------------------------------------- | ------------------------------------------------------------------------ |
@@ -123,7 +123,7 @@ Things to consider when executing commands
 
 ## Visual Studio Code (VSCode)
 
-74% of surveyed developers reported using [Visual Studio Code (VSCode)][10]. VSCode has the option of many (if not all) of the features of provided by IntelliJ IDEA and Visual Studio, packaged as a lightweight, configurable IDE installation. The base installation of this IDE has builtin Javascript, Typescript, and NodeJS support. Debugging and linting for other languages is provided via VSCode's large extension marketplace. VS Code can be run on Windows, MacOS, and Linux.
+76.2% of surveyed developers reported using [Visual Studio Code (VSCode)][10]. VSCode has the option of many (if not all) of the features of provided by IntelliJ IDEA and Visual Studio, packaged as a lightweight, configurable IDE installation. The base installation of this IDE has builtin Javascript, Typescript, and NodeJS support. Debugging and linting for other languages is provided via VSCode's large extension marketplace. VS Code can be run on Windows, MacOS, and Linux.
 
 | Pros                                        | Cons                                                                    |
 | ------------------------------------------- | ----------------------------------------------------------------------- |
@@ -135,7 +135,7 @@ Things to consider when executing commands
 
 > Pros and cons are subject to opinion. Ultimately the best IDE is the whatever makes you most efficient.
 
-[1]: https://survey.stackoverflow.co/2024/ "This is a non-Federal link"
+[1]: https://survey.stackoverflow.co/2025 "This is a non-Federal link"
 [2]: https://www.vim.org/ "This is a non-Federal link"
 [3]: https://vimhelp.org/usr_toc.txt.html#_getting-started "This is a non-Federal link"
 [4]: https://notepad-plus-plus.org/ "This is a non-Federal link"

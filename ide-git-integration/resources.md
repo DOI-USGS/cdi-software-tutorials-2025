@@ -13,6 +13,10 @@ This page documents resources that may be useful and/or relevant to the IDE Git 
 - [VS Code Source Control Interface Overview][8]
 - [Comparing user and workspace settings][9]
 - [VS Code Python settings reference][10]
+- [Stack Overflow 2025 Developer Survey][11]
+- [Vim documentation][12]
+- [Notepad++ documentation][13]
+- [IntelliJ IDEA documentation][14]
 
 [1]: https://github.com/microsoft/vscode "Not a Federal Link"
 [2]: https://code.visualstudio.com/ "Not a Federal Link"
@@ -24,3 +28,7 @@ This page documents resources that may be useful and/or relevant to the IDE Git 
 [8]: https://code.visualstudio.com/docs/sourcecontrol/overview "This is a non-Federal link"
 [9]: https://code.visualstudio.com/docs/configure/settings?originUrl=%2Fdocs%2Fconfigure%2Fsettings "This is a non-Federal link"
 [10]: https://code.visualstudio.com/docs/python/settings-reference "This is a non-Federal link"
+[11]: https://survey.stackoverflow.co/2025 "This is a non-Federal link"
+[12]: https://www.vim.org/ "This is a non-Federal link"
+[13]: https://notepad-plus-plus.org/ "This is a non-Federal link"
+[14]: https://www.jetbrains.com/idea/ "This is a non-Federal link"
