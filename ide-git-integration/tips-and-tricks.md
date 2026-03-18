@@ -35,7 +35,7 @@ once or copy columns of data.
 - VS Code: hold Shift + Option (Mac) or Shift + Alt (PC/Linux) and click/drag with the mouse
 - RStudio: Option (Mac) or Alt (PC/Linux) and click/drag with mouse
 
-![...or `awk -v OFS="," '{print $2,$1}' latlon.txt > lonlat.csv`](img/column-select.gif)
+![...or `awk -v OFS="," '{print $2,$1}' latlon.txt > lonlat.csv`](images/column-select.gif)
 
 </details><br>
 
@@ -125,7 +125,7 @@ Ever struggle with line endings when sharing files between users on different sy
 this can be standardized with Git hooks and editor settings, but you can make quick changes right
 from the VS Code status bar (as well as the encoding or language/file type).
 
-![VS Code GUI line endings](img/eol.png)
+![VS Code GUI line endings](images/eol.png)
 
 </details><br>
 
@@ -154,7 +154,7 @@ typing "workspace settings" to open the workspacing settings JSON file. Add the 
 
 Or, in a `workspace.json` file:
 
-![VS Code Custom Title Bar Color](img/title-bar-color.png)
+![VS Code Custom Title Bar Color](images/title-bar-color.png)
 
 </details><br>
 
@@ -178,7 +178,7 @@ Code documentation is important, but does anyone like to do it? VS Code can make
 with automatic doc-strings. VS Code provides this out-of-the box for typescript and language-specific
 extensions can create configurable auto doc-strings for other languages like Python, below:
 
-![VS Code auto doc-strings in Python](img/auto-doc-string.gif)
+![VS Code auto doc-strings in Python](images/auto-doc-string.gif)
 
 </details><br>
 

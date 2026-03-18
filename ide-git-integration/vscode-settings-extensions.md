@@ -1,6 +1,6 @@
-# VS Code Setting and Extensions
+# VS Code Settings and Extensions
 
-- [VS Code Setting and Extensions](#vs-code-setting-and-extensions)
+- [VS Code Settings and Extensions](#vs-code-settings-and-extensions)
   - [Settings](#settings)
   - [Extensions](#extensions)
   - [Example Extensions](#example-extensions)

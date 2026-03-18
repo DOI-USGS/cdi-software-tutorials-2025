@@ -55,8 +55,7 @@ current file, and the language mode for the current document.
 
 ### (5) Command Palette
 
-VS Code's Command Palette is accessed with Cmd+Shift+P (Mac) or Ctrl+Shift+P (PC/Linux), or by
-clicking in the search field at the top of the VS Code window. When you open the the command palette
+VS Code's Command Palette is accessed with Cmd+Shift+P (Mac) or Ctrl+Shift+P (PC/Linux), or going to `View --> Command Palette`. When you open the the command palette
 there is a ">" character - delete this to see a list of available actions. Or, start typing after
 the ">" to see available commands, such as VS Code settings, extension settings, or actions. Actions
 include things like trim spaces, transform characters to uppercase, format selection or document.
