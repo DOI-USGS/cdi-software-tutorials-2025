@@ -30,6 +30,7 @@ This repository contains tutorial materials for CDI-Software members. Tutorials 
 - Jason Altekruse <jaltekruse@usgs.gov>
 - Kirstie Haynie <khaynie@usgs.gov>
 - Heather Hunsinger <hhunsinger@usgs.gov>
+- Bojan Milinic <bmilinic@usgs.gov>
 - Liam Toney <ltoney@usgs.gov>
 
 If you would like to get involved, deliver a tutorial, or suggest ideas for a tutorial, please email a committee member.
