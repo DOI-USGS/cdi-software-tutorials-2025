@@ -8,19 +8,19 @@ This repository contains tutorial materials for CDI-Software members. Tutorials 
 
 1. [Git Basics](./git-basics/)
 
-   - Introductory tutorial on git and git commands, and basic collboration practices
+   - Introductory tutorial on git and git commands, and basic collaboration practices
    - Tutorial Date: June 12, 2025
    - Tutorial Lead: Jason Altekruse
 
 2. [IDEs with Git Integration](./ide-git-integration/)
 
-   - Tutorial on Integrated Development Enviornments (IDEs) that have git integration (e.g., VSCode, R Studio)
-   - Tutorial Date: September 25, 2025
+   - Tutorial on Integrated Development Environments (IDEs) that have git integration (focus on VS Code)
+   - Tutorial Date: April 9, 2025
    - Tutorial Lead: Kirstie Haynie
 
 3. [CI/CD Pipeline Basics](./ci-cd-pipelines/)
-   - Introduction to Continuous Integration/Continuous Deployment (CI/CD) pipelines for testing, liting, and publishing pages and packages
-   - Tutorial Date: November 6, 2025
+   - Introduction to Continuous Integration/Continuous Deployment (CI/CD) pipelines for testing, linting, and publishing pages and packages
+   - Tutorial Date: TBD
    - Tutorial Lead: Heather Hunsinger
 
 ## CDI-Software Tutorial Committee
@@ -30,7 +30,7 @@ This repository contains tutorial materials for CDI-Software members. Tutorials 
 - Jason Altekruse <jaltekruse@usgs.gov>
 - Kirstie Haynie <khaynie@usgs.gov>
 - Heather Hunsinger <hhunsinger@usgs.gov>
-- Carl Schroedl <carl_schroedl@ios.doi.gov>
+- Bojan Milinic <bmilinic@usgs.gov>
 - Liam Toney <ltoney@usgs.gov>
 
 If you would like to get involved, deliver a tutorial, or suggest ideas for a tutorial, please email a committee member.
