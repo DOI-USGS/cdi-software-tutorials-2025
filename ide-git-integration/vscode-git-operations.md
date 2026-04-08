@@ -209,7 +209,7 @@ Note: you can also type `Git: Pull from` in the Command Palette.
 
 ### View Changes
 
-The changes that we pulled down has a new item in the [README.md](./README.md): `8. Pizza break!!!!!!!!!!`. Let's remove that!
+The changes that we pulled down has a new item in the [README.md](./README.md): `7. Pizza break!!!!!!!!!!`. Let's remove that!
 
 1. Open the [IDE's and Git Integration README.md](./README.md).
 2. Delete item 8 and save the file.
@@ -246,7 +246,7 @@ On second thought...a break doesn't sound like a bad idea! Let's discard the cha
 Let's suggest a coffee break instead of pizza and make a commit!
 
 1. Open the [IDE's and Git Integration README.md](./README.md).
-2. Replace `Pizza` with `Coffee` in item 8 and save the file.
+2. Replace `Pizza` with `Coffee` in item 7 and save the file.
 
 #### Source Control Interface
 
