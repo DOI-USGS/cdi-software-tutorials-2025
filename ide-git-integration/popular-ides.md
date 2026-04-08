@@ -121,7 +121,7 @@ Things to consider when executing commands
 
 > Pros and cons are subject to opinion. Ultimately the best IDE is the whatever makes you most efficient.
 
-## Visual Studio Code (VSCode)
+## Visual Studio Code (VS Code)
 
 76.2% of surveyed developers reported using [Visual Studio Code (VS Code)][10]. VS Code has the option of many (if not all) of the features of provided by IntelliJ IDEA and Visual Studio, packaged as a lightweight, configurable IDE installation. The base installation of this IDE has builtin Javascript, Typescript, and NodeJS support. Debugging and linting for other languages is provided via VS Code's large extension marketplace. VS Code can be run on Windows, MacOS, and Linux.
 
