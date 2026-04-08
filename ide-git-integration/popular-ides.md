@@ -9,7 +9,7 @@
   - [Notepad++](#notepad)
   - [IntelliJ IDEA](#intellij-idea)
   - [Visual Studio](#visual-studio)
-  - [Visual Studio Code (VSCode)](#visual-studio-code-vscode)
+  - [Visual Studio Code (VS Code)](#visual-studio-code-vscode)
   - [Tutorial Pages](#tutorial-pages)
 
 ## Overview
@@ -123,7 +123,7 @@ Things to consider when executing commands
 
 ## Visual Studio Code (VSCode)
 
-76.2% of surveyed developers reported using [Visual Studio Code (VSCode)][10]. VSCode has the option of many (if not all) of the features of provided by IntelliJ IDEA and Visual Studio, packaged as a lightweight, configurable IDE installation. The base installation of this IDE has builtin Javascript, Typescript, and NodeJS support. Debugging and linting for other languages is provided via VSCode's large extension marketplace. VS Code can be run on Windows, MacOS, and Linux.
+76.2% of surveyed developers reported using [Visual Studio Code (VS Code)][10]. VS Code has the option of many (if not all) of the features of provided by IntelliJ IDEA and Visual Studio, packaged as a lightweight, configurable IDE installation. The base installation of this IDE has builtin Javascript, Typescript, and NodeJS support. Debugging and linting for other languages is provided via VS Code's large extension marketplace. VS Code can be run on Windows, MacOS, and Linux.
 
 | Pros                                        | Cons                                                                    |
 | ------------------------------------------- | ----------------------------------------------------------------------- |
