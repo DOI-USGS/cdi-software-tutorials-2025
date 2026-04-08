@@ -212,7 +212,7 @@ Note: you can also type `Git: Pull from` in the Command Palette.
 The changes that we pulled down has a new item in the [README.md](./README.md): `7. Pizza break!!!!!!!!!!`. Let's remove that!
 
 1. Open the [IDE's and Git Integration README.md](./README.md).
-2. Delete item 8 and save the file.
+2. Delete item 7 and save the file.
 
 Now, lets verify that change by looking at the difference between
 
