@@ -19,7 +19,6 @@ Tutorial on integrating Git and Git platforms (GitHub and GitLab) with Integrate
 
 ## Tutorial Slides and Recording
 
-The slides and recording of the live tutorial can be found here:
+The recording of the live tutorial can be found here:
 
-- Slides: [<PlaceHolder>]()
-- Recording: [<PlaceHolder>]()
+- [Link to Recording](https://doimspp.sharepoint.com/:v:/r/sites/Software/Meeting%20History/CDI-Software%20Tutorial%20IDEs%20with%20Git%20Integration-20260409_130403-Meeting%20Recording.mp4?csf=1&web=1&e=XAT1F6)
