@@ -1,0 +1,37 @@
+# Project metadata, requirements, and dependencies
+[project]
+name = "helloworld"
+version = "0.1.0"
+description = "Package to practice CI/CD methodologies"
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+dependencies = [
+    "requests<2.31.0"
+]
+
+[project.scripts]
+# Defines a command 'hello' that points to the module main.py and function hello()
+hello = "helloworld.main:hello"
+
+[dependency-groups]
+# List development dependencies. These are installed, but will not be bundled
+dev = [
+    "black",
+    "isort",
+    "mypy",
+    "poethepoet",
+    "pytest",
+    "pytest-cov"
+]
+
+[tool.uv]
+# The project/package will be built and installed into the uv project environment
+# this allows us to access the hello command with out an additional 'pip install .'
+package = true
+
+# Tasks that can be run to automate command line commands
+[tool.poe.tasks]
+lint = [
+  { shell = "echo 'I am running a lint task'" },
+  { shell = "black helloworld --check" }
+]

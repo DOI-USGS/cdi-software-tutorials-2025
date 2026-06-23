@@ -1,2 +1,11 @@
 .DS_Store
+.coverage
+.mypy_cache
+.pytest_cache
+.venv
+.vscode
+dist
+htmlcov
 temp*
+*egg-info
+__pycache__
