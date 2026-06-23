@@ -18,9 +18,9 @@ This repository contains tutorial materials for CDI-Software members. Tutorials 
    - Tutorial Date: April 9, 2026
    - Tutorial Lead: Kirstie Haynie
 
-3. [CI/CD Pipeline Basics](./ci-cd-pipelines/)
-   - Introduction to Continuous Integration/Continuous Deployment (CI/CD) pipelines for testing, linting, and publishing pages and packages
-   - Tutorial Date: TBD
+3. [CI/CD Basics](./ci-cd/)
+   - Introduction to Continuous Integration/Continuous Deployment (CI/CD) for testing, linting, and publishing pages and packages
+   - Tutorial Date: June 25, 2026
    - Tutorial Lead: Heather Hunsinger
 
 ## CDI-Software Tutorial Committee
