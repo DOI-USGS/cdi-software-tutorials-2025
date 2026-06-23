@@ -42,9 +42,9 @@ All unix-like operating systems can use the command line commands outlined in th
 
 ### Installing Python and uv into a conda environment
 
-1. Create an environment for the tutorial: `conda env create -n cicd`
+1. Create an environment for the tutorial: `conda create -n cicd python=3.12`
 2. Activate the environment: `conda activate cicd`
-3. Install Python and uv: `conda install -y python=3.12 uv`
+3. Install uv: `conda install -y uv`
 
 ## Pyenv 
 
