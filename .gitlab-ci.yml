@@ -36,6 +36,7 @@ stages:
 Audit:
   script:
     - echo "Check Python dependencies"
+    - uv audit
   stage: audit
 
 ## -------------------------------------
@@ -43,8 +44,13 @@ Audit:
 ## -------------------------------------
 
 Install:
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - .venv
   script:
     - echo "Install Python dependencies"
+    - uv sync
   stage: install
 
 ## -------------------------------------
@@ -54,11 +60,21 @@ Install:
 Lint:
   script:
     - echo "Lint Python code"
+    - uv run isort . --check
+    - uv run black . --check
+    - uv run mypy helloworld --strict
   stage: check
 
 Test:
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
   script:
     - echo "Test Python code"
+    - uv run pytest --cov helloworld
+    - uv run coverage xml
   stage: check
 
 ## -------------------------------------
@@ -66,9 +82,14 @@ Test:
 ## -------------------------------------
 
 Build:
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - dist
   rules:
     # Do not run automatically. Require a manual trigger.
     - when: manual
   script:
     - echo "Build Python code"
+    - uv build
   stage: build
