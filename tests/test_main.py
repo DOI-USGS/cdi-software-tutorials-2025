@@ -1,4 +1,5 @@
-from helloworld.main import say_hello, hello
+from helloworld.main import hello
+
 
 def test_hello():
-    say_hello()
+    hello()

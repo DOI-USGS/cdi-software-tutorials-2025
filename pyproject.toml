@@ -31,7 +31,22 @@ package = true
 
 # Tasks that can be run to automate command line commands
 [tool.poe.tasks]
+audit = [
+{ shell = "uv audit" }
+]
 lint = [
-  { shell = "echo 'I am running a lint task'" },
-  { shell = "black helloworld --check" }
+{ shell = "isort . --check" },
+{ shell = "black . --check" },
+{ shell = "mypy helloworld --strict" },
+]
+test = [
+{ shell = "pytest tests --cov helloworld" },
+{ shell = "coverage xml" }
+]
+build = [
+{ shell = "uv build" }
+]
+fix = [
+{ shell = "isort ." },
+{ shell = "black ." },
 ]

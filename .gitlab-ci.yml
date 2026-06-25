@@ -36,7 +36,7 @@ stages:
 Audit:
   script:
     - echo "Check Python dependencies"
-    - uv audit
+    - uv run poe audit
   stage: audit
 
 ## -------------------------------------
@@ -60,9 +60,7 @@ Install:
 Lint:
   script:
     - echo "Lint Python code"
-    - uv run isort . --check
-    - uv run black . --check
-    - uv run mypy helloworld --strict
+    - uv run poe lint
   stage: check
 
 Test:
@@ -73,8 +71,7 @@ Test:
         path: coverage.xml
   script:
     - echo "Test Python code"
-    - uv run pytest --cov helloworld
-    - uv run coverage xml
+    - uv run poe test
   stage: check
 
 ## -------------------------------------
@@ -91,5 +88,5 @@ Build:
     - when: manual
   script:
     - echo "Build Python code"
-    - uv build
+    - uv run poe build
   stage: build
